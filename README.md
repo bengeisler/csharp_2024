@@ -1,5 +1,7 @@
 # Anwendungsentwickler der HWK Charlottenhof 2024
 ## Git
+Git ist ein dezentrales Versionsverwaltungssystem. Es ermöglicht es, Änderungen an Dateien zu verfolgen und diese zu verwalten. Git arbeitet dezentral, das bedeutet, dass jeder Entwickler eine lokale Kopie des gesamten Repositorys hat. Änderungen werden lokal vorgenommen und dann mit dem zentralen Repository synchronisiert.
+
 ### Git installieren
 1. [Git](https://git-scm.com/downloads) herunterladen, installieren und konfigurieren
 2. Git Bash öffnen
