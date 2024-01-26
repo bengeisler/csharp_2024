@@ -7,6 +7,9 @@
 ## Git
 Git ist ein dezentrales Versionsverwaltungssystem. Es ermöglicht es, Änderungen an Dateien zu verfolgen und diese zu verwalten. Git arbeitet dezentral, das bedeutet, dass jeder Entwickler eine lokale Kopie des gesamten Repositorys hat. Änderungen werden lokal vorgenommen und dann mit dem zentralen Repository synchronisiert.
 
+### GitHub
+GitHub ist ein (der beliebteste) Online-Dienst, der Git-Repositories hostet. Um in diesem Kurs mitarbeiten zu können, benötigt ihr einen GitHub-Account. Diesen könnt ihr [hier](https://github.com/) erstellen.
+
 ### Git konfigurieren
 2. Git Bash öffnen
 3. `git config --global user.name "Vorname Nachname"` ausführen
@@ -25,3 +28,10 @@ Git ist ein dezentrales Versionsverwaltungssystem. Es ermöglicht es, Änderunge
 - [Git](https://git-scm.com/)
 - [git - Der einfache Einstieg](https://rogerdudler.github.io/git-guide/index.de.html)
 - [kostenloses Ebook: Pro Git](https://git-scm.com/book/de/v2)
+
+## Exercism
+Programmieren lernt man wie Kochen oder ein Musikinstrument: durch Üben. Exercism ist eine Plattform, die euch dabei hilft, eure Programmierfähigkeiten zu verbessern. Sie stellt für eine Vielzahl von Sprachen, darunter auch C#, Übungsaufgaben zur Verfügung. Diese Aufgaben könnt ihr lösen. Für jede Aufgabe gibt es Tests die euch sofort sagen, ob eure Lösung richtig ist. Außerdem könnt ihr eure Lösung mit der Lösung anderer vergleichen. Das praktische: ihr könnt euch mit dem gerade erstellten GitHub-Account bei Exercism anmelden.
+
+Hier geht es zu Exercism: https://exercism.io/
+
+Um die Aufgaben zu lösen, müsst ihr euch den Exercism-Client herunterladen. Diesen findet ihr hier: https://exercism.io/cli-walkthrough
