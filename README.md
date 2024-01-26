@@ -3,7 +3,8 @@
 - [Visual Studio](https://visualstudio.microsoft.com/de/downloads/) herunterladen und installieren
 - [Visual Studio Code](https://code.visualstudio.com/download) herunterladen und installieren
 - [Git](https://git-scm.com/downloads) herunterladen, installieren und konfigurieren
-- 
+- [Exercism CLI](https://exercism.io/cli-walkthrough) herunterladen und installieren
+
 ## Git
 Git ist ein dezentrales Versionsverwaltungssystem. Es ermöglicht es, Änderungen an Dateien zu verfolgen und diese zu verwalten. Git arbeitet dezentral, das bedeutet, dass jeder Entwickler eine lokale Kopie des gesamten Repositorys hat. Änderungen werden lokal vorgenommen und dann mit dem zentralen Repository synchronisiert.
 
@@ -35,3 +36,43 @@ Programmieren lernt man wie Kochen oder ein Musikinstrument: durch Üben. Exerci
 Hier geht es zu Exercism: https://exercism.io/
 
 Um die Aufgaben zu lösen, müsst ihr euch den Exercism-Client herunterladen. Diesen findet ihr hier: https://exercism.io/cli-walkthrough
+
+### CLI konfigurieren
+Nachdem ihr den Client heruntergeladen habt, müsst ihr ihn konfigurieren. Dazu öffnet ihr das Terminal und führt folgende Befehle aus:
+
+```bash
+exercism configure --token=<TOKEN>
+```
+
+Erstellt nun einen Ordner für eure Aufgaben und wechselt in diesen Ordner:
+    
+```bash
+mkdir exercism
+cd exercism
+```
+
+Ladet euch die erste Aufgabe herunter, indem ihr folgenden Befehl ausführt:
+
+```bash
+exercism download --track=csharp --exercise=hello-world
+```
+
+Wenn ihr nun `tree /f .` ausführt, solltet ihr folgende Ordnerstruktur sehen:
+
+```
+C:\USERS\BENED\EXERCISM
+└───csharp
+    └───hello-world
+        │   .editorconfig
+        │   HelloWorld.cs
+        │   HelloWorld.csproj
+        │   HelloWorldTests.cs
+        │   HELP.md
+        │   README.md
+        │
+        └───.exercism
+                config.json
+                metadata.json
+```
+
+
