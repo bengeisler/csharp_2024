@@ -23,7 +23,7 @@ GitHub ist ein (der beliebteste) Online-Dienst, der Git-Repositories hostet. Um 
 ### Einen eigenen Branch erstellen
 1. Git Bash öffnen
 2. `git checkout -b <branch-name>` ausführen. Dabei `<branch-name>` durch euren Namen ersetzen.
-3. `git push --set-upstream origin <branch-name>` ausführen. 
+3. `git push --set-upstream origin <branch-name>` ausführen.
 
 ### Links
 - [Git](https://git-scm.com/)
@@ -45,7 +45,7 @@ exercism configure --token=<TOKEN>
 ```
 
 Erstellt nun einen Ordner für eure Aufgaben und wechselt in diesen Ordner:
-    
+
 ```bash
 mkdir exercism
 cd exercism
@@ -74,5 +74,30 @@ C:\USERS\BENED\EXERCISM
                 config.json
                 metadata.json
 ```
+
+Gut. Wechselt nun in den Ordner `hello-world`
+
+```bash
+cd csharp/hello-world
+```
+
+und öffnet die Datei `HelloWorld.sln` mit Visual Studio.
+
+### Aufgabe lösen
+- Lest euch die Aufgabenstellung in der Datei `README.md` durch
+- Versucht die Aufgabe zu lösen
+- Führt die Tests aus, um zu sehen, ob eure Lösung richtig ist. Dazu öffnet ihr den Test-Explorer in Visual Studio und führt die Tests aus.
+- Wenn die Tests erfolgreich sind, könnt ihr eure Lösung einreichen. Dazu führt ihr folgenden Befehl aus:
+
+```bash
+exercism submit HelloWorld.cs
+```
+
+- Wechselt zurück zur [Exercism-Website](https://exercism.io/) und schaut euch die Lösungen anderer an. Vergleicht eure Lösung mit den Lösungen anderer. Was ist anders? Was ist besser? Was ist könnte verbessert werden?
+- Verbessert ggfs. eure Lösung und reicht sie erneut ein.
+- Wenn ihr mit eurer Lösung zufrieden seid, könnt ihr die Aufgabe als abgeschlossen markieren.
+
+Und schon könnt ihr mit der nächsten Aufgabe weitermachen. Viel Spaß!
+
 
 
