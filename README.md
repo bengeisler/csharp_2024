@@ -5,5 +5,6 @@
 - [Git](https://git-scm.com/downloads) herunterladen, installieren und konfigurieren
 - [Exercism CLI](https://exercism.io/cli-walkthrough) herunterladen und installieren
 
+## Weitere Informationen
 - [Git](./docs/git.md)
 - [Exercism](./docs/exercism.md)
