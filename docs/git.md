@@ -6,10 +6,10 @@ Git ist ein dezentrales Versionsverwaltungssystem. Es ermöglicht es, Änderunge
 GitHub ist ein (der beliebteste) Online-Dienst, der Git-Repositories hostet. Um in diesem Kurs mitarbeiten zu können, benötigt ihr einen GitHub-Account. Diesen könnt ihr [hier](https://github.com/) erstellen.
 
 ## Git konfigurieren
-2. Git Bash öffnen
-3. `git config --global user.name "Vorname Nachname"` ausführen
-4. `git config --global user.email "Email"` ausführen
-5. [Visual Studio als merge und diff tool konfigurieren](https://www.codewrecks.com/post/old/2019/07/how-to-configure-visual-studio-as-diff-and-merge-tool-for-git/)
+1. Git Bash öffnen
+2. `git config --global user.name "Vorname Nachname"` ausführen
+3. `git config --global user.email "Email"` ausführen
+4. [Visual Studio als merge und diff tool konfigurieren](https://www.codewrecks.com/post/old/2019/07/how-to-configure-visual-studio-as-diff-and-merge-tool-for-git/)
 
 ## Repository klonen
 1. Git Bash öffnen
