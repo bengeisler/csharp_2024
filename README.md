@@ -8,3 +8,5 @@
 ## Weitere Informationen
 - [Git](./docs/git.md)
 - [Exercism](./docs/exercism.md)
+- [Kursnotizen](./docs/kursnotizen.md)
+- [Skript](./docs/skript.pdf)
