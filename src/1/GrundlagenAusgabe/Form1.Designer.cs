@@ -66,15 +66,17 @@ namespace GrundlagenAusgabe
             BtnAnzeigen3.TabIndex = 2;
             BtnAnzeigen3.Text = "Anzeigen 3";
             BtnAnzeigen3.UseVisualStyleBackColor = true;
+            BtnAnzeigen3.Click += BtnAnzeigen3_Click;
             // 
             // BtnAnzeigen4
             // 
-            BtnAnzeigen4.Location = new Point(231, 133);
+            BtnAnzeigen4.Location = new Point(231, 132);
             BtnAnzeigen4.Name = "BtnAnzeigen4";
             BtnAnzeigen4.Size = new Size(112, 34);
             BtnAnzeigen4.TabIndex = 3;
             BtnAnzeigen4.Text = "Anzeigen 4";
             BtnAnzeigen4.UseVisualStyleBackColor = true;
+            BtnAnzeigen4.Click += BtnAnzeigen4_Click;
             // 
             // LblAnzeige
             // 

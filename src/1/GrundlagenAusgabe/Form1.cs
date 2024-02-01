@@ -31,10 +31,9 @@ namespace GrundlagenAusgabe
 
             // Ohne String-Interpolation
             LblAnzeige.Text = "Wert: {x}"; // Wert: {x}    wird angezeigt
-            
+
             // Wert in geschweiften Klammern wird in string umgewandelt
             LblAnzeige.Text = $"Wert: {x}"; // Wert: 42    wird angezeigt
-
 
             // Weiteres Beispiel:
 
@@ -43,6 +42,28 @@ namespace GrundlagenAusgabe
 
             // LblAnzeige.Text = $"Hallo, mein Name ist {name} und ich bin {alter} Jahre alt";
             // LblAnzeige.Text = "Hallo, mein Name ist " + name + " und ich bin " + alter.ToString() + " Jahre alt.";
+        }
+
+        private void BtnAnzeigen3_Click(object sender, EventArgs e)
+        {
+            int a = 25;
+            int b = 17;
+            int c = a + b;
+
+            // \n = Zeilenumbruch
+            LblAnzeige.Text = $"Ergebnis der Berechnung: \n{a} + {b} = {c}";
+        }
+
+        private void BtnAnzeigen4_Click(object sender, EventArgs e)
+        {
+            int a = 25;
+            int b = 17;
+            int c = a + b;
+
+            // Ausgabe der Berechnung in einer MessageBox
+            MessageBox.Show($"Ergebnis der Berechnung: \n{a} + {b} = {c}");
+
+            LblAnzeige.Text = "Ende";
         }
     }
 }
