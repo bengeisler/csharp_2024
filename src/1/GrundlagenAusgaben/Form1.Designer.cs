@@ -66,6 +66,7 @@ namespace GrundlagenAusgaben
             BtnAnzeigen3.TabIndex = 2;
             BtnAnzeigen3.Text = "Anzeigen 3";
             BtnAnzeigen3.UseVisualStyleBackColor = true;
+            BtnAnzeigen3.Click += BtnAnzeigen3_Click;
             // 
             // BtnAnzeigen4
             // 
@@ -75,6 +76,7 @@ namespace GrundlagenAusgaben
             BtnAnzeigen4.TabIndex = 3;
             BtnAnzeigen4.Text = "Anzeigen 4";
             BtnAnzeigen4.UseVisualStyleBackColor = true;
+            BtnAnzeigen4.Click += BtnAnzeigen4_Click;
             // 
             // LblAnzeigen
             // 

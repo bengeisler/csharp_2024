@@ -31,5 +31,26 @@ namespace GrundlagenAusgaben
 
             LblAnzeigen.Text = $"Wert: {x}";
         }
+
+        private void BtnAnzeigen3_Click(object sender, EventArgs e)
+        {
+            int x = 25;
+            int y = 17;
+            int z = x + y;
+
+            LblAnzeigen.Text = $"Das Ergebnis der Berechnung: \n {x} + {y} = {z}";
+        }
+
+        private void BtnAnzeigen4_Click(object sender, EventArgs e)
+        {
+            int x = 25;
+            int y = 17;
+            int z = x + y;
+
+            //Ausgabe der Berechnung in einer MessageBox
+            MessageBox.Show($"Das Ergebnis der Berechnung: \n {x} + {y} = {z}");
+
+            LblAnzeigen.Text = "Ende";
+        }
     }
 }
