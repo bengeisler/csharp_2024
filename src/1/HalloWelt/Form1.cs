@@ -6,4 +6,9 @@ public partial class Form1 : Form
     {
         InitializeComponent();
     }
+
+    private void BtnHalloWelt_Click(object sender, EventArgs e)
+    {
+        LblAnzeige.Text = "Hallo Welt!";
+    }
 }

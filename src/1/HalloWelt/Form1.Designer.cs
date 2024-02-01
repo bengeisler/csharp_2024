@@ -28,11 +28,44 @@ partial class Form1
     /// </summary>
     private void InitializeComponent()
     {
-        this.components = new System.ComponentModel.Container();
-        this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-        this.ClientSize = new System.Drawing.Size(800, 450);
-        this.Text = "Form1";
+        BtnHalloWelt = new Button();
+        LblAnzeige = new Label();
+        SuspendLayout();
+        // 
+        // BtnHalloWelt
+        // 
+        BtnHalloWelt.Location = new Point(433, 12);
+        BtnHalloWelt.Name = "BtnHalloWelt";
+        BtnHalloWelt.Size = new Size(117, 42);
+        BtnHalloWelt.TabIndex = 0;
+        BtnHalloWelt.Text = "Hallo, Welt!";
+        BtnHalloWelt.UseVisualStyleBackColor = true;
+        BtnHalloWelt.Click += BtnHalloWelt_Click;
+        // 
+        // LblAnzeige
+        // 
+        LblAnzeige.AutoSize = true;
+        LblAnzeige.Location = new Point(582, 20);
+        LblAnzeige.Name = "LblAnzeige";
+        LblAnzeige.Size = new Size(38, 15);
+        LblAnzeige.TabIndex = 1;
+        LblAnzeige.Text = "label1";
+        // 
+        // Form1
+        // 
+        AutoScaleDimensions = new SizeF(7F, 15F);
+        AutoScaleMode = AutoScaleMode.Font;
+        ClientSize = new Size(800, 450);
+        Controls.Add(LblAnzeige);
+        Controls.Add(BtnHalloWelt);
+        Name = "Form1";
+        Text = "HalloWelt";
+        ResumeLayout(false);
+        PerformLayout();
     }
 
     #endregion
+
+    private Button BtnHalloWelt;
+    private Label LblAnzeige;
 }
