@@ -30,6 +30,7 @@ partial class Form1
     {
         BtnHalloWelt = new Button();
         LblAnzeige = new Label();
+        BtnBeenden = new Button();
         SuspendLayout();
         // 
         // BtnHalloWelt
@@ -51,11 +52,22 @@ partial class Form1
         LblAnzeige.TabIndex = 1;
         LblAnzeige.Text = "label1";
         // 
+        // BtnBeenden
+        // 
+        BtnBeenden.Location = new Point(12, 64);
+        BtnBeenden.Name = "BtnBeenden";
+        BtnBeenden.Size = new Size(112, 34);
+        BtnBeenden.TabIndex = 2;
+        BtnBeenden.Text = "Beenden";
+        BtnBeenden.UseVisualStyleBackColor = true;
+        BtnBeenden.Click += BtnBeenden_Click;
+        // 
         // Form1
         // 
         AutoScaleDimensions = new SizeF(10F, 25F);
         AutoScaleMode = AutoScaleMode.Font;
-        ClientSize = new Size(410, 75);
+        ClientSize = new Size(410, 170);
+        Controls.Add(BtnBeenden);
         Controls.Add(LblAnzeige);
         Controls.Add(BtnHalloWelt);
         Name = "Form1";
@@ -68,4 +80,5 @@ partial class Form1
 
     private Button BtnHalloWelt;
     private Label LblAnzeige;
+    private Button BtnBeenden;
 }
