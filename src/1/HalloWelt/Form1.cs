@@ -13,4 +13,10 @@ public partial class Form1 : Form
 
 
     }
+
+    private void BtnBeenden_Click(object sender, EventArgs e)
+    {
+        // Programm beenden
+        Close();
+    }
 }
