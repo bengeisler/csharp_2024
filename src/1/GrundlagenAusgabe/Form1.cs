@@ -16,7 +16,8 @@ namespace GrundlagenAusgabe
             int x = 42;
 
             // Das funktioniert nicht:
-            // LblAnzeige.Text = x;
+            // LblAnzeige.Text = x; 
+            // Datentyp int (x) kann nicht Datentyp string (Text) zugewiesen werden
 
             // Variable in string umwandeln und der Text-Eigenschaft zuweisen
             LblAnzeige.Text = x.ToString();
@@ -27,14 +28,12 @@ namespace GrundlagenAusgabe
             int x = 42;
 
             // Ausgabe mit String-Interpolation
-            // Wert: 42
 
-            // Ausgabe {x}  wird angezeigt
-            LblAnzeige.Text = "Ausgabe {x}";
-
-            // Wert: 42    wird angezeigt
+            // Ohne String-Interpolation
+            LblAnzeige.Text = "Wert: {x}"; // Wert: {x}    wird angezeigt
+            
             // Wert in geschweiften Klammern wird in string umgewandelt
-            LblAnzeige.Text = $"{x}";
+            LblAnzeige.Text = $"Wert: {x}"; // Wert: 42    wird angezeigt
 
 
             // Weiteres Beispiel:
