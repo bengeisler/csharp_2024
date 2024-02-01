@@ -11,4 +11,10 @@ public partial class form1 : Form
     {
         LblAnzeige.Text = "Hallo, Welt!";
     }
+
+    private void BtnBeenden_Click(object sender, EventArgs e)
+    {
+        // Programm beenden
+        Close();
+    }
 }
