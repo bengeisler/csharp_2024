@@ -22,9 +22,7 @@ namespace GrundlagenDatentypen
 
             LblAnzeigen.Text = $"Adresse:\nPavel Pekin\nBergstraﬂe {b}\n{c} Brunnstadt\n\nAlter: {alter}\nGehalt: {DE}"; 
 
-
-
-            
+           
         }
     }
 }
