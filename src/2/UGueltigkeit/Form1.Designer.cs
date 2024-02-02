@@ -31,12 +31,58 @@ namespace UGueltigkeit
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Text = "Form1";
+            CmdAnzeigen1 = new Button();
+            CmdAnzeigen2 = new Button();
+            LblAnzeige = new Label();
+            SuspendLayout();
+            // 
+            // CmdAnzeigen1
+            // 
+            CmdAnzeigen1.Location = new Point(361, 9);
+            CmdAnzeigen1.Name = "CmdAnzeigen1";
+            CmdAnzeigen1.Size = new Size(112, 34);
+            CmdAnzeigen1.TabIndex = 0;
+            CmdAnzeigen1.Text = "Anzeigen 1";
+            CmdAnzeigen1.UseVisualStyleBackColor = true;
+            CmdAnzeigen1.Click += CmdAnzeigen1_Click;
+            // 
+            // CmdAnzeigen2
+            // 
+            CmdAnzeigen2.Location = new Point(361, 49);
+            CmdAnzeigen2.Name = "CmdAnzeigen2";
+            CmdAnzeigen2.Size = new Size(112, 34);
+            CmdAnzeigen2.TabIndex = 1;
+            CmdAnzeigen2.Text = "Anzeigen 2";
+            CmdAnzeigen2.UseVisualStyleBackColor = true;
+            CmdAnzeigen2.Click += CmdAnzeigen2_Click;
+            // 
+            // LblAnzeige
+            // 
+            LblAnzeige.AutoSize = true;
+            LblAnzeige.Location = new Point(12, 9);
+            LblAnzeige.Name = "LblAnzeige";
+            LblAnzeige.Size = new Size(59, 25);
+            LblAnzeige.TabIndex = 2;
+            LblAnzeige.Text = "label1";
+            // 
+            // Form1
+            // 
+            AutoScaleDimensions = new SizeF(10F, 25F);
+            AutoScaleMode = AutoScaleMode.Font;
+            ClientSize = new Size(497, 167);
+            Controls.Add(LblAnzeige);
+            Controls.Add(CmdAnzeigen2);
+            Controls.Add(CmdAnzeigen1);
+            Name = "Form1";
+            Text = "Form1";
+            ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
+
+        private Button CmdAnzeigen1;
+        private Button CmdAnzeigen2;
+        private Label LblAnzeige;
     }
 }
