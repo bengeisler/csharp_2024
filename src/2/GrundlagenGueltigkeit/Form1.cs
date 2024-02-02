@@ -59,7 +59,7 @@ namespace GrundlagenGueltigkeit
             int x = 0;
 
 
-            //Hallo Andre Turkey Turkey müssen alle umbringen
+            //Hallo Andre
 
             Mx++;
 
