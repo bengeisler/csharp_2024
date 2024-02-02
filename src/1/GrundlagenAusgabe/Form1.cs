@@ -54,7 +54,7 @@ namespace GrundlagenAusgabe
             int a = 25;
             int b = 17;
             int c = a + b;
-
+            
             //Ausgabe der Berechnung in einer MessageBox
             MessageBox.Show($"Das Ergebnis der Berechnung:\n{a} + {b} = {c}");
 
