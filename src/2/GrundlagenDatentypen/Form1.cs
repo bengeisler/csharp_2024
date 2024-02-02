@@ -21,8 +21,8 @@ namespace GrundlagenDatentypen
             decimal DE = 2855.55m;
 
             LblAnzeigen.Text = $"Adresse:\nPavel Pekin\nBergstraﬂe {b}\n{c} Brunnstadt\n\nAlter: {alter}\nGehalt: {DE}"; 
-
-           
+                      
+         
         }
     }
 }
