@@ -11,6 +11,8 @@ namespace GrundlagenGueltigkeit
         }
 
         // "Globale" Variable
+        // = Objekteigenschaft
+        // = Feld
         private int Mx = 0;
         // private: Sichtbarkeit der Variable (nur innerhalb der Klasse)
         // int: Datentyp
@@ -61,7 +63,7 @@ namespace GrundlagenGueltigkeit
             Mx++;
 
             // Wert im Label anzeigen
-            LblAnzeige.Text = x.ToString();
+            LblAnzeige.Text = $"x: {x}, Mx: {Mx}";
         }
     }
 }
