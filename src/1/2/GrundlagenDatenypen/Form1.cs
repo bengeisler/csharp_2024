@@ -12,7 +12,6 @@ namespace GrundlagenDatenypen
 
         private void CmdAnzeigen_Click(object sender, EventArgs e)
         {
-            string Adresse = "Adresse";
             string Name = "Claus Clever";
             string Strasse = "Bergstraﬂe 34";
             string PLZ = "09445 Brunnstadt";
@@ -20,7 +19,7 @@ namespace GrundlagenDatenypen
             string Gehalt = "Gehalt:";
             decimal Euro = 2852.55M;
 
-            LblAnzeigen.Text = $"Adresse: \n {Name} \n {Strasse} \n {PLZ} \n \n {Alter} \n {Gehalt} {Euro}";
+            LblAnzeigen.Text = $" Adresse: \n {Name} \n {Strasse} \n {PLZ} \n \n {Alter} \n {Gehalt} {Euro}";
         }
     }
 }
