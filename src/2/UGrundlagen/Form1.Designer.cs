@@ -34,7 +34,6 @@ namespace UGrundlagen
             BtnAnzeigen1 = new Button();
             BtnAnzeigen2 = new Button();
             LblAnzeigen1 = new Label();
-            LblAnzeigen2 = new Label();
             SuspendLayout();
             // 
             // BtnAnzeigen1
@@ -66,21 +65,11 @@ namespace UGrundlagen
             LblAnzeigen1.TabIndex = 2;
             LblAnzeigen1.Text = "label1";
             // 
-            // LblAnzeigen2
-            // 
-            LblAnzeigen2.AutoSize = true;
-            LblAnzeigen2.Location = new Point(12, 57);
-            LblAnzeigen2.Name = "LblAnzeigen2";
-            LblAnzeigen2.Size = new Size(38, 15);
-            LblAnzeigen2.TabIndex = 3;
-            LblAnzeigen2.Text = "label2";
-            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(380, 147);
-            Controls.Add(LblAnzeigen2);
             Controls.Add(LblAnzeigen1);
             Controls.Add(BtnAnzeigen2);
             Controls.Add(BtnAnzeigen1);
@@ -95,6 +84,5 @@ namespace UGrundlagen
         private Button BtnAnzeigen1;
         private Button BtnAnzeigen2;
         private Label LblAnzeigen1;
-        private Label LblAnzeigen2;
     }
 }

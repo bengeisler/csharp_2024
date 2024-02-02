@@ -20,8 +20,7 @@ namespace UGrundlagen
             y = y + 0.1;
 
 
-            LblAnzeigen1.Text = $"x:{x}";
-            LblAnzeigen2.Text = $"y:{y}";
+            LblAnzeigen1.Text = $"x:{x}\ny:{y}";
 
 
         }
@@ -33,8 +32,7 @@ namespace UGrundlagen
             x = x + 0.1;
             z = z + 0.1;
 
-            LblAnzeigen1.Text = $"x:{x}";
-            LblAnzeigen2.Text = $"z:{z}";
+            LblAnzeigen1.Text = $"x:{x}\nz:{z}";
 
 
         }
