@@ -15,9 +15,10 @@ namespace UGültigkeit
 
             
 
-            double y = 0.1;
+            double y = 0.0;
 
             x = x + 0.1;
+            y = y + 0.1;
 
             LblAnzeigen.Text = $"x: {x}\ny: {y}";
 
@@ -27,7 +28,7 @@ namespace UGültigkeit
 
         private void CmdAnzeigen2_Click(object sender, EventArgs e)
         {
-            double z = 0.1;
+            double z = 0.0;
 
             x = x + 0.1;
 
