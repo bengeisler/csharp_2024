@@ -7,6 +7,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GrundlagenDatentypen", "Gru
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UDatentypen", "UDatentypen\UDatentypen.csproj", "{7B5D8FEB-DB48-4A08-B8A1-6C1B3714A470}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GrundlagenGueltigkeit", "GrundlagenGueltigkeit\GrundlagenGueltigkeit.csproj", "{A8A76D47-1B7B-4D0E-8289-A1526C295A62}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{7B5D8FEB-DB48-4A08-B8A1-6C1B3714A470}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7B5D8FEB-DB48-4A08-B8A1-6C1B3714A470}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7B5D8FEB-DB48-4A08-B8A1-6C1B3714A470}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A8A76D47-1B7B-4D0E-8289-A1526C295A62}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A8A76D47-1B7B-4D0E-8289-A1526C295A62}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A8A76D47-1B7B-4D0E-8289-A1526C295A62}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A8A76D47-1B7B-4D0E-8289-A1526C295A62}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
