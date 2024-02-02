@@ -11,10 +11,11 @@ namespace UGrundlagen
         }
 
         private double x = 0;
-
+        private double y = 0;
+        private double z = 0;
         private void BtnAnzeigen1_Click(object sender, EventArgs e)
         {
-            double y = 0;
+            //double y = 0;
 
             x = x + 0.1;
             y = y + 0.1;
@@ -27,7 +28,7 @@ namespace UGrundlagen
 
         private void BtnAnzeigen2_Click(object sender, EventArgs e)
         {
-            double z = 0;
+            //double z = 0;
 
             x = x + 0.1;
             z = z + 0.1;
