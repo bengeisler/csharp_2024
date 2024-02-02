@@ -12,12 +12,29 @@ namespace UDatentypen
 
         private void CmdAnzeigen_Click(object sender, EventArgs e)
         {
-            var name = "Benedikt Geisler";
-            var adresse = $"{name}\nMeine Straße 1\n12345 Regensburg";
-            var alter = 33;
-            var gehalt = 12345.5M;
+            // Variablen anlegen
 
-            LblAnzeige.Text = $"Adresse:\n{adresse}\n\nAlter: {alter}\nGehalt: {gehalt}€";
+            // Möglichkeit 1: var (Datentyp wird automatisch erkannt durch das, was auf der rechten Seite des = steht)
+            var name = "Mein Name";
+            // Möglichkeit 2: string (explizite Angabe des Datentyps)
+            string meinName = "Claus Clever";
+            // Zeichenketten (Text) immer in Anführungszeichen!
+            // Zeichenketten sind Datentyp string
+
+            string strasse = "Meine Straße 1";
+            string ort = "12345 Mein Ort";
+
+            int alter = 32;
+            decimal gehalt = 2852.55M; // Für decimal M anhängen, sonst Fehlermeldung
+
+            // String-Interpolation
+            // $"... {Variable}"
+            // ^     ^        ^
+            // |     Geschweifte Klammern + Variable werden durch den INHALT der Variable ersetzt
+            // |
+            // $ am Anfang bedeutet, dass innerhalb der geschweiften Klammern Variablen sind,
+            //   deren Inhalt als String interpretiert und an der entsprechenden Stelle eingefügt werden soll.
+            LblAnzeige.Text = $"Adresse:\n{name}\n{strasse}\n\nAlter: {alter}\nGehalt: {gehalt} €";
         }
     }
 }

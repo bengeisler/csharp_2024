@@ -27,7 +27,7 @@ namespace GrundlagenDatentypen
             // 2^1 = 2
             // 2^2 = 4
             // ...
-            // 2^7 = 128
+            //2 ^ 7 = 128
 
 
             // bool
