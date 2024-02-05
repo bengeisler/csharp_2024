@@ -15,6 +15,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GrundlagenEnumertationen", 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UOperatorenRechnen", "UOperatorenRechnen\UOperatorenRechnen.csproj", "{D13F8A6B-A223-4AC2-90E0-E11808FACA9F}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SteuerelementTextBox", "SteuerelementTextBox\SteuerelementTextBox.csproj", "{1136DA15-3CEA-4645-A150-EEF0B12573EE}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -45,6 +47,10 @@ Global
 		{D13F8A6B-A223-4AC2-90E0-E11808FACA9F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D13F8A6B-A223-4AC2-90E0-E11808FACA9F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D13F8A6B-A223-4AC2-90E0-E11808FACA9F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1136DA15-3CEA-4645-A150-EEF0B12573EE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1136DA15-3CEA-4645-A150-EEF0B12573EE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1136DA15-3CEA-4645-A150-EEF0B12573EE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1136DA15-3CEA-4645-A150-EEF0B12573EE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

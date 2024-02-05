@@ -44,7 +44,7 @@ namespace UOperatorenRechnen
 
             LabelAnzeige1.Text = $"325 Minuten sind {stunden} stunden und {minuten} minuten";
 
-
+           
 
 
         }
