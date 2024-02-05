@@ -9,9 +9,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GrundlagenGültigkeit", "Gr
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UGülitgkeit", "UGülitgkeit\UGülitgkeit.csproj", "{C138FA1C-4145-49EB-A95F-1773D6AC8ED1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GrundlagenEnumerationen", "GrundlagenEnumerationen\GrundlagenEnumerationen.csproj", "{9E7AFBEC-3920-4523-B69E-22654607AE26}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GrundlagenEnumerationen", "GrundlagenEnumerationen\GrundlagenEnumerationen.csproj", "{9E7AFBEC-3920-4523-B69E-22654607AE26}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UOperatorenVergleich", "UOperatorenVergleich\UOperatorenVergleich.csproj", "{A125AC74-70B8-46B7-A619-02C45A0B9B8B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UOperatorenVergleich", "UOperatorenVergleich\UOperatorenVergleich.csproj", "{A125AC74-70B8-46B7-A619-02C45A0B9B8B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SteuerelementTextBox", "SteuerelementTextBox\SteuerelementTextBox.csproj", "{5DFDC8E9-C12A-4747-AA9D-8C8374B0D56C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,6 +41,10 @@ Global
 		{A125AC74-70B8-46B7-A619-02C45A0B9B8B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A125AC74-70B8-46B7-A619-02C45A0B9B8B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A125AC74-70B8-46B7-A619-02C45A0B9B8B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5DFDC8E9-C12A-4747-AA9D-8C8374B0D56C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5DFDC8E9-C12A-4747-AA9D-8C8374B0D56C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5DFDC8E9-C12A-4747-AA9D-8C8374B0D56C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5DFDC8E9-C12A-4747-AA9D-8C8374B0D56C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

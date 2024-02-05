@@ -46,7 +46,7 @@ namespace UOperatorenVergleich
             double Minuten;
             double Sekunden;
             int Eingabe = 3661;
-
+            
             Stunden = Eingabe / 60 / 60;
             Minuten = Stunden / 60 % 60;
             Sekunden = Eingabe % 60;
