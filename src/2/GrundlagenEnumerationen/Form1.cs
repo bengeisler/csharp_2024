@@ -11,7 +11,8 @@ namespace GrundlagenEnumerationen
         }
 
 
-        private enum Wochentag : string
+        private enum Wochentag : int
+        {
             Montag = 1,
             Dienstag = 2,
             Mittwoch = 3,
@@ -19,6 +20,8 @@ namespace GrundlagenEnumerationen
             Freitag = 5,
             Samstag = 6,
             Sonntag = 7,
+        }
+          
 
         private void CmdAnzeige1_Click(object sender, EventArgs e)
         {
