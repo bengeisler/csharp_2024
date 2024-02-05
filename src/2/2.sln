@@ -21,6 +21,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SteuerelementNumericUpDown"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GrundlagenIfElse", "GrundlagenIfElse\GrundlagenIfElse.csproj", "{12F09597-BD84-4FBF-9C02-A1C97464FB80}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "USteuerbetrag", "USteuerbetrag\USteuerbetrag.csproj", "{C9E4FD1C-260F-43CD-8730-65129A785FA9}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -63,6 +65,10 @@ Global
 		{12F09597-BD84-4FBF-9C02-A1C97464FB80}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{12F09597-BD84-4FBF-9C02-A1C97464FB80}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{12F09597-BD84-4FBF-9C02-A1C97464FB80}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C9E4FD1C-260F-43CD-8730-65129A785FA9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C9E4FD1C-260F-43CD-8730-65129A785FA9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C9E4FD1C-260F-43CD-8730-65129A785FA9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C9E4FD1C-260F-43CD-8730-65129A785FA9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
