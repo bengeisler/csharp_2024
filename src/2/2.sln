@@ -15,6 +15,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UOperatorenBerechnen", "UOp
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SteuerelementTextBox", "SteuerelementTextBox\SteuerelementTextBox.csproj", "{6272A2A4-5319-4F69-B019-4C5A831FA938}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SteuerelementNummericUpDown", "SteuerelementNummericUpDown\SteuerelementNummericUpDown.csproj", "{183E0D86-858F-4174-9440-1BA8AE8408BC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GrundlagenIfElse", "GrundlagenIfElse\GrundlagenIfElse.csproj", "{4C763C88-3DFA-4B7C-A0E1-018A8DC4E34C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -45,6 +49,14 @@ Global
 		{6272A2A4-5319-4F69-B019-4C5A831FA938}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6272A2A4-5319-4F69-B019-4C5A831FA938}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6272A2A4-5319-4F69-B019-4C5A831FA938}.Release|Any CPU.Build.0 = Release|Any CPU
+		{183E0D86-858F-4174-9440-1BA8AE8408BC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{183E0D86-858F-4174-9440-1BA8AE8408BC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{183E0D86-858F-4174-9440-1BA8AE8408BC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{183E0D86-858F-4174-9440-1BA8AE8408BC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4C763C88-3DFA-4B7C-A0E1-018A8DC4E34C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4C763C88-3DFA-4B7C-A0E1-018A8DC4E34C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4C763C88-3DFA-4B7C-A0E1-018A8DC4E34C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4C763C88-3DFA-4B7C-A0E1-018A8DC4E34C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
