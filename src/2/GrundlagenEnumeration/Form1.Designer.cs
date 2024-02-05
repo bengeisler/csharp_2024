@@ -1,7 +1,7 @@
 ﻿// Licensed to the .NET Foundation under one or more agreements.
 // The .NET Foundation licenses this file to you under the MIT license.
 
-namespace WinFormsApp4
+namespace GrundlagenEnumeration
 {
     partial class Form1
     {
@@ -31,37 +31,48 @@ namespace WinFormsApp4
         /// </summary>
         private void InitializeComponent()
         {
+            CmdAnzeigen2 = new Button();
+            CmdAnzeigen1 = new Button();
             LblAnzeige = new Label();
-            BtnAnzeigen = new Button();
             SuspendLayout();
+            // 
+            // CmdAnzeigen2
+            // 
+            CmdAnzeigen2.Location = new Point(639, 67);
+            CmdAnzeigen2.Name = "CmdAnzeigen2";
+            CmdAnzeigen2.Size = new Size(75, 23);
+            CmdAnzeigen2.TabIndex = 2;
+            CmdAnzeigen2.Text = "Anzeigen 2";
+            CmdAnzeigen2.UseVisualStyleBackColor = true;
+            CmdAnzeigen2.Click += CmdAnzeigen2_Click;
+            // 
+            // CmdAnzeigen1
+            // 
+            CmdAnzeigen1.Location = new Point(639, 38);
+            CmdAnzeigen1.Name = "CmdAnzeigen1";
+            CmdAnzeigen1.Size = new Size(75, 23);
+            CmdAnzeigen1.TabIndex = 3;
+            CmdAnzeigen1.Text = "Anzeigen 1";
+            CmdAnzeigen1.UseVisualStyleBackColor = true;
+            CmdAnzeigen1.Click += CmdAnzeigen1_Click;
             // 
             // LblAnzeige
             // 
             LblAnzeige.AutoSize = true;
-            LblAnzeige.Location = new Point(196, 47);
+            LblAnzeige.Location = new Point(52, 38);
             LblAnzeige.Name = "LblAnzeige";
-            LblAnzeige.Size = new Size(38, 15);
-            LblAnzeige.TabIndex = 0;
-            LblAnzeige.Text = "label1";
-            LblAnzeige.Click += LblAnzeige_Click;
-            // 
-            // BtnAnzeigen
-            // 
-            BtnAnzeigen.Location = new Point(546, 47);
-            BtnAnzeigen.Name = "BtnAnzeigen";
-            BtnAnzeigen.Size = new Size(75, 23);
-            BtnAnzeigen.TabIndex = 1;
-            BtnAnzeigen.Text = "button1";
-            BtnAnzeigen.UseVisualStyleBackColor = true;
-            BtnAnzeigen.Click += BtnAnzeigen_Click;
+            LblAnzeige.Size = new Size(42, 15);
+            LblAnzeige.TabIndex = 4;
+            LblAnzeige.Text = "XXXXX";
             // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
-            Controls.Add(BtnAnzeigen);
             Controls.Add(LblAnzeige);
+            Controls.Add(CmdAnzeigen1);
+            Controls.Add(CmdAnzeigen2);
             Name = "Form1";
             Text = "Form1";
             ResumeLayout(false);
@@ -70,7 +81,8 @@ namespace WinFormsApp4
 
         #endregion
 
+        private Button CmdAnzeigen2;
+        private Button CmdAnzeigen1;
         private Label LblAnzeige;
-        private Button BtnAnzeigen;
     }
 }

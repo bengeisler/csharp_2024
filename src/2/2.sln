@@ -3,11 +3,15 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.0.31903.59
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GrundlagenDateityp", "Grundl\GrundlagenDateityp.csproj", "{3B4A9D54-A1B2-4EFB-B8D5-136E51D217A9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GrundlagenDateityp", "Grundl\GrundlagenDateityp.csproj", "{3B4A9D54-A1B2-4EFB-B8D5-136E51D217A9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GrundlagenGültigkeit", "GrundlagenGültigkeit\GrundlagenGültigkeit.csproj", "{186E281E-DAD2-48D8-B66D-20E7BE3E4772}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GrundlagenGültigkeit", "GrundlagenGültigkeit\GrundlagenGültigkeit.csproj", "{186E281E-DAD2-48D8-B66D-20E7BE3E4772}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IDK", "IDK\IDK.csproj", "{2CE63325-90CE-4E3A-AD51-3E71509A61DA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "IDK", "IDK\IDK.csproj", "{2CE63325-90CE-4E3A-AD51-3E71509A61DA}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GrundlagenEnumeration", "GrundlagenEnumeration\GrundlagenEnumeration.csproj", "{C7DBD24C-B06D-44E3-9D51-F28E9E8E2A74}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Rechenoperatoren", "Rechenoperatoren\Rechenoperatoren.csproj", "{18C83A63-C6A6-42B4-B074-58DE3FB8F3A5}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -27,6 +31,14 @@ Global
 		{2CE63325-90CE-4E3A-AD51-3E71509A61DA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2CE63325-90CE-4E3A-AD51-3E71509A61DA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2CE63325-90CE-4E3A-AD51-3E71509A61DA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C7DBD24C-B06D-44E3-9D51-F28E9E8E2A74}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C7DBD24C-B06D-44E3-9D51-F28E9E8E2A74}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C7DBD24C-B06D-44E3-9D51-F28E9E8E2A74}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C7DBD24C-B06D-44E3-9D51-F28E9E8E2A74}.Release|Any CPU.Build.0 = Release|Any CPU
+		{18C83A63-C6A6-42B4-B074-58DE3FB8F3A5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{18C83A63-C6A6-42B4-B074-58DE3FB8F3A5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{18C83A63-C6A6-42B4-B074-58DE3FB8F3A5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{18C83A63-C6A6-42B4-B074-58DE3FB8F3A5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
