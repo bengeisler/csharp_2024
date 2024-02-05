@@ -61,7 +61,7 @@ namespace GrundlagenGueltigkeit
             Mx++;
 
             // Wert im Label anzeigen
-            LblAnzeige.Text = x.ToString();
+            LblAnzeige.Text = $"x: {x}, Mx: {Mx}";
         }
     }
 }
