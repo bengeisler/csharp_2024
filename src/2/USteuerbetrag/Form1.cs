@@ -13,28 +13,28 @@ namespace USteuerbetrag
         private void BtnBerechnung_Click(object sender, EventArgs e)
         {
 
-            double ausgabe;
+            decimal ausgabe;
 
-            double eingabe = Convert.ToDouble(TxtEingabe.Text);
+            decimal eingabe = Convert.ToDecimal(TxtEingabe.Text);
 
             if (eingabe > 30000)
             {
-                ausgabe = eingabe * 0.25;
+                ausgabe = eingabe * 0.25M;
             }
             else if (eingabe >20000)
             {
-                ausgabe = eingabe * 0.20;
+                ausgabe = eingabe * 0.20M;
             }
             else if (eingabe > 12000)
             {
-                ausgabe = eingabe * 0.15;
+                ausgabe = eingabe * 0.15M;
             }
             else
             {
-                ausgabe = eingabe * 0.12;
+                ausgabe = eingabe * 0.12M;
             }
 
-            LblAnzeige1.Text = $"Steuerbetrag: {ausgabe.ToString()}";
+            LblAnzeige1.Text = $"Steuerbetrag: {ausgabe}";
 
         }
     }
