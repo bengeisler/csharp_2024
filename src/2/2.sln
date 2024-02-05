@@ -17,6 +17,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UebungOperatorenRechnen", "
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SteuerelementTextbox", "SteuerelementTextbox\SteuerelementTextbox.csproj", "{742E9770-41B0-47AD-980A-419D3FA70CFB}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SteuerelementNumericUpDown", "SteuerelementNumericUpDown\SteuerelementNumericUpDown.csproj", "{98E32081-AC18-49BC-ADD7-1B9EF3449F4C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GrundlagenIfElse", "GrundlagenIfElse\GrundlagenIfElse.csproj", "{12F09597-BD84-4FBF-9C02-A1C97464FB80}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -51,6 +55,14 @@ Global
 		{742E9770-41B0-47AD-980A-419D3FA70CFB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{742E9770-41B0-47AD-980A-419D3FA70CFB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{742E9770-41B0-47AD-980A-419D3FA70CFB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{98E32081-AC18-49BC-ADD7-1B9EF3449F4C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{98E32081-AC18-49BC-ADD7-1B9EF3449F4C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{98E32081-AC18-49BC-ADD7-1B9EF3449F4C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{98E32081-AC18-49BC-ADD7-1B9EF3449F4C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{12F09597-BD84-4FBF-9C02-A1C97464FB80}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{12F09597-BD84-4FBF-9C02-A1C97464FB80}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{12F09597-BD84-4FBF-9C02-A1C97464FB80}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{12F09597-BD84-4FBF-9C02-A1C97464FB80}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
