@@ -21,6 +21,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Steuerlemente numericupdown
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Grundlagenifelse", "Grundlagenifelse\Grundlagenifelse.csproj", "{8AA2E02A-33ED-4F09-B0D1-69322872A18E}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "USteuerbetrag", "USteuerbetrag\USteuerbetrag.csproj", "{4D837CCB-77AE-4E88-AB5D-B1380E5CA9CC}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -63,6 +65,10 @@ Global
 		{8AA2E02A-33ED-4F09-B0D1-69322872A18E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8AA2E02A-33ED-4F09-B0D1-69322872A18E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8AA2E02A-33ED-4F09-B0D1-69322872A18E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4D837CCB-77AE-4E88-AB5D-B1380E5CA9CC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4D837CCB-77AE-4E88-AB5D-B1380E5CA9CC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4D837CCB-77AE-4E88-AB5D-B1380E5CA9CC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4D837CCB-77AE-4E88-AB5D-B1380E5CA9CC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
