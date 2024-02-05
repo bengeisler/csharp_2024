@@ -15,6 +15,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GrundlagenEnumerationen", "
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UebungOperatorenRechnen", "UebungOperatorenRechnen\UebungOperatorenRechnen.csproj", "{7E2F4CB0-58BF-4D5F-A7B1-5800E3D4DC7A}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SteuerelementTextbox", "SteuerelementTextbox\SteuerelementTextbox.csproj", "{742E9770-41B0-47AD-980A-419D3FA70CFB}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -45,6 +47,10 @@ Global
 		{7E2F4CB0-58BF-4D5F-A7B1-5800E3D4DC7A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7E2F4CB0-58BF-4D5F-A7B1-5800E3D4DC7A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7E2F4CB0-58BF-4D5F-A7B1-5800E3D4DC7A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{742E9770-41B0-47AD-980A-419D3FA70CFB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{742E9770-41B0-47AD-980A-419D3FA70CFB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{742E9770-41B0-47AD-980A-419D3FA70CFB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{742E9770-41B0-47AD-980A-419D3FA70CFB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
