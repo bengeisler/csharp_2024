@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GrundlagenEnumeration", "Gr
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UOperatorenBerechnen", "UOperatorenBerechnen\UOperatorenBerechnen.csproj", "{957242E9-5987-4B27-AEA4-FE6A2F261B9A}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SteuerelementTextBox", "SteuerelementTextBox\SteuerelementTextBox.csproj", "{6272A2A4-5319-4F69-B019-4C5A831FA938}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{957242E9-5987-4B27-AEA4-FE6A2F261B9A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{957242E9-5987-4B27-AEA4-FE6A2F261B9A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{957242E9-5987-4B27-AEA4-FE6A2F261B9A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6272A2A4-5319-4F69-B019-4C5A831FA938}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6272A2A4-5319-4F69-B019-4C5A831FA938}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6272A2A4-5319-4F69-B019-4C5A831FA938}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6272A2A4-5319-4F69-B019-4C5A831FA938}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
