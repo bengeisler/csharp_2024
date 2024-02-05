@@ -45,6 +45,7 @@ namespace GrundlagenIfElse
             NumZahl.Name = "NumZahl";
             NumZahl.Size = new Size(120, 23);
             NumZahl.TabIndex = 0;
+            NumZahl.ValueChanged += NumZahl_ValueChanged;
             // 
             // LblAnzeige
             // 

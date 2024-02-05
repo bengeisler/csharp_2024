@@ -36,7 +36,7 @@ namespace GrundlagenIfElse
                 LblAnzeige.ForeColor = Color.Black;
             }
             else
-            { 
+            {
                 LblAnzeige.ForeColor = Color.Red;
             }
 
@@ -44,6 +44,11 @@ namespace GrundlagenIfElse
             LblAnzeige.ForeColor = NumZahl.Value < 0 ? Color.Red : Color.Black;
             //
             //
+        }
+
+        private void NumZahl_ValueChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
