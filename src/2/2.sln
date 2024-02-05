@@ -11,7 +11,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UGrundlagen", "UGrundlagen\
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GrundlagenKonstanten", "GrundlagenKonstanten\GrundlagenKonstanten.csproj", "{E7E23CA2-A8D1-439A-A00D-4FFD970B45F4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UOperatorenRechnen", "UOperatorenRechnen\UOperatorenRechnen.csproj", "{D4E64AED-C692-416F-91EF-B958D5BDEF40}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UOperatorenRechnen", "UOperatorenRechnen\UOperatorenRechnen.csproj", "{D4E64AED-C692-416F-91EF-B958D5BDEF40}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SteuerelementTextBox", "SteuerelementTextBox\SteuerelementTextBox.csproj", "{560CD1FC-6C01-4EA5-A1DA-CF1160DB8338}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,6 +41,10 @@ Global
 		{D4E64AED-C692-416F-91EF-B958D5BDEF40}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D4E64AED-C692-416F-91EF-B958D5BDEF40}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D4E64AED-C692-416F-91EF-B958D5BDEF40}.Release|Any CPU.Build.0 = Release|Any CPU
+		{560CD1FC-6C01-4EA5-A1DA-CF1160DB8338}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{560CD1FC-6C01-4EA5-A1DA-CF1160DB8338}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{560CD1FC-6C01-4EA5-A1DA-CF1160DB8338}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{560CD1FC-6C01-4EA5-A1DA-CF1160DB8338}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -91,7 +91,7 @@ namespace UOperatorenRechnen
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(311, 160);
+            ClientSize = new Size(311, 135);
             Controls.Add(BtnRechnung4);
             Controls.Add(BtnRechnung3);
             Controls.Add(LblAnzeige);
