@@ -51,9 +51,7 @@ namespace USteuerbetrag
             
             var Gehalt = Convert.ToDecimal(TxtEingabe.Text);
 
-            
-
-            
+                     
             decimal Steuersatz = Gehalt switch
             {
                 <= 12_000 => 0.12M,

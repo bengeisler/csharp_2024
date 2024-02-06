@@ -38,6 +38,7 @@ namespace GrundlagenSwitch
             CmdAnzeigen3 = new Button();
             CmdAnzeigen4 = new Button();
             CmdAnzeigen5 = new Button();
+            CmdAnzeigen6 = new Button();
             SuspendLayout();
             // 
             // CmdAnzeigen1
@@ -106,11 +107,22 @@ namespace GrundlagenSwitch
             CmdAnzeigen5.UseVisualStyleBackColor = true;
             CmdAnzeigen5.Click += CmdAnzeigen5_Click;
             // 
+            // CmdAnzeigen6
+            // 
+            CmdAnzeigen6.Location = new Point(282, 373);
+            CmdAnzeigen6.Name = "CmdAnzeigen6";
+            CmdAnzeigen6.Size = new Size(131, 41);
+            CmdAnzeigen6.TabIndex = 7;
+            CmdAnzeigen6.Text = "Anzeigen 6";
+            CmdAnzeigen6.UseVisualStyleBackColor = true;
+            CmdAnzeigen6.Click += CmdAnzeigen6_Click;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(CmdAnzeigen6);
             Controls.Add(CmdAnzeigen5);
             Controls.Add(CmdAnzeigen4);
             Controls.Add(CmdAnzeigen3);
@@ -133,5 +145,6 @@ namespace GrundlagenSwitch
         private Button CmdAnzeigen3;
         private Button CmdAnzeigen4;
         private Button CmdAnzeigen5;
+        private Button CmdAnzeigen6;
     }
 }
