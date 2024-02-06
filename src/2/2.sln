@@ -25,6 +25,18 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "USteuerbetrag", "USteuerbet
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GrundlagenSwitch", "GrundlagenSwitch\GrundlagenSwitch.csproj", "{52FA4819-0186-4BD6-B7D0-8E7A6FF76E71}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SteuerelementCheckBox", "SteuerelementCheckBox\SteuerelementCheckBox.csproj", "{158C4B5F-15D7-4591-94EF-713BC6951949}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SteuerelementRadioButton", "SteuerelementRadioButton\SteuerelementRadioButton.csproj", "{51DD94C6-80BD-42E3-9311-66F3E8ABC6C6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SteuerelemntGroupBox", "SteuerelemntGroupBox\SteuerelemntGroupBox.csproj", "{5DB55B51-E0E9-4F5C-8DCF-9E03E014DFF5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GrundlagenFor", "GrundlagenFor\GrundlagenFor.csproj", "{FDBC1E9D-A204-43F5-A2BE-EC4F8618F857}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GrundlagenWhile", "GrundlagenWhile\GrundlagenWhile.csproj", "{3F6E36C4-7143-4979-B71F-6D22B4EC6AB6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "USchleifeFor", "USchleifeFor\USchleifeFor.csproj", "{CE10DB4A-61EC-4AD9-9AE1-33A7DE36C78E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -75,6 +87,30 @@ Global
 		{52FA4819-0186-4BD6-B7D0-8E7A6FF76E71}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{52FA4819-0186-4BD6-B7D0-8E7A6FF76E71}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{52FA4819-0186-4BD6-B7D0-8E7A6FF76E71}.Release|Any CPU.Build.0 = Release|Any CPU
+		{158C4B5F-15D7-4591-94EF-713BC6951949}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{158C4B5F-15D7-4591-94EF-713BC6951949}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{158C4B5F-15D7-4591-94EF-713BC6951949}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{158C4B5F-15D7-4591-94EF-713BC6951949}.Release|Any CPU.Build.0 = Release|Any CPU
+		{51DD94C6-80BD-42E3-9311-66F3E8ABC6C6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{51DD94C6-80BD-42E3-9311-66F3E8ABC6C6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{51DD94C6-80BD-42E3-9311-66F3E8ABC6C6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{51DD94C6-80BD-42E3-9311-66F3E8ABC6C6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5DB55B51-E0E9-4F5C-8DCF-9E03E014DFF5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5DB55B51-E0E9-4F5C-8DCF-9E03E014DFF5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5DB55B51-E0E9-4F5C-8DCF-9E03E014DFF5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5DB55B51-E0E9-4F5C-8DCF-9E03E014DFF5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FDBC1E9D-A204-43F5-A2BE-EC4F8618F857}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FDBC1E9D-A204-43F5-A2BE-EC4F8618F857}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FDBC1E9D-A204-43F5-A2BE-EC4F8618F857}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FDBC1E9D-A204-43F5-A2BE-EC4F8618F857}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3F6E36C4-7143-4979-B71F-6D22B4EC6AB6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3F6E36C4-7143-4979-B71F-6D22B4EC6AB6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3F6E36C4-7143-4979-B71F-6D22B4EC6AB6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3F6E36C4-7143-4979-B71F-6D22B4EC6AB6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CE10DB4A-61EC-4AD9-9AE1-33A7DE36C78E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CE10DB4A-61EC-4AD9-9AE1-33A7DE36C78E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CE10DB4A-61EC-4AD9-9AE1-33A7DE36C78E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CE10DB4A-61EC-4AD9-9AE1-33A7DE36C78E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
