@@ -1,7 +1,7 @@
 ﻿// Licensed to the .NET Foundation under one or more agreements.
 // The .NET Foundation licenses this file to you under the MIT license.
 
-namespace GrundlagenWhile
+namespace USchleifeFor
 {
     partial class Form1
     {
@@ -32,13 +32,13 @@ namespace GrundlagenWhile
         private void InitializeComponent()
         {
             BtnAnzeigen1 = new Button();
-            LblAnzeigen = new Label();
             BtnAnzeigen2 = new Button();
+            LblAnzeigen = new Label();
             SuspendLayout();
             // 
             // BtnAnzeigen1
             // 
-            BtnAnzeigen1.Location = new Point(125, 23);
+            BtnAnzeigen1.Location = new Point(165, 30);
             BtnAnzeigen1.Name = "BtnAnzeigen1";
             BtnAnzeigen1.Size = new Size(75, 23);
             BtnAnzeigen1.TabIndex = 0;
@@ -46,36 +46,35 @@ namespace GrundlagenWhile
             BtnAnzeigen1.UseVisualStyleBackColor = true;
             BtnAnzeigen1.Click += BtnAnzeigen1_Click;
             // 
-            // LblAnzeigen
-            // 
-            LblAnzeigen.AutoSize = true;
-            LblAnzeigen.Location = new Point(43, 45);
-            LblAnzeigen.Name = "LblAnzeigen";
-            LblAnzeigen.Size = new Size(38, 15);
-            LblAnzeigen.TabIndex = 1;
-            LblAnzeigen.Text = "label1";
-            // 
             // BtnAnzeigen2
             // 
-            BtnAnzeigen2.Location = new Point(125, 52);
+            BtnAnzeigen2.Location = new Point(165, 70);
             BtnAnzeigen2.Name = "BtnAnzeigen2";
             BtnAnzeigen2.Size = new Size(75, 23);
-            BtnAnzeigen2.TabIndex = 2;
+            BtnAnzeigen2.TabIndex = 1;
             BtnAnzeigen2.Text = "Anzeigen 2";
             BtnAnzeigen2.UseVisualStyleBackColor = true;
             BtnAnzeigen2.Click += BtnAnzeigen2_Click;
+            // 
+            // LblAnzeigen
+            // 
+            LblAnzeigen.AutoSize = true;
+            LblAnzeigen.Location = new Point(26, 34);
+            LblAnzeigen.Name = "LblAnzeigen";
+            LblAnzeigen.Size = new Size(38, 15);
+            LblAnzeigen.TabIndex = 2;
+            LblAnzeigen.Text = "label1";
             // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
-            Controls.Add(BtnAnzeigen2);
+            ClientSize = new Size(354, 306);
             Controls.Add(LblAnzeigen);
+            Controls.Add(BtnAnzeigen2);
             Controls.Add(BtnAnzeigen1);
             Name = "Form1";
             Text = "Form1";
-            Load += Form1_Load;
             ResumeLayout(false);
             PerformLayout();
         }
@@ -83,7 +82,7 @@ namespace GrundlagenWhile
         #endregion
 
         private Button BtnAnzeigen1;
-        private Label LblAnzeigen;
         private Button BtnAnzeigen2;
+        private Label LblAnzeigen;
     }
 }
