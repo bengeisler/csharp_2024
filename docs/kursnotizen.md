@@ -49,3 +49,6 @@ eingeben werden, wobei `Mein_Ordner` hier natürlich nur ein Beispiel ist und vo
 |<kbd>Strg</kbd> + <kbd>Alt</kbd> + <kbd>X</kbd>| Toolbox |
 |<kbd>Strg</kbd> + <kbd>0</kbd>, <kbd>Strg</kbd> + <kbd>G</kbd>| Git-Änderungen |
 |<kbd>Strg</kbd> + <kbd>ö</kbd>| Powershell |
+
+## Markdown
+Eine grundlegende Einführung (auf Englisch) findet ihr [hier](https://www.markdownguide.org/cheat-sheet/).
