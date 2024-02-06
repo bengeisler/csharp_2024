@@ -17,7 +17,7 @@ namespace USteuerbetrag
             decimal steuerbetrag;
 
             // Steuersatz ist abhängig vom Gehalt
-            if (gehalt <= 12_000) 
+            if (gehalt <= 12_000)
             {
                 steuersatz = 0.12M;
             }
@@ -47,6 +47,21 @@ namespace USteuerbetrag
             // else if (gehalt > 12_000 && gehalt <= 20_000) steuersatz = 0.15M;
             // else if (gehalt > 20_000 && gehalt <= 30_000) steuersatz = 0.20M;
             // else steuersatz = 0.25M;
+
+        }
+
+        private void cmdSwitch_Click(object sender, EventArgs e)
+        {
+            double gehalt = Convert.ToDouble(TxtGehalt.Text);
+            LblSteuerbetrag.Text = "Steuerbetrag: " + gehalt / 100
+                * gehalt switch
+                {
+                    <= 12000 => 12,
+                    <= 20000 => 15,
+                    <= 30000 => 20,
+                    _ => 25
+
+                };
 
         }
     }

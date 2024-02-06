@@ -99,9 +99,30 @@ namespace GrundlagenSwitch
                 1 or 3 or 5 => "ungerade",
                 2 or 4 or 6 => "gerade",
                 _ => "kein Würfelwert"
-            } ;
+            };
 
             LblAusgabe.Text = $"Wert: {x}, {bewertung}";
+        }
+
+        private void cmdbutton5_Click(object sender, EventArgs e)
+        {
+            //Switch mit Vergleichoperatoren
+            // Zufallszahl zwischen -5 und 15 erstellen
+            int x = r.Next(-5, 16);
+
+            string bewertung = x switch
+            {
+                < 0 => "negativ",
+                0 => "Null",
+                > 9 => "positiv, zweitstellig",
+                _ => "positiv, einstellig"
+
+            };
+            LblAusgabe.Text = $"Wert: {x}, {bewertung}";
+
+
+
+
         }
     }
 }

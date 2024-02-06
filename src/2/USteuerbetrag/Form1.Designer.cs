@@ -35,13 +35,15 @@ namespace USteuerbetrag
             label1 = new Label();
             TxtGehalt = new TextBox();
             LblSteuerbetrag = new Label();
+            cmdSwitch = new Button();
             SuspendLayout();
             // 
             // CmdBerechnenIfElse
             // 
-            CmdBerechnenIfElse.Location = new Point(12, 87);
+            CmdBerechnenIfElse.Location = new Point(8, 52);
+            CmdBerechnenIfElse.Margin = new Padding(2, 2, 2, 2);
             CmdBerechnenIfElse.Name = "CmdBerechnenIfElse";
-            CmdBerechnenIfElse.Size = new Size(215, 34);
+            CmdBerechnenIfElse.Size = new Size(150, 20);
             CmdBerechnenIfElse.TabIndex = 0;
             CmdBerechnenIfElse.Text = "Berechnen mit if...else";
             CmdBerechnenIfElse.UseVisualStyleBackColor = true;
@@ -50,37 +52,52 @@ namespace USteuerbetrag
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(12, 9);
+            label1.Location = new Point(8, 5);
+            label1.Margin = new Padding(2, 0, 2, 0);
             label1.Name = "label1";
-            label1.Size = new Size(66, 25);
+            label1.Size = new Size(44, 15);
             label1.TabIndex = 1;
             label1.Text = "Gehalt:";
             // 
             // TxtGehalt
             // 
-            TxtGehalt.Location = new Point(12, 37);
+            TxtGehalt.Location = new Point(8, 22);
+            TxtGehalt.Margin = new Padding(2, 2, 2, 2);
             TxtGehalt.Name = "TxtGehalt";
-            TxtGehalt.Size = new Size(150, 31);
+            TxtGehalt.Size = new Size(106, 23);
             TxtGehalt.TabIndex = 2;
             // 
             // LblSteuerbetrag
             // 
             LblSteuerbetrag.AutoSize = true;
-            LblSteuerbetrag.Location = new Point(168, 40);
+            LblSteuerbetrag.Location = new Point(118, 24);
+            LblSteuerbetrag.Margin = new Padding(2, 0, 2, 0);
             LblSteuerbetrag.Name = "LblSteuerbetrag";
-            LblSteuerbetrag.Size = new Size(59, 25);
+            LblSteuerbetrag.Size = new Size(38, 15);
             LblSteuerbetrag.TabIndex = 3;
             LblSteuerbetrag.Text = "label2";
             // 
+            // cmdSwitch
+            // 
+            cmdSwitch.Location = new Point(12, 93);
+            cmdSwitch.Name = "cmdSwitch";
+            cmdSwitch.Size = new Size(146, 23);
+            cmdSwitch.TabIndex = 4;
+            cmdSwitch.Text = "Berchnen mit Switch";
+            cmdSwitch.UseVisualStyleBackColor = true;
+            cmdSwitch.Click += cmdSwitch_Click;
+            // 
             // Form1
             // 
-            AutoScaleDimensions = new SizeF(10F, 25F);
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(376, 144);
+            ClientSize = new Size(300, 154);
+            Controls.Add(cmdSwitch);
             Controls.Add(LblSteuerbetrag);
             Controls.Add(TxtGehalt);
             Controls.Add(label1);
             Controls.Add(CmdBerechnenIfElse);
+            Margin = new Padding(2, 2, 2, 2);
             Name = "Form1";
             Text = "USteuerbetrag";
             ResumeLayout(false);
@@ -93,5 +110,6 @@ namespace USteuerbetrag
         private Label label1;
         private TextBox TxtGehalt;
         private Label LblSteuerbetrag;
+        private Button cmdSwitch;
     }
 }

@@ -39,26 +39,29 @@ namespace SteuerelementTextBox
             // 
             // TxtEingabe
             // 
-            TxtEingabe.Location = new Point(12, 12);
+            TxtEingabe.Location = new Point(8, 7);
+            TxtEingabe.Margin = new Padding(2, 2, 2, 2);
             TxtEingabe.Name = "TxtEingabe";
-            TxtEingabe.Size = new Size(202, 31);
+            TxtEingabe.Size = new Size(143, 23);
             TxtEingabe.TabIndex = 0;
             TxtEingabe.Text = "Hallo";
             // 
             // LblAnzeige
             // 
             LblAnzeige.AutoSize = true;
-            LblAnzeige.Location = new Point(12, 61);
+            LblAnzeige.Location = new Point(8, 37);
+            LblAnzeige.Margin = new Padding(2, 0, 2, 0);
             LblAnzeige.Name = "LblAnzeige";
-            LblAnzeige.Size = new Size(59, 25);
+            LblAnzeige.Size = new Size(38, 15);
             LblAnzeige.TabIndex = 1;
             LblAnzeige.Text = "label1";
             // 
             // CmdAnzeigen
             // 
-            CmdAnzeigen.Location = new Point(302, 12);
+            CmdAnzeigen.Location = new Point(211, 7);
+            CmdAnzeigen.Margin = new Padding(2, 2, 2, 2);
             CmdAnzeigen.Name = "CmdAnzeigen";
-            CmdAnzeigen.Size = new Size(112, 34);
+            CmdAnzeigen.Size = new Size(78, 20);
             CmdAnzeigen.TabIndex = 2;
             CmdAnzeigen.Text = "Anzeigen";
             CmdAnzeigen.UseVisualStyleBackColor = true;
@@ -66,9 +69,10 @@ namespace SteuerelementTextBox
             // 
             // CmdRechnen
             // 
-            CmdRechnen.Location = new Point(302, 52);
+            CmdRechnen.Location = new Point(211, 31);
+            CmdRechnen.Margin = new Padding(2, 2, 2, 2);
             CmdRechnen.Name = "CmdRechnen";
-            CmdRechnen.Size = new Size(112, 34);
+            CmdRechnen.Size = new Size(78, 20);
             CmdRechnen.TabIndex = 3;
             CmdRechnen.Text = "Rechnen";
             CmdRechnen.UseVisualStyleBackColor = true;
@@ -76,13 +80,14 @@ namespace SteuerelementTextBox
             // 
             // Form1
             // 
-            AutoScaleDimensions = new SizeF(10F, 25F);
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(442, 116);
+            ClientSize = new Size(342, 130);
             Controls.Add(CmdRechnen);
             Controls.Add(CmdAnzeigen);
             Controls.Add(LblAnzeige);
             Controls.Add(TxtEingabe);
+            Margin = new Padding(2, 2, 2, 2);
             Name = "Form1";
             Text = "TextBox";
             ResumeLayout(false);

@@ -37,13 +37,15 @@ namespace GrundlagenSwitch
             CmdAnzeigen2 = new Button();
             CmdAnzeigen3 = new Button();
             CmdAnzeigen4 = new Button();
+            cmdbutton5 = new Button();
             SuspendLayout();
             // 
             // CmdAnzeigen1
             // 
-            CmdAnzeigen1.Location = new Point(12, 49);
+            CmdAnzeigen1.Location = new Point(8, 29);
+            CmdAnzeigen1.Margin = new Padding(2, 2, 2, 2);
             CmdAnzeigen1.Name = "CmdAnzeigen1";
-            CmdAnzeigen1.Size = new Size(112, 34);
+            CmdAnzeigen1.Size = new Size(78, 20);
             CmdAnzeigen1.TabIndex = 0;
             CmdAnzeigen1.Text = "Anzeigen 1";
             CmdAnzeigen1.UseVisualStyleBackColor = true;
@@ -51,25 +53,28 @@ namespace GrundlagenSwitch
             // 
             // TxtStadt
             // 
-            TxtStadt.Location = new Point(12, 12);
+            TxtStadt.Location = new Point(8, 7);
+            TxtStadt.Margin = new Padding(2, 2, 2, 2);
             TxtStadt.Name = "TxtStadt";
-            TxtStadt.Size = new Size(150, 31);
+            TxtStadt.Size = new Size(106, 23);
             TxtStadt.TabIndex = 1;
             // 
             // LblAusgabe
             // 
             LblAusgabe.AutoSize = true;
-            LblAusgabe.Location = new Point(12, 127);
+            LblAusgabe.Location = new Point(8, 76);
+            LblAusgabe.Margin = new Padding(2, 0, 2, 0);
             LblAusgabe.Name = "LblAusgabe";
-            LblAusgabe.Size = new Size(59, 25);
+            LblAusgabe.Size = new Size(38, 15);
             LblAusgabe.TabIndex = 2;
             LblAusgabe.Text = "label1";
             // 
             // CmdAnzeigen2
             // 
-            CmdAnzeigen2.Location = new Point(130, 49);
+            CmdAnzeigen2.Location = new Point(91, 29);
+            CmdAnzeigen2.Margin = new Padding(2, 2, 2, 2);
             CmdAnzeigen2.Name = "CmdAnzeigen2";
-            CmdAnzeigen2.Size = new Size(112, 34);
+            CmdAnzeigen2.Size = new Size(78, 20);
             CmdAnzeigen2.TabIndex = 3;
             CmdAnzeigen2.Text = "Anzeigen 2";
             CmdAnzeigen2.UseVisualStyleBackColor = true;
@@ -77,9 +82,10 @@ namespace GrundlagenSwitch
             // 
             // CmdAnzeigen3
             // 
-            CmdAnzeigen3.Location = new Point(248, 49);
+            CmdAnzeigen3.Location = new Point(174, 29);
+            CmdAnzeigen3.Margin = new Padding(2, 2, 2, 2);
             CmdAnzeigen3.Name = "CmdAnzeigen3";
-            CmdAnzeigen3.Size = new Size(112, 34);
+            CmdAnzeigen3.Size = new Size(78, 20);
             CmdAnzeigen3.TabIndex = 4;
             CmdAnzeigen3.Text = "Anzeigen 3";
             CmdAnzeigen3.UseVisualStyleBackColor = true;
@@ -87,25 +93,38 @@ namespace GrundlagenSwitch
             // 
             // CmdAnzeigen4
             // 
-            CmdAnzeigen4.Location = new Point(366, 49);
+            CmdAnzeigen4.Location = new Point(256, 29);
+            CmdAnzeigen4.Margin = new Padding(2, 2, 2, 2);
             CmdAnzeigen4.Name = "CmdAnzeigen4";
-            CmdAnzeigen4.Size = new Size(112, 34);
+            CmdAnzeigen4.Size = new Size(78, 20);
             CmdAnzeigen4.TabIndex = 5;
             CmdAnzeigen4.Text = "Anzeigen 4";
             CmdAnzeigen4.UseVisualStyleBackColor = true;
             CmdAnzeigen4.Click += CmdAnzeigen4_Click;
             // 
+            // cmdbutton5
+            // 
+            cmdbutton5.Location = new Point(339, 29);
+            cmdbutton5.Name = "cmdbutton5";
+            cmdbutton5.Size = new Size(75, 23);
+            cmdbutton5.TabIndex = 6;
+            cmdbutton5.Text = "Anzeigen 5";
+            cmdbutton5.UseVisualStyleBackColor = true;
+            cmdbutton5.Click += cmdbutton5_Click;
+            // 
             // Form1
             // 
-            AutoScaleDimensions = new SizeF(10F, 25F);
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
+            ClientSize = new Size(560, 270);
+            Controls.Add(cmdbutton5);
             Controls.Add(CmdAnzeigen4);
             Controls.Add(CmdAnzeigen3);
             Controls.Add(CmdAnzeigen2);
             Controls.Add(LblAusgabe);
             Controls.Add(TxtStadt);
             Controls.Add(CmdAnzeigen1);
+            Margin = new Padding(2, 2, 2, 2);
             Name = "Form1";
             Text = "Form1";
             ResumeLayout(false);
@@ -120,5 +139,6 @@ namespace GrundlagenSwitch
         private Button CmdAnzeigen2;
         private Button CmdAnzeigen3;
         private Button CmdAnzeigen4;
+        private Button cmdbutton5;
     }
 }
