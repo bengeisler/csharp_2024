@@ -27,6 +27,12 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SteuerelementCheckBox", "St
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SteuerelementeRadioButtons", "SteuerelementeRadioButtons\SteuerelementeRadioButtons.csproj", "{C8381521-10B2-40CA-A753-BC3375684463}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SteuerelementGroupBox", "SteuerelementGroupBox\SteuerelementGroupBox.csproj", "{79894B88-C1C3-4B58-A98B-99F2B1ADCCAD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GrundlagenFor", "GrundlagenFor\GrundlagenFor.csproj", "{1CBA4E5B-11AA-43EA-AC54-225615AB1657}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GrundlagenWhile", "GrundlagenWhile\GrundlagenWhile.csproj", "{E9288699-9260-4117-91F3-A2629AAED404}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -81,6 +87,18 @@ Global
 		{C8381521-10B2-40CA-A753-BC3375684463}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C8381521-10B2-40CA-A753-BC3375684463}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C8381521-10B2-40CA-A753-BC3375684463}.Release|Any CPU.Build.0 = Release|Any CPU
+		{79894B88-C1C3-4B58-A98B-99F2B1ADCCAD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{79894B88-C1C3-4B58-A98B-99F2B1ADCCAD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{79894B88-C1C3-4B58-A98B-99F2B1ADCCAD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{79894B88-C1C3-4B58-A98B-99F2B1ADCCAD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1CBA4E5B-11AA-43EA-AC54-225615AB1657}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1CBA4E5B-11AA-43EA-AC54-225615AB1657}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1CBA4E5B-11AA-43EA-AC54-225615AB1657}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1CBA4E5B-11AA-43EA-AC54-225615AB1657}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E9288699-9260-4117-91F3-A2629AAED404}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E9288699-9260-4117-91F3-A2629AAED404}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E9288699-9260-4117-91F3-A2629AAED404}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E9288699-9260-4117-91F3-A2629AAED404}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
