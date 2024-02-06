@@ -13,10 +13,10 @@ namespace USteuerbetrag
         private void CmdIfElse_Click(object sender, EventArgs e)
         {
 
-            double wert;
-            wert = Convert.ToDouble(TxtEingabe.Text);
 
-            
+            double wert = Convert.ToDouble(TxtEingabe.Text);
+
+
 
 
 
@@ -45,5 +45,24 @@ namespace USteuerbetrag
 
 
         }
-    } 
+
+        private void CmdSwitch_Click(object sender, EventArgs e)
+        {
+            
+            var Gehalt = Convert.ToDecimal(TxtEingabe.Text);
+
+            
+
+            
+            decimal Steuersatz = Gehalt switch
+            {
+                <= 12_000 => 0.12M,
+                <= 20_000 => 0.15M,
+                <= 30_000 => 0.20M,
+                > 30_000 => 0.25M
+            };       
+
+            LblAnzeigen.Text = $"Steuerbetrag: {Steuersatz * Gehalt}";
+        }
+    }
 }

@@ -9,17 +9,19 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GrundlagenGültigkeit", "Gr
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UGültigkeit", "UGültigkeit\UGültigkeit.csproj", "{43F65C20-A91D-468D-A891-6DB36A33D332}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GrundlagenEnumeration", "GrundlagenEnumeration\GrundlagenEnumeration.csproj", "{1BB484CE-D38D-4DAB-BA1D-C2BDBF8F31C0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GrundlagenEnumeration", "GrundlagenEnumeration\GrundlagenEnumeration.csproj", "{1BB484CE-D38D-4DAB-BA1D-C2BDBF8F31C0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UOperatorenBerechnen", "UOperatorenBerechnen\UOperatorenBerechnen.csproj", "{957242E9-5987-4B27-AEA4-FE6A2F261B9A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UOperatorenBerechnen", "UOperatorenBerechnen\UOperatorenBerechnen.csproj", "{957242E9-5987-4B27-AEA4-FE6A2F261B9A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SteuerelementTextBox", "SteuerelementTextBox\SteuerelementTextBox.csproj", "{6272A2A4-5319-4F69-B019-4C5A831FA938}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SteuerelementTextBox", "SteuerelementTextBox\SteuerelementTextBox.csproj", "{6272A2A4-5319-4F69-B019-4C5A831FA938}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SteuerelementNummericUpDown", "SteuerelementNummericUpDown\SteuerelementNummericUpDown.csproj", "{183E0D86-858F-4174-9440-1BA8AE8408BC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SteuerelementNummericUpDown", "SteuerelementNummericUpDown\SteuerelementNummericUpDown.csproj", "{183E0D86-858F-4174-9440-1BA8AE8408BC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GrundlagenIfElse", "GrundlagenIfElse\GrundlagenIfElse.csproj", "{4C763C88-3DFA-4B7C-A0E1-018A8DC4E34C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GrundlagenIfElse", "GrundlagenIfElse\GrundlagenIfElse.csproj", "{4C763C88-3DFA-4B7C-A0E1-018A8DC4E34C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "USteuerbetrag", "USteuerbetrag\USteuerbetrag.csproj", "{51AD39BB-257F-4BC5-9CF3-ACC10B3C0DAD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "USteuerbetrag", "USteuerbetrag\USteuerbetrag.csproj", "{51AD39BB-257F-4BC5-9CF3-ACC10B3C0DAD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GrundlagenSwitch", "GrundlagenSwitch\GrundlagenSwitch.csproj", "{39B28A74-4B16-46A4-AFB1-FC2463A27491}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -63,6 +65,10 @@ Global
 		{51AD39BB-257F-4BC5-9CF3-ACC10B3C0DAD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{51AD39BB-257F-4BC5-9CF3-ACC10B3C0DAD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{51AD39BB-257F-4BC5-9CF3-ACC10B3C0DAD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{39B28A74-4B16-46A4-AFB1-FC2463A27491}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{39B28A74-4B16-46A4-AFB1-FC2463A27491}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{39B28A74-4B16-46A4-AFB1-FC2463A27491}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{39B28A74-4B16-46A4-AFB1-FC2463A27491}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

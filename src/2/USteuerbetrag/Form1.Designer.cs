@@ -35,6 +35,7 @@ namespace USteuerbetrag
             LblAnzeigen = new Label();
             label2 = new Label();
             TxtEingabe = new NumericUpDown();
+            CmdSwitch = new Button();
             ((System.ComponentModel.ISupportInitialize)TxtEingabe).BeginInit();
             SuspendLayout();
             // 
@@ -74,11 +75,22 @@ namespace USteuerbetrag
             TxtEingabe.Size = new Size(120, 23);
             TxtEingabe.TabIndex = 4;
             // 
+            // CmdSwitch
+            // 
+            CmdSwitch.Location = new Point(308, 373);
+            CmdSwitch.Name = "CmdSwitch";
+            CmdSwitch.Size = new Size(289, 57);
+            CmdSwitch.TabIndex = 5;
+            CmdSwitch.Text = "Berechnen mit switch";
+            CmdSwitch.UseVisualStyleBackColor = true;
+            CmdSwitch.Click += CmdSwitch_Click;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(CmdSwitch);
             Controls.Add(TxtEingabe);
             Controls.Add(label2);
             Controls.Add(LblAnzeigen);
@@ -96,5 +108,6 @@ namespace USteuerbetrag
         private Label LblAnzeigen;
         private Label label2;
         private NumericUpDown TxtEingabe;
+        private Button CmdSwitch;
     }
 }
