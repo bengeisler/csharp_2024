@@ -31,6 +31,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SteuerelementRadioButton", 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SteuerelementGroupBox", "SteuerelementGroupBox\SteuerelementGroupBox.csproj", "{9BF1AD24-005D-410A-B434-6B9BF28F1084}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Forschleife", "Forschleife\Forschleife.csproj", "{86B4D278-E57F-44EA-9845-9E86C7CAFC95}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -93,6 +95,10 @@ Global
 		{9BF1AD24-005D-410A-B434-6B9BF28F1084}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9BF1AD24-005D-410A-B434-6B9BF28F1084}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9BF1AD24-005D-410A-B434-6B9BF28F1084}.Release|Any CPU.Build.0 = Release|Any CPU
+		{86B4D278-E57F-44EA-9845-9E86C7CAFC95}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{86B4D278-E57F-44EA-9845-9E86C7CAFC95}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{86B4D278-E57F-44EA-9845-9E86C7CAFC95}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{86B4D278-E57F-44EA-9845-9E86C7CAFC95}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
