@@ -91,14 +91,18 @@ namespace GrundlagenSwitch
 
         private void button1_Click(object sender, EventArgs e)
         {
-            int x = r.Next(1, 7);
+            int d = Convert.ToInt16(TxtEingabe.Text);
+            int x = r.Next(1, d);
 
-            string bewertung = x switch
-            {
-                1 or 3 or 5 => "ungerade",
-                2 or 4 or 6 => "gerade",
-                _ => "kein Würfelwert"
-            };
+            string bewertung = (x % 2 == 0) ? "gerade" : "ungerade";
+
+
+            //            string bewertung = x switch
+            //            {
+            //                1 or 3 or 5 => "ungerade",
+            //                2 or 4 or 6 => "gerade",
+            //                _ => "kein Würfelwert"
+            //            };
 
             LblAnzeige.Text = $"Wert: {x}, {bewertung}";
         }
