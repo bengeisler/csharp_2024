@@ -24,9 +24,29 @@ namespace Forschleife
         {
             int i;
             LblAnzeige2.Text = "";
-            for (i = 0; i < 10; i+=2)
+            for (i = 0; i < 10; i += 2)
             {
                 LblAnzeige2.Text += $"\n{i}";
+            }
+        }
+
+        private void CmdButton3_Click(object sender, EventArgs e)
+        {
+            int i;
+            LblAnzeige3.Text = "";
+            for (i = 10; i > 2; i--)
+            {
+                LblAnzeige3.Text += $"\n{i}";
+            }
+        }
+
+        private void CmdButton4_Click(object sender, EventArgs e)
+        {
+            double i;
+            LblAnzeige4.Text = "";
+            for (i = 10; i > 5; i-= 0.5)
+            {
+                LblAnzeige4.Text += $"\n{i}";
             }
         }
     }
