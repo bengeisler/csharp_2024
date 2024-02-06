@@ -35,6 +35,7 @@ namespace USteuerbetrag
             label1 = new Label();
             LblAnzeige1 = new Label();
             TxtEingabe = new TextBox();
+            button1 = new Button();
             SuspendLayout();
             // 
             // BtnBerechnung
@@ -72,11 +73,22 @@ namespace USteuerbetrag
             TxtEingabe.Size = new Size(100, 23);
             TxtEingabe.TabIndex = 3;
             // 
+            // button1
+            // 
+            button1.Location = new Point(12, 85);
+            button1.Name = "button1";
+            button1.Size = new Size(173, 23);
+            button1.TabIndex = 4;
+            button1.Text = "Berechnen mit switch";
+            button1.UseVisualStyleBackColor = true;
+            button1.Click += button1_Click;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(button1);
             Controls.Add(TxtEingabe);
             Controls.Add(LblAnzeige1);
             Controls.Add(label1);
@@ -93,5 +105,6 @@ namespace USteuerbetrag
         private Label label1;
         private Label LblAnzeige1;
         private TextBox TxtEingabe;
+        private Button button1;
     }
 }
