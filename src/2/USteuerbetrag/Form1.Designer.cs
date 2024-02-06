@@ -31,20 +31,21 @@ namespace USteuerbetrag
         /// </summary>
         private void InitializeComponent()
         {
-            button1 = new Button();
+            CmdBerechnenIfElse = new Button();
             label1 = new Label();
             TxtGehalt = new TextBox();
             LblSteuerbetrag = new Label();
             SuspendLayout();
             // 
-            // button1
+            // CmdBerechnenIfElse
             // 
-            button1.Location = new Point(12, 87);
-            button1.Name = "button1";
-            button1.Size = new Size(215, 34);
-            button1.TabIndex = 0;
-            button1.Text = "Berechnen mit if...else";
-            button1.UseVisualStyleBackColor = true;
+            CmdBerechnenIfElse.Location = new Point(12, 87);
+            CmdBerechnenIfElse.Name = "CmdBerechnenIfElse";
+            CmdBerechnenIfElse.Size = new Size(215, 34);
+            CmdBerechnenIfElse.TabIndex = 0;
+            CmdBerechnenIfElse.Text = "Berechnen mit if...else";
+            CmdBerechnenIfElse.UseVisualStyleBackColor = true;
+            CmdBerechnenIfElse.Click += CmdBerechnenIfElse_Click;
             // 
             // label1
             // 
@@ -79,7 +80,7 @@ namespace USteuerbetrag
             Controls.Add(LblSteuerbetrag);
             Controls.Add(TxtGehalt);
             Controls.Add(label1);
-            Controls.Add(button1);
+            Controls.Add(CmdBerechnenIfElse);
             Name = "Form1";
             Text = "USteuerbetrag";
             ResumeLayout(false);
@@ -88,7 +89,7 @@ namespace USteuerbetrag
 
         #endregion
 
-        private Button button1;
+        private Button CmdBerechnenIfElse;
         private Label label1;
         private TextBox TxtGehalt;
         private Label LblSteuerbetrag;
