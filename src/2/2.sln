@@ -23,6 +23,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GrundlagenIfElse", "Grundla
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "USteuerbetrag", "USteuerbetrag\USteuerbetrag.csproj", "{89D24936-3F2E-47C9-9436-75CAA3554177}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GrundlagenSwitch", "GrundlagenSwitch\GrundlagenSwitch.csproj", "{52FA4819-0186-4BD6-B7D0-8E7A6FF76E71}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -69,6 +71,10 @@ Global
 		{89D24936-3F2E-47C9-9436-75CAA3554177}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{89D24936-3F2E-47C9-9436-75CAA3554177}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{89D24936-3F2E-47C9-9436-75CAA3554177}.Release|Any CPU.Build.0 = Release|Any CPU
+		{52FA4819-0186-4BD6-B7D0-8E7A6FF76E71}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{52FA4819-0186-4BD6-B7D0-8E7A6FF76E71}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{52FA4819-0186-4BD6-B7D0-8E7A6FF76E71}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{52FA4819-0186-4BD6-B7D0-8E7A6FF76E71}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

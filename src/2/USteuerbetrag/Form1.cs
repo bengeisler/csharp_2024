@@ -42,7 +42,7 @@ namespace USteuerbetrag
 
             steuerbetrag = gehalt * steuersatz;
 
-                LblSteuerbetrag.Text = $"Steuerbetrag: {steuerbetrag}";
+            LblSteuerbetrag.Text = $"Steuerbetrag: {steuerbetrag}";
 
 
 
@@ -58,12 +58,46 @@ namespace USteuerbetrag
 
         }
 
-            
-           
-            
-                
+        private void CmdSwitch_Click(object sender, EventArgs e)
+        {
 
-            
-        
+            decimal gehalt = Convert.ToDecimal(TxtGehalt.Text);
+            decimal steuersatz = 0;
+            decimal steuerbetrag = 0;
+
+            switch (gehalt)
+            {
+
+                case <= 12_000:
+                    steuersatz = 0.12M;
+                    break;
+                case > 12_000 and  <= 20_000:
+                    steuersatz = 0.15M;
+                    break;
+
+
+
+
+                case > 20_000 and <= 30_000:
+                    steuersatz = 0.20M;
+
+
+                    break;
+                default:
+                    steuersatz = 0.25M;
+
+                    
+                    break;
+
+            }
+
+            steuerbetrag = gehalt * steuersatz;
+
+            LblSteuerbetrag.Text = $"Steuerbetrag: {steuerbetrag}";
+
+
+
+
+        }
     }
 }
