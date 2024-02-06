@@ -13,13 +13,15 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GrundlagenEnumerationen", "
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UOperatorenVergleich", "UOperatorenVergleich\UOperatorenVergleich.csproj", "{A125AC74-70B8-46B7-A619-02C45A0B9B8B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SteuerelementTextBox", "SteuerelementTextBox\SteuerelementTextBox.csproj", "{5DFDC8E9-C12A-4747-AA9D-8C8374B0D56C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SteuerelementTextBox", "SteuerelementTextBox\SteuerelementTextBox.csproj", "{5DFDC8E9-C12A-4747-AA9D-8C8374B0D56C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Steuerelement NumericUpDown", "Steuerelement NumericUpDown\Steuerelement NumericUpDown.csproj", "{4F610390-E86F-41F4-B602-1DD4E75B434E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Steuerelement NumericUpDown", "Steuerelement NumericUpDown\Steuerelement NumericUpDown.csproj", "{4F610390-E86F-41F4-B602-1DD4E75B434E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GrundlagenIfElse", "GrundlagenIfElse\GrundlagenIfElse.csproj", "{FA79D9DC-1243-4FF0-BBF8-08B3AD2B433E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GrundlagenIfElse", "GrundlagenIfElse\GrundlagenIfElse.csproj", "{FA79D9DC-1243-4FF0-BBF8-08B3AD2B433E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "USteuerbetrag", "USteuerbetrag\USteuerbetrag.csproj", "{4C80452A-0EC4-43B1-9FEA-05E36513D5B1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "USteuerbetrag", "USteuerbetrag\USteuerbetrag.csproj", "{4C80452A-0EC4-43B1-9FEA-05E36513D5B1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GrundlagenSwitch", "GrundlagenSwitch\GrundlagenSwitch.csproj", "{932F2C22-80E5-488B-982C-E0ED7E89C855}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -63,6 +65,10 @@ Global
 		{4C80452A-0EC4-43B1-9FEA-05E36513D5B1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4C80452A-0EC4-43B1-9FEA-05E36513D5B1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4C80452A-0EC4-43B1-9FEA-05E36513D5B1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{932F2C22-80E5-488B-982C-E0ED7E89C855}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{932F2C22-80E5-488B-982C-E0ED7E89C855}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{932F2C22-80E5-488B-982C-E0ED7E89C855}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{932F2C22-80E5-488B-982C-E0ED7E89C855}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
