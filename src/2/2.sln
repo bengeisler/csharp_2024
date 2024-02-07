@@ -41,6 +41,10 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SteuerelementListBox", "Ste
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SteuerelementListBoxVerwalten", "SteuerelementListBoxVerwalten\SteuerelementListBoxVerwalten.csproj", "{6607D062-F606-450B-9DF1-06DB0C18737F}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SteuerelementComboBox", "SteuerelementComboBox\SteuerelementComboBox.csproj", "{EB3A3C60-D6A7-477D-A29E-8DC555AB96A6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UEinkaufsliste", "UEinkaufsliste\UEinkaufsliste.csproj", "{C3CFEF49-9209-4B41-97E8-02DF5DF22E4A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -123,6 +127,14 @@ Global
 		{6607D062-F606-450B-9DF1-06DB0C18737F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6607D062-F606-450B-9DF1-06DB0C18737F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6607D062-F606-450B-9DF1-06DB0C18737F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EB3A3C60-D6A7-477D-A29E-8DC555AB96A6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EB3A3C60-D6A7-477D-A29E-8DC555AB96A6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EB3A3C60-D6A7-477D-A29E-8DC555AB96A6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EB3A3C60-D6A7-477D-A29E-8DC555AB96A6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C3CFEF49-9209-4B41-97E8-02DF5DF22E4A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C3CFEF49-9209-4B41-97E8-02DF5DF22E4A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C3CFEF49-9209-4B41-97E8-02DF5DF22E4A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C3CFEF49-9209-4B41-97E8-02DF5DF22E4A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
