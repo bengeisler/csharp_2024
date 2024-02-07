@@ -21,23 +21,31 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GrundlagenIfElse", "Grundla
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "USteuerbetrag", "USteuerbetrag\USteuerbetrag.csproj", "{7DB66855-CD13-4294-B33A-15139B0EB5A3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GrundlagenSwitch", "GrundlagenSwitch\GrundlagenSwitch.csproj", "{3A003273-0F05-4FED-B97D-59B6709534D5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GrundlagenSwitch", "GrundlagenSwitch\GrundlagenSwitch.csproj", "{3A003273-0F05-4FED-B97D-59B6709534D5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SteuerelementCheckBox", "SteuerelementCheckBox\SteuerelementCheckBox.csproj", "{E88A1700-9534-479B-82B0-21EE48C6A230}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SteuerelementCheckBox", "SteuerelementCheckBox\SteuerelementCheckBox.csproj", "{E88A1700-9534-479B-82B0-21EE48C6A230}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SteuerelementeRadioButton", "SteuerelementeRadioButton\SteuerelementeRadioButton.csproj", "{349B81A3-186B-476E-8752-FDD5C52835A8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SteuerelementeRadioButton", "SteuerelementeRadioButton\SteuerelementeRadioButton.csproj", "{349B81A3-186B-476E-8752-FDD5C52835A8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SteuerelementGroupBox", "SteuerelementGroupBox\SteuerelementGroupBox.csproj", "{F21AFBAD-992F-49AE-B6F1-EA50C2E7D19E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SteuerelementGroupBox", "SteuerelementGroupBox\SteuerelementGroupBox.csproj", "{F21AFBAD-992F-49AE-B6F1-EA50C2E7D19E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GrundlagenFor", "GrundlagenFor\GrundlagenFor.csproj", "{9FEAD19C-7B27-4451-B443-3F65026615DB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GrundlagenFor", "GrundlagenFor\GrundlagenFor.csproj", "{9FEAD19C-7B27-4451-B443-3F65026615DB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GrundlagenWhile", "GrundlagenWhile\GrundlagenWhile.csproj", "{C072EBFA-49FF-441C-8B3B-E68AAA753CF7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GrundlagenWhile", "GrundlagenWhile\GrundlagenWhile.csproj", "{C072EBFA-49FF-441C-8B3B-E68AAA753CF7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "USchleifeFor", "USchleifeFor\USchleifeFor.csproj", "{D39D6432-7DEA-45B9-B95D-3AB40E11FC5C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "USchleifeFor", "USchleifeFor\USchleifeFor.csproj", "{D39D6432-7DEA-45B9-B95D-3AB40E11FC5C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "USchleifeWhile", "USchleifeWhile\USchleifeWhile.csproj", "{BD154C2C-2B70-4A71-A616-1A0FD95EE251}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "USchleifeWhile", "USchleifeWhile\USchleifeWhile.csproj", "{BD154C2C-2B70-4A71-A616-1A0FD95EE251}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UZahlenraten", "UZahlenraten\UZahlenraten.csproj", "{C62C6049-62A0-40C8-B330-1B3E8FCFFB78}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UZahlenraten", "UZahlenraten\UZahlenraten.csproj", "{C62C6049-62A0-40C8-B330-1B3E8FCFFB78}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GrundlagenListBox", "GrundlagenListBox\GrundlagenListBox.csproj", "{68092576-E684-41F3-B16F-1AA3EF7520A1}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SteuerelementeListBoxVerwalten", "SteuerelementeListBoxVerwalten\SteuerelementeListBoxVerwalten.csproj", "{71AB376D-9CB8-4AEC-8D51-93FE8A5697AD}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SteuerelementComboBox", "SteuerelementComboBox\SteuerelementComboBox.csproj", "{E3303680-0E8B-4E6E-9B90-E99909EA7151}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UComboBox", "UComboBox\UComboBox.csproj", "{34443F71-4B2F-412C-9A00-A07F3AB81A4E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -117,6 +125,22 @@ Global
 		{C62C6049-62A0-40C8-B330-1B3E8FCFFB78}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C62C6049-62A0-40C8-B330-1B3E8FCFFB78}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C62C6049-62A0-40C8-B330-1B3E8FCFFB78}.Release|Any CPU.Build.0 = Release|Any CPU
+		{68092576-E684-41F3-B16F-1AA3EF7520A1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{68092576-E684-41F3-B16F-1AA3EF7520A1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{68092576-E684-41F3-B16F-1AA3EF7520A1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{68092576-E684-41F3-B16F-1AA3EF7520A1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{71AB376D-9CB8-4AEC-8D51-93FE8A5697AD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{71AB376D-9CB8-4AEC-8D51-93FE8A5697AD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{71AB376D-9CB8-4AEC-8D51-93FE8A5697AD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{71AB376D-9CB8-4AEC-8D51-93FE8A5697AD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E3303680-0E8B-4E6E-9B90-E99909EA7151}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E3303680-0E8B-4E6E-9B90-E99909EA7151}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E3303680-0E8B-4E6E-9B90-E99909EA7151}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E3303680-0E8B-4E6E-9B90-E99909EA7151}.Release|Any CPU.Build.0 = Release|Any CPU
+		{34443F71-4B2F-412C-9A00-A07F3AB81A4E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{34443F71-4B2F-412C-9A00-A07F3AB81A4E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{34443F71-4B2F-412C-9A00-A07F3AB81A4E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{34443F71-4B2F-412C-9A00-A07F3AB81A4E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
