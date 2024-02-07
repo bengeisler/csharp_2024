@@ -34,7 +34,7 @@ namespace UZahlenraten
             BtnZahlerzeugen = new Button();
             BtnEingabeprüfen = new Button();
             LblEingabe = new Label();
-            textBox1 = new TextBox();
+            TxtEingabe = new TextBox();
             LblAusgabe = new Label();
             SuspendLayout();
             // 
@@ -56,6 +56,7 @@ namespace UZahlenraten
             BtnEingabeprüfen.TabIndex = 1;
             BtnEingabeprüfen.Text = "Eingabe prüfen";
             BtnEingabeprüfen.UseVisualStyleBackColor = true;
+            BtnEingabeprüfen.Click += BtnEingabeprüfen_Click;
             // 
             // LblEingabe
             // 
@@ -66,12 +67,12 @@ namespace UZahlenraten
             LblEingabe.TabIndex = 2;
             LblEingabe.Text = "Ihre Eingabe:";
             // 
-            // textBox1
+            // TxtEingabe
             // 
-            textBox1.Location = new Point(101, 66);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(100, 23);
-            textBox1.TabIndex = 3;
+            TxtEingabe.Location = new Point(101, 66);
+            TxtEingabe.Name = "TxtEingabe";
+            TxtEingabe.Size = new Size(100, 23);
+            TxtEingabe.TabIndex = 3;
             // 
             // LblAusgabe
             // 
@@ -88,7 +89,7 @@ namespace UZahlenraten
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
             Controls.Add(LblAusgabe);
-            Controls.Add(textBox1);
+            Controls.Add(TxtEingabe);
             Controls.Add(LblEingabe);
             Controls.Add(BtnEingabeprüfen);
             Controls.Add(BtnZahlerzeugen);
@@ -103,7 +104,7 @@ namespace UZahlenraten
         private Button BtnZahlerzeugen;
         private Button BtnEingabeprüfen;
         private Label LblEingabe;
-        private TextBox textBox1;
+        private TextBox TxtEingabe;
         private Label LblAusgabe;
     }
 }

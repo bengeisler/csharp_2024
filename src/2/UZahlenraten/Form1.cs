@@ -11,19 +11,48 @@ namespace UZahlenraten
         }
 
         private readonly Random r = new Random();
-        private int versuch = 3;
+        private int x;
+        private int versuch;
 
         private void BtnZahlerzeugen_Click(object sender, EventArgs e)
         {
-            
+            x = (int)r.Next(1, 100);
+            versuch = 3;
+            LblAusgabe.Text = $"Versuche: {versuch}, {x.ToString()}";
 
-            while (versuch >= 0)
+        }
+
+        private void BtnEingabepr¸fen_Click(object sender, EventArgs e)
+        {
+            int eingabe = Convert.ToInt16(TxtEingabe.Text);
+            string nahe = "platzhalter";
+
+            if (versuch > 0)
             {
-
-
+                if (eingabe < x)
+                {
+                    nahe = "zu klein";
+                    versuch--;
+                }
+                else if (eingabe > x)
+                {
+                    nahe = "zu groﬂ";
+                    versuch--;
+                }
+                if (eingabe == x)
+                {
+                    LblAusgabe.Text = $"Richtig, die Zahl lautet {x}";
+                }
+                else
+                {
+                    LblAusgabe.Text = $"Versuche: {versuch} Eingabe: {eingabe}, {nahe}";
+                }
             }
-
-
+            else
+            {
+                LblAusgabe.Text = "Keine Versuche mehr";
+            }
         }
     }
 }
+
