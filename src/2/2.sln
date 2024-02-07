@@ -29,7 +29,17 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SteuerelemntCheckBox", "Ste
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RadioButtons", "RadioButtons\RadioButtons.csproj", "{A9166A03-EB1D-4FE4-9155-4155A7C5DFF9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Schleifen mit for", "Schleifen mit for\Schleifen mit for.csproj", "{0058BA98-A475-4D4C-99B8-22A0CEA8A1E4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Schleifen mit for", "Schleifen mit for\Schleifen mit for.csproj", "{0058BA98-A475-4D4C-99B8-22A0CEA8A1E4}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "USchleifeWhile", "USchleifeWhile\USchleifeWhile.csproj", "{725B6901-07DF-40DE-8535-34C9B4AE84B2}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SteuerelementeListbox", "SteuerelementeListbox\SteuerelementeListbox.csproj", "{3F189EF8-6E8C-41DA-876B-5907FDF61226}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SteuerelementListBoxVerwalten", "SteuerelementListBoxVerwalten\SteuerelementListBoxVerwalten.csproj", "{3096BF8D-9B36-4DFB-888D-621C47CCAAF0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SteuerelementComboBox", "SteuerelementComboBox\SteuerelementComboBox.csproj", "{2D8A4FD0-FAEB-4D1C-B21D-6D8866E83B60}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UEinkaufsliste", "UEinkaufsliste\UEinkaufsliste.csproj", "{FACDBED6-3DF3-4036-AEED-F9703436B9E1}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -93,6 +103,26 @@ Global
 		{0058BA98-A475-4D4C-99B8-22A0CEA8A1E4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0058BA98-A475-4D4C-99B8-22A0CEA8A1E4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0058BA98-A475-4D4C-99B8-22A0CEA8A1E4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{725B6901-07DF-40DE-8535-34C9B4AE84B2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{725B6901-07DF-40DE-8535-34C9B4AE84B2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{725B6901-07DF-40DE-8535-34C9B4AE84B2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{725B6901-07DF-40DE-8535-34C9B4AE84B2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3F189EF8-6E8C-41DA-876B-5907FDF61226}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3F189EF8-6E8C-41DA-876B-5907FDF61226}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3F189EF8-6E8C-41DA-876B-5907FDF61226}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3F189EF8-6E8C-41DA-876B-5907FDF61226}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3096BF8D-9B36-4DFB-888D-621C47CCAAF0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3096BF8D-9B36-4DFB-888D-621C47CCAAF0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3096BF8D-9B36-4DFB-888D-621C47CCAAF0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3096BF8D-9B36-4DFB-888D-621C47CCAAF0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2D8A4FD0-FAEB-4D1C-B21D-6D8866E83B60}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2D8A4FD0-FAEB-4D1C-B21D-6D8866E83B60}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2D8A4FD0-FAEB-4D1C-B21D-6D8866E83B60}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2D8A4FD0-FAEB-4D1C-B21D-6D8866E83B60}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FACDBED6-3DF3-4036-AEED-F9703436B9E1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FACDBED6-3DF3-4036-AEED-F9703436B9E1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FACDBED6-3DF3-4036-AEED-F9703436B9E1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FACDBED6-3DF3-4036-AEED-F9703436B9E1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
