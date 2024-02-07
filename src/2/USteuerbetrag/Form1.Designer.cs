@@ -35,6 +35,7 @@ namespace USteuerbetrag
             label1 = new Label();
             LblSteuerbetrag = new Label();
             txtGehalt = new TextBox();
+            CmdSwitch = new Button();
             SuspendLayout();
             // 
             // CmdBerechnen
@@ -73,11 +74,22 @@ namespace USteuerbetrag
             txtGehalt.Size = new Size(206, 23);
             txtGehalt.TabIndex = 3;
             // 
+            // CmdSwitch
+            // 
+            CmdSwitch.Location = new Point(127, 306);
+            CmdSwitch.Name = "CmdSwitch";
+            CmdSwitch.Size = new Size(270, 63);
+            CmdSwitch.TabIndex = 4;
+            CmdSwitch.Text = "Berechnen mit switch";
+            CmdSwitch.UseVisualStyleBackColor = true;
+            CmdSwitch.Click += CmdSwitch_Click;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(CmdSwitch);
             Controls.Add(txtGehalt);
             Controls.Add(LblSteuerbetrag);
             Controls.Add(label1);
@@ -94,5 +106,6 @@ namespace USteuerbetrag
         private Label label1;
         private Label LblSteuerbetrag;
         private TextBox txtGehalt;
+        private Button CmdSwitch;
     }
 }
