@@ -35,7 +35,15 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GrundlagenWhile", "Grundlag
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "USchleifeFor", "USchleifeFor\USchleifeFor.csproj", "{754DA697-0EEE-49E1-ADAE-54CD752D866D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "USchleifeWhile", "USchleifeWhile\USchleifeWhile.csproj", "{879A6589-A855-4BA8-AF7A-40620C538B0E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "USchleifeWhile", "USchleifeWhile\USchleifeWhile.csproj", "{879A6589-A855-4BA8-AF7A-40620C538B0E}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SteuerelementListBox", "SteuerelementListBox\SteuerelementListBox.csproj", "{35B1F696-0CA8-46D4-B1DE-0CD0FDA83E26}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SteuerelementListBoxVerwalten", "SteuerelementListBoxVerwalten\SteuerelementListBoxVerwalten.csproj", "{D810398A-CFA6-44BC-B49D-51FB20A58DB3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SteuerelementComboBox", "SteuerelementComboBox\SteuerelementComboBox.csproj", "{D11952F2-1BC3-435D-BBD6-81575044BB26}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UEinkaufsliste", "UEinkaufsliste\UEinkaufsliste.csproj", "{6B1F022D-6E7E-4F64-9B89-D607763BCB0C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -111,6 +119,22 @@ Global
 		{879A6589-A855-4BA8-AF7A-40620C538B0E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{879A6589-A855-4BA8-AF7A-40620C538B0E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{879A6589-A855-4BA8-AF7A-40620C538B0E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{35B1F696-0CA8-46D4-B1DE-0CD0FDA83E26}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{35B1F696-0CA8-46D4-B1DE-0CD0FDA83E26}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{35B1F696-0CA8-46D4-B1DE-0CD0FDA83E26}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{35B1F696-0CA8-46D4-B1DE-0CD0FDA83E26}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D810398A-CFA6-44BC-B49D-51FB20A58DB3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D810398A-CFA6-44BC-B49D-51FB20A58DB3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D810398A-CFA6-44BC-B49D-51FB20A58DB3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D810398A-CFA6-44BC-B49D-51FB20A58DB3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D11952F2-1BC3-435D-BBD6-81575044BB26}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D11952F2-1BC3-435D-BBD6-81575044BB26}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D11952F2-1BC3-435D-BBD6-81575044BB26}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D11952F2-1BC3-435D-BBD6-81575044BB26}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6B1F022D-6E7E-4F64-9B89-D607763BCB0C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6B1F022D-6E7E-4F64-9B89-D607763BCB0C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6B1F022D-6E7E-4F64-9B89-D607763BCB0C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6B1F022D-6E7E-4F64-9B89-D607763BCB0C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
