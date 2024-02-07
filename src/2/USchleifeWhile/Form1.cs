@@ -9,5 +9,20 @@ namespace USchleifeWhile
         {
             InitializeComponent();
         }
+
+        private void CmdAnzeigen_Click(object sender, EventArgs e)
+        {
+            // Eingabe auslesen und in double umwandeln
+            double zahl = Convert.ToDouble(TxtEingabe.Text);
+
+            LblAnzeige.Text = "";
+
+            while (zahl >= 0.01)
+            {
+                // Zahl halbieren
+                zahl /= 2;
+                LblAnzeige.Text += $"{zahl}\n";
+            }
+        }
     }
 }

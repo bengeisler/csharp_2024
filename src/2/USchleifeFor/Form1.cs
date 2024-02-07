@@ -12,18 +12,19 @@ namespace USchleifeFor
 
         private void CmdAnzeigen_Click(object sender, EventArgs e)
         {
-            List<double> werte = [];
-
             LblAnzeige.Text = "";
+            double summe = 0;
+            int zaehler = 0;
 
             for (double i = 35; i >= 20; i -= 2.5)
             {
                 LblAnzeige.Text += $"{i}\n";
-                werte.Add(i);
+                summe += i;
+                zaehler++;
             }
 
-            LblAnzeige.Text += $"Summe: {werte.Sum()}\n";
-            LblAnzeige.Text += $"Mittelwert: {werte.Average()}";
+            LblAnzeige.Text += $"Summe: {summe}\n";
+            LblAnzeige.Text += $"Mittelwert: {summe / zaehler}\n";
         }
 
         private void LblAnzeige_Click(object sender, EventArgs e)

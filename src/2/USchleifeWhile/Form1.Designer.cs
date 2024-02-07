@@ -44,6 +44,7 @@ namespace USchleifeWhile
             CmdAnzeigen.TabIndex = 3;
             CmdAnzeigen.Text = "Anzeigen";
             CmdAnzeigen.UseVisualStyleBackColor = true;
+            CmdAnzeigen.Click += CmdAnzeigen_Click;
             // 
             // LblAnzeige
             // 
