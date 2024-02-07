@@ -1,7 +1,7 @@
 ﻿// Licensed to the .NET Foundation under one or more agreements.
 // The .NET Foundation licenses this file to you under the MIT license.
 
-namespace GrundlagenWhile
+namespace USchleifeWhile
 {
     partial class Form1
     {
@@ -31,58 +31,55 @@ namespace GrundlagenWhile
         /// </summary>
         private void InitializeComponent()
         {
-            cmdAnzeigen1 = new Button();
-            cmdAnzeigen2 = new Button();
+            cmdAnzeigen = new Button();
             LblAnzeigen1 = new Label();
+            txtZahl = new TextBox();
             SuspendLayout();
             // 
-            // cmdAnzeigen1
+            // cmdAnzeigen
             // 
-            cmdAnzeigen1.Location = new Point(122, 31);
-            cmdAnzeigen1.Name = "cmdAnzeigen1";
-            cmdAnzeigen1.Size = new Size(75, 23);
-            cmdAnzeigen1.TabIndex = 0;
-            cmdAnzeigen1.Text = "Anzeigen 1";
-            cmdAnzeigen1.UseVisualStyleBackColor = true;
-            cmdAnzeigen1.Click += cmdAnzeigen1_Click;
-            // 
-            // cmdAnzeigen2
-            // 
-            cmdAnzeigen2.Location = new Point(122, 60);
-            cmdAnzeigen2.Name = "cmdAnzeigen2";
-            cmdAnzeigen2.Size = new Size(75, 23);
-            cmdAnzeigen2.TabIndex = 1;
-            cmdAnzeigen2.Text = "Anzeigen 2";
-            cmdAnzeigen2.UseVisualStyleBackColor = true;
-            cmdAnzeigen2.Click += cmdAnzeigen2_Click;
+            cmdAnzeigen.Location = new Point(178, 51);
+            cmdAnzeigen.Name = "cmdAnzeigen";
+            cmdAnzeigen.Size = new Size(75, 23);
+            cmdAnzeigen.TabIndex = 0;
+            cmdAnzeigen.Text = "Anzeigen";
+            cmdAnzeigen.UseVisualStyleBackColor = true;
+            cmdAnzeigen.Click += cmdAnzeigen_Click;
             // 
             // LblAnzeigen1
             // 
             LblAnzeigen1.AutoSize = true;
-            LblAnzeigen1.Location = new Point(12, 35);
+            LblAnzeigen1.Location = new Point(32, 20);
             LblAnzeigen1.Name = "LblAnzeigen1";
             LblAnzeigen1.Size = new Size(38, 15);
-            LblAnzeigen1.TabIndex = 2;
+            LblAnzeigen1.TabIndex = 1;
             LblAnzeigen1.Text = "label1";
+            // 
+            // txtZahl
+            // 
+            txtZahl.Location = new Point(178, 12);
+            txtZahl.Name = "txtZahl";
+            txtZahl.Size = new Size(140, 23);
+            txtZahl.TabIndex = 2;
             // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(txtZahl);
             Controls.Add(LblAnzeigen1);
-            Controls.Add(cmdAnzeigen2);
-            Controls.Add(cmdAnzeigen1);
+            Controls.Add(cmdAnzeigen);
             Name = "Form1";
-            Text = "Schleifen mit while und do ... while";
+            Text = "Form1";
             ResumeLayout(false);
             PerformLayout();
         }
 
         #endregion
 
-        private Button cmdAnzeigen1;
-        private Button cmdAnzeigen2;
+        private Button cmdAnzeigen;
         private Label LblAnzeigen1;
+        private TextBox txtZahl;
     }
 }

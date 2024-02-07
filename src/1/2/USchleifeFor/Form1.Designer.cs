@@ -1,7 +1,7 @@
 ﻿// Licensed to the .NET Foundation under one or more agreements.
 // The .NET Foundation licenses this file to you under the MIT license.
 
-namespace GrundlagenWhile
+namespace USchleifeFor
 {
     partial class Form1
     {
@@ -38,7 +38,7 @@ namespace GrundlagenWhile
             // 
             // cmdAnzeigen1
             // 
-            cmdAnzeigen1.Location = new Point(122, 31);
+            cmdAnzeigen1.Location = new Point(182, 12);
             cmdAnzeigen1.Name = "cmdAnzeigen1";
             cmdAnzeigen1.Size = new Size(75, 23);
             cmdAnzeigen1.TabIndex = 0;
@@ -48,7 +48,7 @@ namespace GrundlagenWhile
             // 
             // cmdAnzeigen2
             // 
-            cmdAnzeigen2.Location = new Point(122, 60);
+            cmdAnzeigen2.Location = new Point(182, 48);
             cmdAnzeigen2.Name = "cmdAnzeigen2";
             cmdAnzeigen2.Size = new Size(75, 23);
             cmdAnzeigen2.TabIndex = 1;
@@ -59,7 +59,7 @@ namespace GrundlagenWhile
             // LblAnzeigen1
             // 
             LblAnzeigen1.AutoSize = true;
-            LblAnzeigen1.Location = new Point(12, 35);
+            LblAnzeigen1.Location = new Point(22, 20);
             LblAnzeigen1.Name = "LblAnzeigen1";
             LblAnzeigen1.Size = new Size(38, 15);
             LblAnzeigen1.TabIndex = 2;
@@ -74,7 +74,7 @@ namespace GrundlagenWhile
             Controls.Add(cmdAnzeigen2);
             Controls.Add(cmdAnzeigen1);
             Name = "Form1";
-            Text = "Schleifen mit while und do ... while";
+            Text = "Form1";
             ResumeLayout(false);
             PerformLayout();
         }
