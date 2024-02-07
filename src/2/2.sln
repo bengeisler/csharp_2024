@@ -21,19 +21,23 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "IfElse", "IfElse\IfElse.csp
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Übung if else", "Übung mit Switch\Übung if else.csproj", "{515E3F9C-29D7-4B1E-9B32-442EB7C6A925}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GrundlagenSwitch", "GrundlagenSwitch\GrundlagenSwitch.csproj", "{1B94D400-7ECD-452E-BB1B-15CFC42A5363}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GrundlagenSwitch", "GrundlagenSwitch\GrundlagenSwitch.csproj", "{1B94D400-7ECD-452E-BB1B-15CFC42A5363}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ÜbungmitSwich", "ÜbungmitSwich\ÜbungmitSwich.csproj", "{E76BD9E8-939E-4B26-BC7A-C5F448712EDA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ÜbungmitSwich", "ÜbungmitSwich\ÜbungmitSwich.csproj", "{E76BD9E8-939E-4B26-BC7A-C5F448712EDA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SteuerelementCheckbox", "SteuerelementCheckbox\SteuerelementCheckbox.csproj", "{4412E666-BCCE-4FE0-8525-69923A1A5213}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SteuerelementCheckbox", "SteuerelementCheckbox\SteuerelementCheckbox.csproj", "{4412E666-BCCE-4FE0-8525-69923A1A5213}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SteuerelementRadioButton", "SteuerelementRadioButton\SteuerelementRadioButton.csproj", "{D0982B24-3F72-4016-BA63-D3978FEBFF0D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SteuerelementRadioButton", "SteuerelementRadioButton\SteuerelementRadioButton.csproj", "{D0982B24-3F72-4016-BA63-D3978FEBFF0D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SteuerelementGroupBox", "SteuerelementGroupBox\SteuerelementGroupBox.csproj", "{9BF1AD24-005D-410A-B434-6B9BF28F1084}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SteuerelementGroupBox", "SteuerelementGroupBox\SteuerelementGroupBox.csproj", "{9BF1AD24-005D-410A-B434-6B9BF28F1084}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Forschleife", "Forschleife\Forschleife.csproj", "{86B4D278-E57F-44EA-9845-9E86C7CAFC95}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Forschleife", "Forschleife\Forschleife.csproj", "{86B4D278-E57F-44EA-9845-9E86C7CAFC95}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "do While schleife", "do While schleife\do While schleife.csproj", "{A53E091E-CFF9-4C27-B43D-BABF38D41E64}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "do While schleife", "do While schleife\do While schleife.csproj", "{A53E091E-CFF9-4C27-B43D-BABF38D41E64}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Übung Do while schleife", "Übung Do while schleife\Übung Do while schleife.csproj", "{DBCDCAF5-BC11-4BAA-8757-861373C940E0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WhileÜbung", "WhileÜbung\WhileÜbung.csproj", "{5AA9BBD8-D3BC-4FC7-9B15-A870BBD5A120}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -105,6 +109,14 @@ Global
 		{A53E091E-CFF9-4C27-B43D-BABF38D41E64}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A53E091E-CFF9-4C27-B43D-BABF38D41E64}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A53E091E-CFF9-4C27-B43D-BABF38D41E64}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DBCDCAF5-BC11-4BAA-8757-861373C940E0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DBCDCAF5-BC11-4BAA-8757-861373C940E0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DBCDCAF5-BC11-4BAA-8757-861373C940E0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DBCDCAF5-BC11-4BAA-8757-861373C940E0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5AA9BBD8-D3BC-4FC7-9B15-A870BBD5A120}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5AA9BBD8-D3BC-4FC7-9B15-A870BBD5A120}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5AA9BBD8-D3BC-4FC7-9B15-A870BBD5A120}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5AA9BBD8-D3BC-4FC7-9B15-A870BBD5A120}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
