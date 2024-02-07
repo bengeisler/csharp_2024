@@ -47,6 +47,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SteuerelementListBoxVerwalt
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SteuerelementComboBox", "SteuerelementComboBox\SteuerelementComboBox.csproj", "{AFA5AC50-4B82-476D-975D-E67A57074FD0}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UEinkaufsliste", "UEinkaufsliste\UEinkaufsliste.csproj", "{CA9847FC-5966-47A7-983D-9FE292BAEF12}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -141,6 +143,10 @@ Global
 		{AFA5AC50-4B82-476D-975D-E67A57074FD0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AFA5AC50-4B82-476D-975D-E67A57074FD0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AFA5AC50-4B82-476D-975D-E67A57074FD0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CA9847FC-5966-47A7-983D-9FE292BAEF12}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CA9847FC-5966-47A7-983D-9FE292BAEF12}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CA9847FC-5966-47A7-983D-9FE292BAEF12}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CA9847FC-5966-47A7-983D-9FE292BAEF12}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
