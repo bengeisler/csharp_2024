@@ -39,7 +39,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Übung Do while schleife", 
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WhileÜbung", "WhileÜbung\WhileÜbung.csproj", "{5AA9BBD8-D3BC-4FC7-9B15-A870BBD5A120}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SteuerelementListBox", "SteuerelementListBox\SteuerelementListBox.csproj", "{1E5A03E0-0F4C-46B8-9F12-5F19576A07FB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SteuerelementListBox", "SteuerelementListBox\SteuerelementListBox.csproj", "{1E5A03E0-0F4C-46B8-9F12-5F19576A07FB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SteuerelementComboBox", "WinFormsApp1\SteuerelementComboBox.csproj", "{9D09C179-FD64-44FA-9D30-113FE43C5812}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Übung Einkaufsliste", "Übung Einkaufsliste\Übung Einkaufsliste.csproj", "{5CF9E66A-115F-46F0-B0ED-7051ED5F6FA1}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -123,6 +127,14 @@ Global
 		{1E5A03E0-0F4C-46B8-9F12-5F19576A07FB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1E5A03E0-0F4C-46B8-9F12-5F19576A07FB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1E5A03E0-0F4C-46B8-9F12-5F19576A07FB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9D09C179-FD64-44FA-9D30-113FE43C5812}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9D09C179-FD64-44FA-9D30-113FE43C5812}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9D09C179-FD64-44FA-9D30-113FE43C5812}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9D09C179-FD64-44FA-9D30-113FE43C5812}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5CF9E66A-115F-46F0-B0ED-7051ED5F6FA1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5CF9E66A-115F-46F0-B0ED-7051ED5F6FA1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5CF9E66A-115F-46F0-B0ED-7051ED5F6FA1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5CF9E66A-115F-46F0-B0ED-7051ED5F6FA1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
