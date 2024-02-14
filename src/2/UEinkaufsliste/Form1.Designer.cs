@@ -88,6 +88,7 @@ namespace UEinkaufsliste
             CmdHinzufügen.TabIndex = 4;
             CmdHinzufügen.Text = "Hinzufügen";
             CmdHinzufügen.UseVisualStyleBackColor = true;
+            CmdHinzufügen.Click += CmdHinzufügen_Click;
             // 
             // label3
             // 
@@ -135,6 +136,7 @@ namespace UEinkaufsliste
             CmdNachLinks.TabIndex = 9;
             CmdNachLinks.Text = "<";
             CmdNachLinks.UseVisualStyleBackColor = true;
+            CmdNachLinks.Click += CmdNachLinks_Click;
             // 
             // CmdNachRechts
             // 
@@ -144,6 +146,7 @@ namespace UEinkaufsliste
             CmdNachRechts.TabIndex = 10;
             CmdNachRechts.Text = ">";
             CmdNachRechts.UseVisualStyleBackColor = true;
+            CmdNachRechts.Click += CmdNachRechts_Click;
             // 
             // LblStatus
             // 
@@ -162,6 +165,7 @@ namespace UEinkaufsliste
             CmdLöschen.TabIndex = 12;
             CmdLöschen.Text = "Löschen";
             CmdLöschen.UseVisualStyleBackColor = true;
+            CmdLöschen.Click += CmdLöschen_Click;
             // 
             // CmdAlleLöschen
             // 
@@ -171,6 +175,7 @@ namespace UEinkaufsliste
             CmdAlleLöschen.TabIndex = 13;
             CmdAlleLöschen.Text = "Alle löschen";
             CmdAlleLöschen.UseVisualStyleBackColor = true;
+            CmdAlleLöschen.Click += CmdAlleLöschen_Click;
             // 
             // CmdBeenden
             // 
@@ -180,6 +185,7 @@ namespace UEinkaufsliste
             CmdBeenden.TabIndex = 14;
             CmdBeenden.Text = "Beenden";
             CmdBeenden.UseVisualStyleBackColor = true;
+            CmdBeenden.Click += CmdBeenden_Click;
             // 
             // Form1
             // 
