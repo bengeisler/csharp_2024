@@ -39,6 +39,7 @@ namespace Methoden
             CmdAnzeigen5 = new Button();
             CmdAnzeigen6 = new Button();
             CmdAnzeigen7 = new Button();
+            CmdAnzeigen8 = new Button();
             SuspendLayout();
             // 
             // LblAusgabe
@@ -120,11 +121,22 @@ namespace Methoden
             CmdAnzeigen7.UseVisualStyleBackColor = true;
             CmdAnzeigen7.Click += CmdAnzeigen7_Click;
             // 
+            // CmdAnzeigen8
+            // 
+            CmdAnzeigen8.Location = new Point(323, 284);
+            CmdAnzeigen8.Name = "CmdAnzeigen8";
+            CmdAnzeigen8.Size = new Size(112, 34);
+            CmdAnzeigen8.TabIndex = 8;
+            CmdAnzeigen8.Text = "Anzeigen 8";
+            CmdAnzeigen8.UseVisualStyleBackColor = true;
+            CmdAnzeigen8.Click += CmdAnzeigen8_Click;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(480, 321);
+            ClientSize = new Size(480, 355);
+            Controls.Add(CmdAnzeigen8);
             Controls.Add(CmdAnzeigen7);
             Controls.Add(CmdAnzeigen6);
             Controls.Add(CmdAnzeigen5);
@@ -149,5 +161,6 @@ namespace Methoden
         private Button CmdAnzeigen5;
         private Button CmdAnzeigen6;
         private Button CmdAnzeigen7;
+        private Button CmdAnzeigen8;
     }
 }

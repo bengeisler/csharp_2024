@@ -117,5 +117,32 @@ namespace Methoden
             // Die Anwendungsgebiete für Lambda-Ausdrücke sind vielfältig; dementsprechend oft und
             // gerne werden sie eingesetzt!
         }
+
+        private void CmdAnzeigen8_Click(object sender, EventArgs e)
+        {
+            // Lokale Funktion, die versucht string in int zu wandeln
+            bool stringInInt(string s, out int ergebnis)
+            {
+                try
+                {
+                    // string in int wandeln
+                    ergebnis = Convert.ToInt32(s);
+                    return true;
+                }
+                catch
+                {
+                    ergebnis = 0;
+                    return false;
+                }
+            }
+
+            bool erfolgreich = stringInInt("asdf", out int ergebnis);
+            // Alternativ: Funktion von C# verwenden:
+            // erfolgreich = int.TryParse("asdf", out int ergebnis);
+            if (erfolgreich) LblAusgabe.Text = $"{ergebnis}";
+            else LblAusgabe.Text = "Fehler!";
+        }
+
+        
     }
 }
