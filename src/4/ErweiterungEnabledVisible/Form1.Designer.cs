@@ -52,7 +52,7 @@ namespace ErweiterungEnabledVisible
             cmdLöschen.Name = "cmdLöschen";
             cmdLöschen.Size = new Size(75, 23);
             cmdLöschen.TabIndex = 1;
-            cmdLöschen.Text = "Löschen";
+            cmdLöschen.Text = "&löschen";
             cmdLöschen.UseVisualStyleBackColor = true;
             cmdLöschen.Click += cmdLöschen_Click;
             // 
