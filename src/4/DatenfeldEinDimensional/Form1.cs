@@ -45,7 +45,7 @@ namespace DatenfeldEinDimensional
 
             //auf Bereiche Zugreifen
             int[] bereich = werte[1..3];
-            
+
         }
 
         private void CmdButton4_Click(object sender, EventArgs e)
@@ -64,6 +64,11 @@ namespace DatenfeldEinDimensional
         private void CmdButton5_Click(object sender, EventArgs e)
         {
             LstBox.Items.Clear();
+        }
+
+        private void LstBox_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

@@ -48,6 +48,7 @@ namespace DatenfeldEinDimensional
             LstBox.Name = "LstBox";
             LstBox.Size = new Size(120, 154);
             LstBox.TabIndex = 0;
+            LstBox.SelectedIndexChanged += LstBox_SelectedIndexChanged;
             // 
             // CmdButton1
             // 
