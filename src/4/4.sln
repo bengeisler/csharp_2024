@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UEnabled", "UEnabled\UEnabled.csproj", "{4FD2D0D6-896D-41A5-A852-7F57BA962394}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ErweiterungTastaturMaus", "ErweiterungTastaturMaus\ErweiterungTastaturMaus.csproj", "{9059D264-1596-4BC8-97F4-E9EFB775BFEE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4FD2D0D6-896D-41A5-A852-7F57BA962394}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4FD2D0D6-896D-41A5-A852-7F57BA962394}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4FD2D0D6-896D-41A5-A852-7F57BA962394}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4FD2D0D6-896D-41A5-A852-7F57BA962394}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9059D264-1596-4BC8-97F4-E9EFB775BFEE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9059D264-1596-4BC8-97F4-E9EFB775BFEE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9059D264-1596-4BC8-97F4-E9EFB775BFEE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9059D264-1596-4BC8-97F4-E9EFB775BFEE}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {1352A4B2-2B32-4B9A-80FB-3BA935C0501F}
+	EndGlobalSection
+EndGlobal

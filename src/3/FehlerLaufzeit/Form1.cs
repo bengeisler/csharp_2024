@@ -49,9 +49,17 @@ namespace FehlerLaufzeit
             {
                 MessageBox.Show("Durch 0 kann nicht geteilt werden!");
             }
+            catch (FormatException)
+            {
+                MessageBox.Show("Die Eingabe ist keine gültige Zahl!");
+            }
+            catch (OverflowException)
+            {
+                MessageBox.Show("Die Eingabe ist zu groß oder zu klein!");
+            }
             catch (Exception)
             {
-                MessageBox.Show("Bitte nur gültige Zahlen eingeben!");
+                MessageBox.Show("Allgemeiner Fehler!");
             }
         }
     }
