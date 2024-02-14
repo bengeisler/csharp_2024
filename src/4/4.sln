@@ -7,6 +7,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UEnabled", "UEnabled\UEnabl
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ErweiterungTastaturMaus", "ErweiterungTastaturMaus\ErweiterungTastaturMaus.csproj", "{9CC92053-F39A-4691-B36A-A6DCFDEEF0D1}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DatenfeldEindimensional", "DatenfeldEindimensional\DatenfeldEindimensional.csproj", "{277D983F-3010-4AFE-AA73-910005E72401}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,8 +23,15 @@ Global
 		{9CC92053-F39A-4691-B36A-A6DCFDEEF0D1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9CC92053-F39A-4691-B36A-A6DCFDEEF0D1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9CC92053-F39A-4691-B36A-A6DCFDEEF0D1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{277D983F-3010-4AFE-AA73-910005E72401}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{277D983F-3010-4AFE-AA73-910005E72401}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{277D983F-3010-4AFE-AA73-910005E72401}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{277D983F-3010-4AFE-AA73-910005E72401}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {FAD4BDC8-EDD3-426F-8404-CB27C45EBF92}
 	EndGlobalSection
 EndGlobal
