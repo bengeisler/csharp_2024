@@ -13,17 +13,17 @@ namespace UEnabled
         private void btnloeschen_Click(object sender, EventArgs e)
         {
             lstbox.Items.Remove(lstbox.SelectedItem);
-            btnloeschen.Enabled = false;
         }
 
         private void lstbox_SelectedIndexChanged(object sender, EventArgs e)
         {
-            int auswahl;
-            auswahl = lstbox.SelectedIndex;
-
-            if (auswahl != -1)
+            if (lstbox.SelectedIndex != -1)
             {
                 btnloeschen.Enabled = true;
+            }
+            else
+            {
+                btnloeschen.Enabled=false;
             }
         }
     }
