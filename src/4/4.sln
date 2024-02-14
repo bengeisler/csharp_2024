@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UEnabled", "UEnabled\UEnabled.csproj", "{5E1575E7-0005-4005-8774-538A1138DAF1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ErweiterungTastaurundMaus", "ErweiterungTastaurundMaus\ErweiterungTastaurundMaus.csproj", "{E83AE518-F114-4E31-A49E-A765A67EEAAB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5E1575E7-0005-4005-8774-538A1138DAF1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5E1575E7-0005-4005-8774-538A1138DAF1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5E1575E7-0005-4005-8774-538A1138DAF1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5E1575E7-0005-4005-8774-538A1138DAF1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E83AE518-F114-4E31-A49E-A765A67EEAAB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E83AE518-F114-4E31-A49E-A765A67EEAAB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E83AE518-F114-4E31-A49E-A765A67EEAAB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E83AE518-F114-4E31-A49E-A765A67EEAAB}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {CCD70D93-9E0E-43FD-8ECC-218E1A724F42}
+	EndGlobalSection
+EndGlobal
