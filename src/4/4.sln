@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.0.31903.59
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Übung Enable Visible", "Übung Enable Visible\Übung Enable Visible.csproj", "{B81D7AC3-2929-41B5-9154-7D794E413923}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Übung Enable Visible", "Übung Enable Visible\Übung Enable Visible.csproj", "{B81D7AC3-2929-41B5-9154-7D794E413923}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tastatur und Maus", "Tastatur und Maus\Tastatur und Maus.csproj", "{09A1299B-692C-486C-948B-BEF379858D04}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{B81D7AC3-2929-41B5-9154-7D794E413923}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B81D7AC3-2929-41B5-9154-7D794E413923}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B81D7AC3-2929-41B5-9154-7D794E413923}.Release|Any CPU.Build.0 = Release|Any CPU
+		{09A1299B-692C-486C-948B-BEF379858D04}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{09A1299B-692C-486C-948B-BEF379858D04}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{09A1299B-692C-486C-948B-BEF379858D04}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{09A1299B-692C-486C-948B-BEF379858D04}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
