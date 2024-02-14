@@ -5,7 +5,9 @@ VisualStudioVersion = 17.0.31903.59
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UEnabled", "UEnabled\UEnabled.csproj", "{288EFC15-FC04-4558-80D0-D4949AF51B25}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ErweiterungTastaturMaus", "ErweiterungTastaturMaus\ErweiterungTastaturMaus.csproj", "{86DDE314-1C9C-4A7E-B698-2BC017907458}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ErweiterungTastaturMaus", "ErweiterungTastaturMaus\ErweiterungTastaturMaus.csproj", "{86DDE314-1C9C-4A7E-B698-2BC017907458}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Eindimensional", "Eindimensional\Eindimensional.csproj", "{8D0608A5-1866-4733-ADE7-2525BA2A18D0}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,8 +23,15 @@ Global
 		{86DDE314-1C9C-4A7E-B698-2BC017907458}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{86DDE314-1C9C-4A7E-B698-2BC017907458}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{86DDE314-1C9C-4A7E-B698-2BC017907458}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8D0608A5-1866-4733-ADE7-2525BA2A18D0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8D0608A5-1866-4733-ADE7-2525BA2A18D0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8D0608A5-1866-4733-ADE7-2525BA2A18D0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8D0608A5-1866-4733-ADE7-2525BA2A18D0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {477E16A9-C837-4653-BC47-B01BA1629367}
 	EndGlobalSection
 EndGlobal
