@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ErweiterungTastaturMaus", "
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DatenfeldEindimensional", "DatenfeldEindimensional\DatenfeldEindimensional.csproj", "{277D983F-3010-4AFE-AA73-910005E72401}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Methoden", "Methoden\Methoden.csproj", "{72639B04-13EA-42B6-9946-DC4E6B28E871}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{277D983F-3010-4AFE-AA73-910005E72401}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{277D983F-3010-4AFE-AA73-910005E72401}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{277D983F-3010-4AFE-AA73-910005E72401}.Release|Any CPU.Build.0 = Release|Any CPU
+		{72639B04-13EA-42B6-9946-DC4E6B28E871}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{72639B04-13EA-42B6-9946-DC4E6B28E871}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{72639B04-13EA-42B6-9946-DC4E6B28E871}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{72639B04-13EA-42B6-9946-DC4E6B28E871}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
