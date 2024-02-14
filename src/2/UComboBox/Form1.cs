@@ -47,7 +47,7 @@ namespace UComboBox
 
         private void BtnAllesLoeschen_Click(object sender, EventArgs e)
         {
-            
+
             counterToDo = LstToDo.Items.Count;
 
             counter = counter - counterToDo;
@@ -68,7 +68,7 @@ namespace UComboBox
                 counterErledigt = LstErledigt.Items.Count;
                 LblAusgabe.Text = $"{counterErledigt.ToString()}/{counter.ToString()}";
             }
-            
+
         }
 
         private void BtnLinks_Click(object sender, EventArgs e)
