@@ -178,6 +178,7 @@ namespace Übung_Einkaufsliste
             LstBoxToDo.Name = "LstBoxToDo";
             LstBoxToDo.Size = new Size(212, 289);
             LstBoxToDo.TabIndex = 13;
+            LstBoxToDo.SelectedIndexChanged += LstBoxToDo_SelectedIndexChanged;
             // 
             // LstBoxRdy
             // 
@@ -187,6 +188,7 @@ namespace Übung_Einkaufsliste
             LstBoxRdy.Name = "LstBoxRdy";
             LstBoxRdy.Size = new Size(212, 289);
             LstBoxRdy.TabIndex = 14;
+            LstBoxRdy.SelectedIndexChanged += LstBoxRdy_SelectedIndexChanged;
             // 
             // Form1
             // 
