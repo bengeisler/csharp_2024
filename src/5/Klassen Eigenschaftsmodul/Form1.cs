@@ -9,5 +9,20 @@ namespace Klassen_Eigenschaftsmodul
         {
             InitializeComponent();
         }
+
+        private void CmdButton1_Click(object sender, EventArgs e)
+        {
+            Fahrzeug Vespa = new Fahrzeug();
+
+            LblAnzeigen1.Text = "Vespa\n" + Vespa.Ausgabe() + "\n";
+
+            Vespa.Beschleunigen(10);
+            //Geschwindigkeit kann aus der Eigenschaftsmethoden ausgelesen werden
+
+
+            LblAnzeigen1.Text += Vespa.Ausgabe() + "\n";
+
+            LblAnzeigen1.Text += "\n\n";
+        }
     }
 }

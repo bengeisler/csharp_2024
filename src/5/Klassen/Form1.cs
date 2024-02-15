@@ -17,7 +17,7 @@ namespace Klassen
             Fahrzeug Vespa = new Fahrzeug();
             //2 Möglichkeit
             //Fahrzeug Vespa2=new();
-            ;
+            
             LblAnzegie1.Text = "Vespa\n" + Vespa.Ausgabe() + "\n";
             Vespa.Beschleinigen(10);
             LblAnzegie1.Text += Vespa.Ausgabe() + "\n";

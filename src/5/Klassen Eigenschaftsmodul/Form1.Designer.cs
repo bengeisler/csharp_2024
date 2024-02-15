@@ -31,12 +31,45 @@ namespace Klassen_Eigenschaftsmodul
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Text = "Form1";
+            CmdButton1 = new Button();
+            LblAnzeigen1 = new Label();
+            SuspendLayout();
+            // 
+            // CmdButton1
+            // 
+            CmdButton1.Location = new Point(151, 8);
+            CmdButton1.Name = "CmdButton1";
+            CmdButton1.Size = new Size(75, 23);
+            CmdButton1.TabIndex = 0;
+            CmdButton1.Text = "button1";
+            CmdButton1.UseVisualStyleBackColor = true;
+            CmdButton1.Click += CmdButton1_Click;
+            // 
+            // LblAnzeigen1
+            // 
+            LblAnzeigen1.AutoSize = true;
+            LblAnzeigen1.Location = new Point(8, 8);
+            LblAnzeigen1.Name = "LblAnzeigen1";
+            LblAnzeigen1.Size = new Size(38, 15);
+            LblAnzeigen1.TabIndex = 1;
+            LblAnzeigen1.Text = "label1";
+            // 
+            // Form1
+            // 
+            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleMode = AutoScaleMode.Font;
+            ClientSize = new Size(800, 450);
+            Controls.Add(LblAnzeigen1);
+            Controls.Add(CmdButton1);
+            Name = "Form1";
+            Text = "Form1";
+            ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
+
+        private Button CmdButton1;
+        private Label LblAnzeigen1;
     }
 }
