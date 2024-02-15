@@ -53,17 +53,14 @@ namespace DatenfeldEindimensional
         private void cmdAnzeigen3_Click(object sender, EventArgs e)
 
         {
-            LstWerte.Items.Clear();
+           
 
-            int[] werte = [123, -2, 33, 444, 1, 0, 7];
+            
 
 
-            Array.Sort(werte);
-            Array.Reverse(werte);
-
-            foreach (int wert in werte)
+           
             {
-                LstWerte.Items.Add(wert);
+                
 
             }
         }
