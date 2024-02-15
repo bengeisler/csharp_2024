@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Klassen Eigenschaftsmodul",
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KlassenKonstruktoren", "KlassenKonstruktoren\KlassenKonstruktoren.csproj", "{BDF17079-6E7F-4E7A-A7DF-7AC584F2F80B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KlassenPrfung", "KlassenPrfung\KlassenPrfung.csproj", "{3674FC35-ADF3-458A-BCE5-5E20FBB4E7BC}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{BDF17079-6E7F-4E7A-A7DF-7AC584F2F80B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BDF17079-6E7F-4E7A-A7DF-7AC584F2F80B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BDF17079-6E7F-4E7A-A7DF-7AC584F2F80B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3674FC35-ADF3-458A-BCE5-5E20FBB4E7BC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3674FC35-ADF3-458A-BCE5-5E20FBB4E7BC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3674FC35-ADF3-458A-BCE5-5E20FBB4E7BC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3674FC35-ADF3-458A-BCE5-5E20FBB4E7BC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
