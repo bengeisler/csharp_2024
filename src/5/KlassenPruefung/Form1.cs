@@ -60,6 +60,12 @@ namespace KlassenPruefung
             // Dadurch dass in der Klasse Fahrzeug die Equals-Methode überladen wurde,
             // ist sindGleich3 hier true!
             bool sindGleich3 = f1.Equals(f2);
+
+
+            // -------------------------------
+            // Vergleichen mit Operatoren
+            bool sindGleich4 = f1 == f2;
+
         }
     }
 }

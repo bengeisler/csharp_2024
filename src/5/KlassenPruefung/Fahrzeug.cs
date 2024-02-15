@@ -31,6 +31,10 @@ namespace KlassenPruefung
             return _bezeichnung == other._bezeichnung && _geschwindigkeit == other._geschwindigkeit;
         }
 
-        public override int GetHashCode() => base.GetHashCode();
+        // == Operator überladen
+        public static bool operator ==(Fahrzeug f1, Fahrzeug f2) => f1.Equals(f2);
+        // != Operator überladen
+        public static bool operator !=(Fahrzeug f1, Fahrzeug f2) => !f1.Equals(f2);
+
     }
 }
