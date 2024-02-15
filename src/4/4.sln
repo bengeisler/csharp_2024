@@ -9,6 +9,10 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ErweiterungTastaturMaus", "
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Eindimensional", "Eindimensional\Eindimensional.csproj", "{8D0608A5-1866-4733-ADE7-2525BA2A18D0}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Methoden", "Methoden\Methoden.csproj", "{D2B8A876-A340-48E4-843D-07E9CFFB5D7A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UMethode", "UMethode\UMethode.csproj", "{F925798B-06A8-4649-93F2-DBFA9FC43D16}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +31,14 @@ Global
 		{8D0608A5-1866-4733-ADE7-2525BA2A18D0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8D0608A5-1866-4733-ADE7-2525BA2A18D0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8D0608A5-1866-4733-ADE7-2525BA2A18D0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D2B8A876-A340-48E4-843D-07E9CFFB5D7A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D2B8A876-A340-48E4-843D-07E9CFFB5D7A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D2B8A876-A340-48E4-843D-07E9CFFB5D7A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D2B8A876-A340-48E4-843D-07E9CFFB5D7A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F925798B-06A8-4649-93F2-DBFA9FC43D16}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F925798B-06A8-4649-93F2-DBFA9FC43D16}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F925798B-06A8-4649-93F2-DBFA9FC43D16}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F925798B-06A8-4649-93F2-DBFA9FC43D16}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
