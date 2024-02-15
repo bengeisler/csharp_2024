@@ -63,6 +63,7 @@ namespace Methoden
             // 
             // CmdAnzeigen2
             // 
+            CmdAnzeigen2.ForeColor = SystemColors.ActiveCaption;
             CmdAnzeigen2.Location = new Point(323, 44);
             CmdAnzeigen2.Name = "CmdAnzeigen2";
             CmdAnzeigen2.Size = new Size(112, 34);
