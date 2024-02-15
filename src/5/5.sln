@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KlassenPrüfung", "KlassenP
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Schnittstelle", "Schnittstelle\Schnittstelle.csproj", "{68280073-FA3C-4EAD-B758-293A37387171}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UBankkonto", "UBankkonto\UBankkonto.csproj", "{5934B9C1-3855-45B9-B753-4773FB71C357}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{68280073-FA3C-4EAD-B758-293A37387171}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{68280073-FA3C-4EAD-B758-293A37387171}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{68280073-FA3C-4EAD-B758-293A37387171}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5934B9C1-3855-45B9-B753-4773FB71C357}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5934B9C1-3855-45B9-B753-4773FB71C357}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5934B9C1-3855-45B9-B753-4773FB71C357}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5934B9C1-3855-45B9-B753-4773FB71C357}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
