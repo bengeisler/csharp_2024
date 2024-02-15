@@ -34,6 +34,8 @@ namespace Klassen
             schwalbe.Beschleunigen(50);
 
             LblAnzeige.Text += schwalbe.Ausgabe() + "\n";
+
+            schwalbe.Geschwindigkeit = 100;
         }
     }
 }
