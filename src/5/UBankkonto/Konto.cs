@@ -53,11 +53,5 @@ namespace UBankkonto
             }
         }
 
-        public string Aufzählung()
-        {
-            string auszug = _kontostand.ToString();
-            return auszug;
-        }
-
     }
 }

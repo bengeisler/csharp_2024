@@ -41,7 +41,7 @@ namespace UBankkonto
         private void btnKontoauszugdrucken_Click(object sender, EventArgs e)
         {
             
-            lblAnzeigen1.Text += $"{_konto.Aufzählung()}\n";
+            lblAnzeigen1.Text += $"{_konto.KontostandAnzeigen()}\n";
         }
     }
 }
