@@ -3,6 +3,7 @@
 
 using System;
 using System.Collections.Generic;
+using System.Configuration;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -10,6 +11,8 @@ using System.Threading.Tasks;
 namespace UBankkonto
 {
     class Konto
+
+
     {
         private decimal _kontostand;
 
@@ -27,8 +30,28 @@ namespace UBankkonto
             _kontostand -= betrag;
         }
 
-        
+        public bool ueberziehen()
+        {
+            if (_kontostand <= 0)
+            {
+                _kontostand = 0;
 
-        public override string? ToString() => $"{_kontostand}";
+                return true;
+            }
+            else return false;
+        }
+
+        public override string? ToString()
+        {
+            if (_kontostand < 0)
+            {
+                _kontostand = 0;
+                return $"Fehler";
+            }
+            else
+            {
+                return $"{_kontostand}";
+            }
+        }
     }
 }

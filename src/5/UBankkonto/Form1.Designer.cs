@@ -79,7 +79,7 @@ namespace UBankkonto
             // 
             btnKontostand.Location = new Point(108, 135);
             btnKontostand.Name = "btnKontostand";
-            btnKontostand.Size = new Size(75, 23);
+            btnKontostand.Size = new Size(80, 23);
             btnKontostand.TabIndex = 4;
             btnKontostand.Text = "Kontostand";
             btnKontostand.UseVisualStyleBackColor = true;

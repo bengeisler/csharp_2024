@@ -23,6 +23,7 @@ namespace UBankkonto
             decimal vareingabe = Convert.ToDecimal(txtEingabe.Text);
 
             _konto.Auzahlen(vareingabe);
+            txtEingabe.Text = _konto.ToString();
         }
 
         private void btnKontostand_Click(object sender, EventArgs e)
