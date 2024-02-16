@@ -11,6 +11,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KlassenKonstruktoren", "Kla
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KlassenPrfung", "KlassenPrfung\KlassenPrfung.csproj", "{3674FC35-ADF3-458A-BCE5-5E20FBB4E7BC}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KlassenSchnittstellen", "KlassenSchnittstellen\KlassenSchnittstellen.csproj", "{7C6AC0CC-C93B-4CFC-8D42-776E7757599C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ÜbungKlassen", "ÜbungKlassen\ÜbungKlassen.csproj", "{26FF565C-6672-4C1F-94F9-5809CA00581B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +37,14 @@ Global
 		{3674FC35-ADF3-458A-BCE5-5E20FBB4E7BC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3674FC35-ADF3-458A-BCE5-5E20FBB4E7BC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3674FC35-ADF3-458A-BCE5-5E20FBB4E7BC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7C6AC0CC-C93B-4CFC-8D42-776E7757599C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7C6AC0CC-C93B-4CFC-8D42-776E7757599C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7C6AC0CC-C93B-4CFC-8D42-776E7757599C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7C6AC0CC-C93B-4CFC-8D42-776E7757599C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{26FF565C-6672-4C1F-94F9-5809CA00581B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{26FF565C-6672-4C1F-94F9-5809CA00581B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{26FF565C-6672-4C1F-94F9-5809CA00581B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{26FF565C-6672-4C1F-94F9-5809CA00581B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
