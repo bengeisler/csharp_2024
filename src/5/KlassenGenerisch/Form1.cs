@@ -41,5 +41,36 @@ namespace KlassenGenerisch
             // Prüfen, ob ein Element in der Liste enthalten ist
             bool enthältMond = listeMitStrings.Contains("Mond");
         }
+
+        private void CmdListLand_Click(object sender, EventArgs e)
+        {
+            // Liste anlegen, in dem Länder gespeichert werden können
+            List<Land> listeMitLändern = new();
+
+            // Länder hinzufügen
+            listeMitLändern.Add(new Land("Frankreich", "Paris"));
+            listeMitLändern.Add(new Land("Deutschland", "Berlin"));
+
+            // Wie viele Länder enhält die Liste?
+            LblAnzeige.Text = $"Die Liste enhält {listeMitLändern.Count} Länder\n";
+
+            // Enhält die Liste das Land Frankreich?
+            bool enhältFrankreich = listeMitLändern.Contains(new Land("Frankreich", "Paris"));
+            LblAnzeige.Text += $"Land Frankreich ist in Liste enhalten: {enhältFrankreich}\n";
+
+            // Land löschen (über Index)
+            // listeMitLändern.RemoveAt(1);
+
+            // Land löschen (über Objekt)
+            listeMitLändern.Remove(new Land("Deutschland", "Berlin"));
+
+            // Alle Länder der Liste anzeigen
+            listeMitLändern.Add(new Land("Belgien", "Brüssel"));
+
+            foreach (var land in listeMitLändern)
+            {
+                LblAnzeige.Text += land.ToString() + "\n";
+            }
+        }
     }
 }

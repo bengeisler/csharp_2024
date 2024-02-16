@@ -33,6 +33,7 @@ namespace KlassenGenerisch
         {
             CmdListString = new Button();
             LblAnzeige = new Label();
+            CmdListLand = new Button();
             SuspendLayout();
             // 
             // CmdListString
@@ -54,11 +55,22 @@ namespace KlassenGenerisch
             LblAnzeige.TabIndex = 1;
             LblAnzeige.Text = "label1";
             // 
+            // CmdListLand
+            // 
+            CmdListLand.Location = new Point(215, 12);
+            CmdListLand.Name = "CmdListLand";
+            CmdListLand.Size = new Size(112, 34);
+            CmdListLand.TabIndex = 2;
+            CmdListLand.Text = "List Land";
+            CmdListLand.UseVisualStyleBackColor = true;
+            CmdListLand.Click += CmdListLand_Click;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(CmdListLand);
             Controls.Add(LblAnzeige);
             Controls.Add(CmdListString);
             Name = "Form1";
@@ -71,5 +83,6 @@ namespace KlassenGenerisch
 
         private Button CmdListString;
         private Label LblAnzeige;
+        private Button CmdListLand;
     }
 }
