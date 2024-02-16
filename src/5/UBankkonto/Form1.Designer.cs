@@ -34,10 +34,11 @@ namespace UBankkonto
             label1 = new Label();
             TxtEingabe = new TextBox();
             CmdEinzahlen = new Button();
-            button2 = new Button();
-            button3 = new Button();
-            button4 = new Button();
+            CmdAuszahlen = new Button();
+            CmdKontostand = new Button();
+            CmdKontoauszug = new Button();
             LblKontostand = new Label();
+            LblKontoauszug = new Label();
             SuspendLayout();
             // 
             // label1
@@ -66,32 +67,34 @@ namespace UBankkonto
             CmdEinzahlen.UseVisualStyleBackColor = true;
             CmdEinzahlen.Click += CmdEinzahlen_Click;
             // 
-            // button2
+            // CmdAuszahlen
             // 
-            button2.Location = new Point(208, 78);
-            button2.Name = "button2";
-            button2.Size = new Size(112, 34);
-            button2.TabIndex = 3;
-            button2.Text = "Auszahlen";
-            button2.UseVisualStyleBackColor = true;
+            CmdAuszahlen.Location = new Point(208, 78);
+            CmdAuszahlen.Name = "CmdAuszahlen";
+            CmdAuszahlen.Size = new Size(112, 34);
+            CmdAuszahlen.TabIndex = 3;
+            CmdAuszahlen.Text = "Auszahlen";
+            CmdAuszahlen.UseVisualStyleBackColor = true;
+            CmdAuszahlen.Click += CmdAuszahlen_Click;
             // 
-            // button3
+            // CmdKontostand
             // 
-            button3.Location = new Point(94, 174);
-            button3.Name = "button3";
-            button3.Size = new Size(137, 34);
-            button3.TabIndex = 4;
-            button3.Text = "Kontostand";
-            button3.UseVisualStyleBackColor = true;
+            CmdKontostand.Location = new Point(94, 174);
+            CmdKontostand.Name = "CmdKontostand";
+            CmdKontostand.Size = new Size(137, 34);
+            CmdKontostand.TabIndex = 4;
+            CmdKontostand.Text = "Kontostand";
+            CmdKontostand.UseVisualStyleBackColor = true;
+            CmdKontostand.Click += CmdKontostand_Click;
             // 
-            // button4
+            // CmdKontoauszug
             // 
-            button4.Location = new Point(94, 227);
-            button4.Name = "button4";
-            button4.Size = new Size(137, 69);
-            button4.TabIndex = 5;
-            button4.Text = "Kontoauszug drucken";
-            button4.UseVisualStyleBackColor = true;
+            CmdKontoauszug.Location = new Point(94, 227);
+            CmdKontoauszug.Name = "CmdKontoauszug";
+            CmdKontoauszug.Size = new Size(137, 69);
+            CmdKontoauszug.TabIndex = 5;
+            CmdKontoauszug.Text = "Kontoauszug drucken";
+            CmdKontoauszug.UseVisualStyleBackColor = true;
             // 
             // LblKontostand
             // 
@@ -101,15 +104,24 @@ namespace UBankkonto
             LblKontostand.Size = new Size(0, 25);
             LblKontostand.TabIndex = 6;
             // 
+            // LblKontoauszug
+            // 
+            LblKontoauszug.AutoSize = true;
+            LblKontoauszug.Location = new Point(60, 326);
+            LblKontoauszug.Name = "LblKontoauszug";
+            LblKontoauszug.Size = new Size(0, 25);
+            LblKontoauszug.TabIndex = 7;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(350, 421);
+            Controls.Add(LblKontoauszug);
             Controls.Add(LblKontostand);
-            Controls.Add(button4);
-            Controls.Add(button3);
-            Controls.Add(button2);
+            Controls.Add(CmdKontoauszug);
+            Controls.Add(CmdKontostand);
+            Controls.Add(CmdAuszahlen);
             Controls.Add(CmdEinzahlen);
             Controls.Add(TxtEingabe);
             Controls.Add(label1);
@@ -124,9 +136,10 @@ namespace UBankkonto
         private Label label1;
         private TextBox TxtEingabe;
         private Button CmdEinzahlen;
-        private Button button2;
-        private Button button3;
-        private Button button4;
+        private Button CmdAuszahlen;
+        private Button CmdKontostand;
+        private Button CmdKontoauszug;
         private Label LblKontostand;
+        private Label LblKontoauszug;
     }
 }
