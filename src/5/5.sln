@@ -3,17 +3,19 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.0.31903.59
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Klassen", "Klassen\Klassen.csproj", "{D10E9C0B-CAF5-475C-A242-97571720FC4E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Klassen", "Klassen\Klassen.csproj", "{D10E9C0B-CAF5-475C-A242-97571720FC4E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Klassen Eigenschaftsmodul", "Klassen Eigenschaftsmodul\Klassen Eigenschaftsmodul.csproj", "{BE4907AE-7CB6-494A-AA3E-AB6459403826}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Klassen Eigenschaftsmodul", "Klassen Eigenschaftsmodul\Klassen Eigenschaftsmodul.csproj", "{BE4907AE-7CB6-494A-AA3E-AB6459403826}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KlassenKonstruktoren", "KlassenKonstruktoren\KlassenKonstruktoren.csproj", "{BDF17079-6E7F-4E7A-A7DF-7AC584F2F80B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "KlassenKonstruktoren", "KlassenKonstruktoren\KlassenKonstruktoren.csproj", "{BDF17079-6E7F-4E7A-A7DF-7AC584F2F80B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KlassenPrfung", "KlassenPrfung\KlassenPrfung.csproj", "{3674FC35-ADF3-458A-BCE5-5E20FBB4E7BC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "KlassenPrfung", "KlassenPrfung\KlassenPrfung.csproj", "{3674FC35-ADF3-458A-BCE5-5E20FBB4E7BC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KlassenSchnittstellen", "KlassenSchnittstellen\KlassenSchnittstellen.csproj", "{7C6AC0CC-C93B-4CFC-8D42-776E7757599C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "KlassenSchnittstellen", "KlassenSchnittstellen\KlassenSchnittstellen.csproj", "{7C6AC0CC-C93B-4CFC-8D42-776E7757599C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ÜbungKlassen", "ÜbungKlassen\ÜbungKlassen.csproj", "{26FF565C-6672-4C1F-94F9-5809CA00581B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ÜbungKlassen", "ÜbungKlassen\ÜbungKlassen.csproj", "{26FF565C-6672-4C1F-94F9-5809CA00581B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KlassenGenerisch", "KlassenGenerisch\KlassenGenerisch.csproj", "{340B4514-DAF5-4EE8-8BC9-47ADF0889985}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -45,6 +47,10 @@ Global
 		{26FF565C-6672-4C1F-94F9-5809CA00581B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{26FF565C-6672-4C1F-94F9-5809CA00581B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{26FF565C-6672-4C1F-94F9-5809CA00581B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{340B4514-DAF5-4EE8-8BC9-47ADF0889985}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{340B4514-DAF5-4EE8-8BC9-47ADF0889985}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{340B4514-DAF5-4EE8-8BC9-47ADF0889985}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{340B4514-DAF5-4EE8-8BC9-47ADF0889985}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
