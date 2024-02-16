@@ -89,5 +89,31 @@ namespace Methoden
 
             int wert = Array.Find(werte, x => x >= 4);
         }
+
+        private void cmdAnzeigen8_Click(object sender, EventArgs e)
+        {
+            bool stringinint(string s, out int ergebnis)
+            {
+                
+                try
+                {
+                    ergebnis = Convert.ToInt32(s);
+                    return true;
+                }
+                catch
+                {
+
+                    ergebnis = 0;
+                    return false;
+
+                }
+                
+            }
+
+            bool erfolgreich = stringinint("asdf", out int ergebnis);
+            if (erfolgreich) LblAnzeigen.Text = $"{ergebnis}";
+            else LblAnzeigen.Text = "Fehler";
+
+        }
     }
 }

@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DatenfeldEinDimensional", "
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Methoden", "Methoden\Methoden.csproj", "{19923428-4B69-4E8D-A3B8-B6C68531AC90}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UMethode", "UMethode\UMethode.csproj", "{5198ECCE-D06A-40DD-90E4-8780DCE249F0}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{19923428-4B69-4E8D-A3B8-B6C68531AC90}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{19923428-4B69-4E8D-A3B8-B6C68531AC90}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{19923428-4B69-4E8D-A3B8-B6C68531AC90}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5198ECCE-D06A-40DD-90E4-8780DCE249F0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5198ECCE-D06A-40DD-90E4-8780DCE249F0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5198ECCE-D06A-40DD-90E4-8780DCE249F0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5198ECCE-D06A-40DD-90E4-8780DCE249F0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
