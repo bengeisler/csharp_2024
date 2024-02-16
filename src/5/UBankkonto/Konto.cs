@@ -16,7 +16,6 @@ namespace UBankkonto
     {
         private decimal _kontostand;
 
-
         public void Einzahlen(decimal betrag)
         {
             _kontostand += betrag;
@@ -53,5 +52,12 @@ namespace UBankkonto
                 return $"{_kontostand}";
             }
         }
+
+        public string Aufzählung()
+        {
+            string auszug = _kontostand.ToString();
+            return auszug;
+        }
+
     }
 }

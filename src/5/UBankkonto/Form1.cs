@@ -8,6 +8,7 @@ namespace UBankkonto
         public Form1()
         {
             InitializeComponent();
+            reset();
         }
         private Konto _konto = new();
         private void btnEinzahlen_Click(object sender, EventArgs e)
@@ -29,6 +30,18 @@ namespace UBankkonto
         private void btnKontostand_Click(object sender, EventArgs e)
         {
             txtEingabe.Text = _konto.ToString();
+        }
+
+
+        private void reset()
+        {
+            lblAnzeigen1.Text = "";
+        }
+
+        private void btnKontoauszugdrucken_Click(object sender, EventArgs e)
+        {
+            
+            lblAnzeigen1.Text += $"{_konto.Aufzählung()}\n";
         }
     }
 }

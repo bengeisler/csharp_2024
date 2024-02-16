@@ -37,6 +37,7 @@ namespace UBankkonto
             btnAuszahlen = new Button();
             btnKontostand = new Button();
             btnKontoauszugdrucken = new Button();
+            lblAnzeigen1 = new Label();
             SuspendLayout();
             // 
             // btnEinzahlen
@@ -93,12 +94,23 @@ namespace UBankkonto
             btnKontoauszugdrucken.TabIndex = 5;
             btnKontoauszugdrucken.Text = "Kontoauszug drucken";
             btnKontoauszugdrucken.UseVisualStyleBackColor = true;
+            btnKontoauszugdrucken.Click += btnKontoauszugdrucken_Click;
+            // 
+            // lblAnzeigen1
+            // 
+            lblAnzeigen1.AutoSize = true;
+            lblAnzeigen1.Location = new Point(129, 231);
+            lblAnzeigen1.Name = "lblAnzeigen1";
+            lblAnzeigen1.Size = new Size(38, 15);
+            lblAnzeigen1.TabIndex = 6;
+            lblAnzeigen1.Text = "label2";
             // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(333, 289);
+            ClientSize = new Size(333, 435);
+            Controls.Add(lblAnzeigen1);
             Controls.Add(btnKontoauszugdrucken);
             Controls.Add(btnKontostand);
             Controls.Add(btnAuszahlen);
@@ -119,5 +131,6 @@ namespace UBankkonto
         private Button btnAuszahlen;
         private Button btnKontostand;
         private Button btnKontoauszugdrucken;
+        private Label lblAnzeigen1;
     }
 }
