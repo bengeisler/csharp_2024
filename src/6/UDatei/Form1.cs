@@ -35,7 +35,7 @@ namespace UDatei
 
         private void BtnSpeichern_Click(object sender, EventArgs e)
         {
-            List<string> items = new List<string>();
+            List<string> items = new();
 
             foreach (var item in LstListe.Items)
             {
