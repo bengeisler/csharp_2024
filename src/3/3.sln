@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FehlerLaufzeit", "FehlerLaufzeit\FehlerLaufzeit.csproj", "{01616E21-E93B-4368-8C47-E191405A4EAF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{01616E21-E93B-4368-8C47-E191405A4EAF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{01616E21-E93B-4368-8C47-E191405A4EAF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{01616E21-E93B-4368-8C47-E191405A4EAF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{01616E21-E93B-4368-8C47-E191405A4EAF}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {68F3E525-0A12-4DC5-A332-9537A2D2A44A}
+	EndGlobalSection
+EndGlobal
