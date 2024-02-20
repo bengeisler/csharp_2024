@@ -37,6 +37,7 @@ namespace WinFormsApp1
             button2 = new Button();
             TxtBox2 = new TextBox();
             TxtBox1 = new TextBox();
+            CmdButton4 = new Button();
             SuspendLayout();
             // 
             // LblAnzeige1
@@ -92,11 +93,22 @@ namespace WinFormsApp1
             TxtBox1.Size = new Size(100, 23);
             TxtBox1.TabIndex = 5;
             // 
+            // CmdButton4
+            // 
+            CmdButton4.Location = new Point(563, 127);
+            CmdButton4.Name = "CmdButton4";
+            CmdButton4.Size = new Size(75, 23);
+            CmdButton4.TabIndex = 6;
+            CmdButton4.Text = "Ausnahme auslösen";
+            CmdButton4.UseVisualStyleBackColor = true;
+            CmdButton4.Click += CmdButton4_Click;
+            // 
             // CmdButton2
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(CmdButton4);
             Controls.Add(TxtBox1);
             Controls.Add(TxtBox2);
             Controls.Add(button2);
@@ -117,5 +129,6 @@ namespace WinFormsApp1
         private Button button2;
         private TextBox TxtBox2;
         private TextBox TxtBox1;
+        private Button CmdButton4;
     }
 }

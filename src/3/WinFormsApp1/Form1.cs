@@ -45,8 +45,8 @@ namespace WinFormsApp1
             {
                 MessageBox.Show("ERROR..\nMissing Logical Nummbers");
             }
-               
-            
+
+
         }
         private void Main()
         {
@@ -54,7 +54,25 @@ namespace WinFormsApp1
             int y = Convert.ToInt32(TxtBox2.Text);
             int z = x / y;
             LblAnzeige1.Text = $"Ergebnis: {z}";
-        } 
+        }
 
+        private void CmdButton4_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                bool erfolgreich = double.TryParse(TxtBox1.Text, out double ergebnis);
+                if (!erfolgreich)
+                {
+                    throw new FormatException("Es wurde keine gültige Zahl eingegeben");
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+
+            
+
+        }
     }
 }
