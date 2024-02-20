@@ -26,6 +26,8 @@ namespace UVerein
             string Name = null;
             string Alter = null;
 
+            LblAusgabe.Text = "";
+
             if (anzahl <= 4)
             {
                 try
@@ -91,6 +93,10 @@ namespace UVerein
                     LblAusgabe.ForeColor = Color.Red;
                 }
 
+                TxtAlter.Text = "";
+                TxtName.Text = "";
+                optBlau.Checked = false;
+                optRot.Checked = false;
                 anzahl += 1;
                 LstBox.Items.Add($"{Name}, {Alter} Jahre");
 
