@@ -9,7 +9,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DialogStandard", "DialogSta
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UDateikonverter", "UDateikonverter\UDateikonverter.csproj", "{C9134471-69CC-4F1F-AD91-37033F280E75}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UArraysSummieren", "UArraysSummieren\UArraysSummieren.csproj", "{4E8BF767-A9BE-4483-8E1E-99FA6283ADDD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UArraysSummieren", "UArraysSummieren\UArraysSummieren.csproj", "{4E8BF767-A9BE-4483-8E1E-99FA6283ADDD}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ULottozahlen", "ULottozahlen\ULottozahlen.csproj", "{80501557-EB85-4EBF-876F-76896ECFE98D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UVerein", "UVerein\UVerein.csproj", "{EBD2F49C-C763-4416-B5D5-8E97C6426EF9}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +37,14 @@ Global
 		{4E8BF767-A9BE-4483-8E1E-99FA6283ADDD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4E8BF767-A9BE-4483-8E1E-99FA6283ADDD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4E8BF767-A9BE-4483-8E1E-99FA6283ADDD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{80501557-EB85-4EBF-876F-76896ECFE98D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{80501557-EB85-4EBF-876F-76896ECFE98D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{80501557-EB85-4EBF-876F-76896ECFE98D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{80501557-EB85-4EBF-876F-76896ECFE98D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EBD2F49C-C763-4416-B5D5-8E97C6426EF9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EBD2F49C-C763-4416-B5D5-8E97C6426EF9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EBD2F49C-C763-4416-B5D5-8E97C6426EF9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EBD2F49C-C763-4416-B5D5-8E97C6426EF9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

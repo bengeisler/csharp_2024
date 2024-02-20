@@ -17,5 +17,34 @@ namespace FehlerLaufzeit
             int z = x / y;
             LblAnzeigen.Text = $"Ergebnis: {z}";
         }
+
+        private void CmdAuslösen_Click(object sender, EventArgs e)
+        {
+
+
+            try
+            {
+                // TryParse:
+                // Rückgabewerte: ture | false => Umwandlung erfolgreich ja/nein
+                // Argument 1: string, der in double umgewandelt werden soll
+                // Argument 2: Ausgabeparameter, in dem das Ergebnis der Umwandlung steht
+                bool erfolgreich = double.TryParse(txtBox1.Text, out double ergebnis);
+
+                // Ausnahme auslösen, falls Umwandlung nicht funktioniert hat
+                if (!erfolgreich)
+                    throw new FormatException("Es wurde keine gültige Zahl eingegeben.");
+
+                //Beispiel
+                //if (txtBox1.Text == "")
+                //    throw new FormatException("Es wurde keine gültige Zahl eingegeben.");
+            }
+            catch (Exception ex)
+            {
+
+                MessageBox.Show(ex.Message);
+            }
+
+
+        }
     }
 }
