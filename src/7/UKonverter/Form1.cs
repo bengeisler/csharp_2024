@@ -45,13 +45,40 @@ namespace UKonverter
                     var isNumeric = double.TryParse(zeile, out double ergebnis);
 
                     // Fallunterscheidung: Linke oder rechte Liste?
-                    // isNumeric = true: Umwandlung war erfolgreich
+                    // isNumeric == true: Umwandlung war erfolgreich
                     // => in linke Liste, auf zwei Nachkommastellen gerundet
                     if (isNumeric) LstWerte.Items.Add($"{ergebnis:0.00}");
-                    // isNumeric = false: Umwandlung war nicht erfolgreich
+                    // isNumeric == false: Umwandlung war nicht erfolgreich
                     else LstFehler.Items.Add(zeile);
                 }
 
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
+
+        private void CmdSpeichern_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                // SaveFileDialog-Objekt erstellen
+                SaveFileDialog sfd = new()
+                {
+                    Title = "Datei speichern",
+                    Filter = "Text-Dateien (*.txt)|*.txt",
+                    InitialDirectory = Environment.SpecialFolder.MyDocuments.ToString(),
+                };
+
+                // Dialog anzeigen & Ergebnis auswerten: Wenn nicht auf Speichern
+                // geklickt wurde, die Methode hier verlassen
+                if(sfd.ShowDialog() != DialogResult.OK) return;
+
+                // Speichern
+                List<string> werte = [];
+                foreach (var wert in LstWerte.Items) werte.Add(wert.ToString());
+                File.WriteAllLines(sfd.FileName, werte);
             }
             catch (Exception ex)
             {

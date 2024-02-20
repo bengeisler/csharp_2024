@@ -55,6 +55,7 @@ namespace UKonverter
             CmdSpeichern.TabIndex = 1;
             CmdSpeichern.Text = "Speichern";
             CmdSpeichern.UseVisualStyleBackColor = true;
+            CmdSpeichern.Click += CmdSpeichern_Click;
             // 
             // LstWerte
             // 
