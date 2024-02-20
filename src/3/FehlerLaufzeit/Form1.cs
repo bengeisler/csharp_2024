@@ -59,5 +59,31 @@ namespace FehlerLaufzeit
                 MessageBox.Show("Allgemeiner Fehler!");
             }
         }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void CmdAuslösen_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                // TryParse:
+                // Rückgabewerte: true | false => Umwandlung erfolgreich ja/nein
+                // Argument 1: string, der in double umgewandelt werden soll
+                // Argument 2: Ausgabeparameter, in dem das Ergebnis der Umwandlung steht
+                // Ausnahme auslösen, falls Umwandlung nicht funktioniert hat
+                if (!double.TryParse(TxtEingabe1.Text, out double ergebnis))
+                    throw new FormatException("Es wurde keine gültige Zahl eingegeben.");
+                if (TxtEingabe1.Text == "")
+                    throw new FormatException("Fehler!");
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
     }
 }
