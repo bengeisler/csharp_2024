@@ -95,6 +95,7 @@ namespace UVerein
 
                 TxtAlter.Text = "";
                 TxtName.Text = "";
+                TxtName.Focus();
                 optBlau.Checked = false;
                 optRot.Checked = false;
                 anzahl += 1;
