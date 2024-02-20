@@ -24,7 +24,7 @@ namespace UKonverter
                 OpenFileDialog ofd = new()
                 {
                     Title = "Datei öffnen",
-                    Filter = "Text-Dateien (*.txt)|*.txt",
+                    Filter = "Text-Dateien|*.txt",
                     InitialDirectory = Environment.SpecialFolder.MyDocuments.ToString(),
                 };
                 // OpenFileDialog anzeigen
@@ -67,7 +67,7 @@ namespace UKonverter
                 SaveFileDialog sfd = new()
                 {
                     Title = "Datei speichern",
-                    Filter = "Text-Dateien (*.txt)|*.txt",
+                    Filter = "Text-Dateien|*.txt",
                     InitialDirectory = Environment.SpecialFolder.MyDocuments.ToString(),
                 };
 
