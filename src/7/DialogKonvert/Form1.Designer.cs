@@ -55,6 +55,7 @@ namespace DialogKonvert
             BtnSchreiben.TabIndex = 1;
             BtnSchreiben.Text = "Schreiben";
             BtnSchreiben.UseVisualStyleBackColor = true;
+            BtnSchreiben.Click += BtnSchreiben_Click;
             // 
             // IstWerte
             // 

@@ -29,14 +29,68 @@ namespace DialogKonvert
             {
                 foreach (var file in ofd.FileNames)
                 {
-                    MessageBox.Show(file);
+
+
+                    //MessageBox.Show(file);
+                    string[] items = File.ReadAllLines(file);
+
+                    IstWerte.Items.Clear();
+                    foreach (string item in items)
+                    {
+
+                        try
+                        {
+                            double zahl = Convert.ToDouble(item);
+                            IstWerte.Items.Add($"{zahl: 0.00}");
+                        }
+                        catch (Exception)
+                        {
+
+                            IstFehler.Items.Add(item);
+                        }
+
+                    }
+
                 }
+
+
             }
 
             else
             {
                 MessageBox.Show("Abbruch");
             }
+
+
+
+
+        }
+
+        private void BtnSchreiben_Click(object sender, EventArgs e)
+        {
+            SaveFileDialog sfd = new()
+            {
+                InitialDirectory = Environment.SpecialFolder.MyDocuments.ToString(),
+                Filter = "Texte (*.txt; *.docx)|*.txt; *.docx|" +
+                "Alle Dateien (*.*)|*.*",
+                Title = "Zum Speichern ein Ort auswählen"
+            };
+
+            var ergebnis = sfd.ShowDialog();
+
+            if(ergebnis == DialogResult.OK)
+            {
+                List<string> items = new();
+
+                foreach (var item in IstWerte.Items)
+                {
+                    items.Add(item.ToString());
+
+                }
+                File.WriteAllLines($"{sfd.FileName}",items);
+
+            }
+
         }
     }
 }
