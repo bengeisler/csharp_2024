@@ -33,7 +33,7 @@ namespace UDateikonverter
         {
             BtnLesen = new Button();
             btnSchreiben = new Button();
-            lstWerte = new ListBox();
+            LstWerte = new ListBox();
             LstFehler = new ListBox();
             SuspendLayout();
             // 
@@ -57,15 +57,15 @@ namespace UDateikonverter
             btnSchreiben.UseVisualStyleBackColor = true;
             btnSchreiben.Click += btnSchreiben_Click;
             // 
-            // lstWerte
+            // LstWerte
             // 
-            lstWerte.FormattingEnabled = true;
-            lstWerte.ItemHeight = 15;
-            lstWerte.Location = new Point(155, 123);
-            lstWerte.Name = "lstWerte";
-            lstWerte.Size = new Size(120, 229);
-            lstWerte.TabIndex = 2;
-            lstWerte.SelectedIndexChanged += lstWerte_SelectedIndexChanged;
+            LstWerte.FormattingEnabled = true;
+            LstWerte.ItemHeight = 15;
+            LstWerte.Location = new Point(155, 123);
+            LstWerte.Name = "LstWerte";
+            LstWerte.Size = new Size(120, 229);
+            LstWerte.TabIndex = 2;
+            LstWerte.SelectedIndexChanged += lstWerte_SelectedIndexChanged;
             // 
             // LstFehler
             // 
@@ -82,7 +82,7 @@ namespace UDateikonverter
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
             Controls.Add(LstFehler);
-            Controls.Add(lstWerte);
+            Controls.Add(LstWerte);
             Controls.Add(btnSchreiben);
             Controls.Add(BtnLesen);
             Name = "Form1";
@@ -94,7 +94,7 @@ namespace UDateikonverter
 
         private Button BtnLesen;
         private Button btnSchreiben;
-        private ListBox lstWerte;
+        private ListBox LstWerte;
         private ListBox LstFehler;
     }
 }

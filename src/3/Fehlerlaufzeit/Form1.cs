@@ -59,6 +59,27 @@ namespace Fehlerlaufzeit
 
 
         }
+
+        private void CmdAusloesen_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                // Rückgabewerte: true | false => erfolgreich ja/nein
+                // Argument 1: string, der in double umgewandelt werden soll
+                // Argument 2: Ausgabeparameter, in das Ergebnis der Umwandlung steht
+                bool erfolgreich = double.TryParse(txt1.Text, out double ergebnis);
+
+                // Ausnahme auslösen, falls Umwandlung nicht funktioniert hat
+                if (!erfolgreich)
+                    throw new FormatException("Es wurde keine gültige Zahl eingegeben.");
+            }
+            catch ( Exception ex)
+            {
+                    MessageBox.Show(ex.Message);
+            }
+
+            }
+        }
     }
 }
 

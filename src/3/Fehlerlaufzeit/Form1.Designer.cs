@@ -37,6 +37,7 @@ namespace Fehlerlaufzeit
             txt1 = new TextBox();
             txt2 = new TextBox();
             LblAusgabe = new Label();
+            CmdAusloesen = new Button();
             SuspendLayout();
             // 
             // cmdOhne
@@ -91,11 +92,22 @@ namespace Fehlerlaufzeit
             LblAusgabe.Size = new Size(0, 15);
             LblAusgabe.TabIndex = 6;
             // 
+            // CmdAusloesen
+            // 
+            CmdAusloesen.Location = new Point(323, 169);
+            CmdAusloesen.Name = "CmdAusloesen";
+            CmdAusloesen.Size = new Size(223, 23);
+            CmdAusloesen.TabIndex = 7;
+            CmdAusloesen.Text = "Auslösen";
+            CmdAusloesen.UseVisualStyleBackColor = true;
+            CmdAusloesen.Click += CmdAusloesen_Click;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(CmdAusloesen);
             Controls.Add(LblAusgabe);
             Controls.Add(txt2);
             Controls.Add(txt1);
@@ -116,5 +128,6 @@ namespace Fehlerlaufzeit
         private TextBox txt1;
         private TextBox txt2;
         private Label LblAusgabe;
+        private Button CmdAusloesen;
     }
 }

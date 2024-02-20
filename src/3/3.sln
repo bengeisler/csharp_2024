@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.0.31903.59
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Fehlerlaufzeit", "Fehlerlaufzeit\Fehlerlaufzeit.csproj", "{CDF938B4-2010-4336-97BF-C308CAE28707}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Fehlerlaufzeit", "Fehlerlaufzeit\Fehlerlaufzeit.csproj", "{CDF938B4-2010-4336-97BF-C308CAE28707}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UVerein", "UVerein\UVerein.csproj", "{9BF8C823-C550-4211-A9F4-C2D2E970FB65}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{CDF938B4-2010-4336-97BF-C308CAE28707}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CDF938B4-2010-4336-97BF-C308CAE28707}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CDF938B4-2010-4336-97BF-C308CAE28707}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9BF8C823-C550-4211-A9F4-C2D2E970FB65}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9BF8C823-C550-4211-A9F4-C2D2E970FB65}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9BF8C823-C550-4211-A9F4-C2D2E970FB65}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9BF8C823-C550-4211-A9F4-C2D2E970FB65}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
