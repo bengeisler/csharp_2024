@@ -37,6 +37,7 @@ namespace FehlerLaufzeit
             CmdMiterweitertenExceptionHandling = new Button();
             textBox1 = new TextBox();
             textBox2 = new TextBox();
+            CmdAuslösen = new Button();
             SuspendLayout();
             // 
             // LblAnzeige
@@ -92,11 +93,22 @@ namespace FehlerLaufzeit
             textBox2.Size = new Size(100, 23);
             textBox2.TabIndex = 5;
             // 
+            // CmdAuslösen
+            // 
+            CmdAuslösen.Location = new Point(285, 152);
+            CmdAuslösen.Name = "CmdAuslösen";
+            CmdAuslösen.Size = new Size(184, 23);
+            CmdAuslösen.TabIndex = 6;
+            CmdAuslösen.Text = "Ausnahme auslösen";
+            CmdAuslösen.UseVisualStyleBackColor = true;
+            CmdAuslösen.Click += CmdAuslösen_Click;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(555, 311);
+            Controls.Add(CmdAuslösen);
             Controls.Add(textBox2);
             Controls.Add(textBox1);
             Controls.Add(CmdMiterweitertenExceptionHandling);
@@ -117,5 +129,6 @@ namespace FehlerLaufzeit
         private Button CmdMiterweitertenExceptionHandling;
         private TextBox textBox1;
         private TextBox textBox2;
+        private Button CmdAuslösen;
     }
 }

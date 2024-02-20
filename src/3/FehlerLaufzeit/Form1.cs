@@ -56,5 +56,30 @@ namespace FehlerLaufzeit
 
             }
         }
+
+        private void CmdAuslösen_Click(object sender, EventArgs e)
+
+        {
+            try
+            {
+                bool erfolgreich = double.TryParse(textBox1.Text, out double ergebnis);
+
+
+                if (!erfolgreich == false)
+                    throw new FormatException("Es wurde keine gültige Zahl eingegeben");
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+
+                
+            }
+
+
+
+
+            
+        }
     }
 }

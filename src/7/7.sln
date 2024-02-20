@@ -9,7 +9,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DialogStandard", "DialogSta
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Dateikonverter", "Dateikonverter\Dateikonverter.csproj", "{44BEB07C-D6B7-46F3-89EB-40B8D6396382}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SUMMIERENARRAY", "SUMMIERENARRAY\SUMMIERENARRAY.csproj", "{E908917B-5015-4737-8155-5C8DF7035464}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SUMMIERENARRAY", "SUMMIERENARRAY\SUMMIERENARRAY.csproj", "{E908917B-5015-4737-8155-5C8DF7035464}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LottozahlenÜBUNG", "LottozahlenÜBUNG\LottozahlenÜBUNG.csproj", "{6BCADD02-4525-471B-8855-510476E9AF3F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EinExclusiverVerein", "EinExclusiverVerein\EinExclusiverVerein.csproj", "{8679E633-C2A4-4A5E-B77A-27542A5AAB07}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +37,14 @@ Global
 		{E908917B-5015-4737-8155-5C8DF7035464}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E908917B-5015-4737-8155-5C8DF7035464}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E908917B-5015-4737-8155-5C8DF7035464}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6BCADD02-4525-471B-8855-510476E9AF3F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6BCADD02-4525-471B-8855-510476E9AF3F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6BCADD02-4525-471B-8855-510476E9AF3F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6BCADD02-4525-471B-8855-510476E9AF3F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8679E633-C2A4-4A5E-B77A-27542A5AAB07}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8679E633-C2A4-4A5E-B77A-27542A5AAB07}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8679E633-C2A4-4A5E-B77A-27542A5AAB07}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8679E633-C2A4-4A5E-B77A-27542A5AAB07}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
