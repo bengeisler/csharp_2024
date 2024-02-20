@@ -37,6 +37,7 @@ namespace LaufzeitfehlerKapitel3
             TxtEingabe1 = new TextBox();
             TxtEingabe2 = new TextBox();
             LblAusgabe = new Label();
+            button1 = new Button();
             SuspendLayout();
             // 
             // Cmdohne
@@ -90,11 +91,22 @@ namespace LaufzeitfehlerKapitel3
             LblAusgabe.TabIndex = 5;
             LblAusgabe.Text = "label1";
             // 
+            // button1
+            // 
+            button1.Location = new Point(284, 235);
+            button1.Name = "button1";
+            button1.Size = new Size(233, 23);
+            button1.TabIndex = 6;
+            button1.Text = "button1";
+            button1.UseVisualStyleBackColor = true;
+            button1.Click += button1_Click;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(button1);
             Controls.Add(LblAusgabe);
             Controls.Add(TxtEingabe2);
             Controls.Add(TxtEingabe1);
@@ -115,5 +127,6 @@ namespace LaufzeitfehlerKapitel3
         private TextBox TxtEingabe1;
         private TextBox TxtEingabe2;
         private Label LblAusgabe;
+        private Button button1;
     }
 }

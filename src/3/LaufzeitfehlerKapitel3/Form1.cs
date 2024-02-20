@@ -14,9 +14,37 @@ namespace LaufzeitfehlerKapitel3
         {
             int x = Convert.ToInt32(TxtEingabe1.Text);
 
-           int y = Convert.ToInt32(TxtEingabe2.Text);
+            int y = Convert.ToInt32(TxtEingabe2.Text);
             int z = x / y;
             LblAusgabe.Text = $"Ergebnis:{z}";
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+
+            try
+            {
+
+                bool erfolgreich = double.TryParse(TxtEingabe1.Text, out double ergebnis);
+                if (!erfolgreich)
+                {
+
+                }
+                throw new FormatException("es wurde keine gültige Zahl eingegeben.");
+            }
+            catch (Exception ex )
+            {
+
+                MessageBox.Show(ex.Message);
+
+            }
+
+            
+
+
+
+            
 
         }
     }
