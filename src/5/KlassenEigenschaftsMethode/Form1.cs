@@ -13,7 +13,7 @@ namespace KlassenEigenschaftsMethode
         private void CmdAnzeigen_Click(object sender, EventArgs e)
         {
             var vespa = new Fahrzeug();
-           
+
 
             LblAnzeige.Text = vespa.Ausgabe() + "\n";
 
@@ -24,6 +24,11 @@ namespace KlassenEigenschaftsMethode
             LblAnzeigen.Text += vespa.Ausgabe() + "\n";
             LblAnzeigen.Text += "\n\n";
 
+
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
 
         }
     }

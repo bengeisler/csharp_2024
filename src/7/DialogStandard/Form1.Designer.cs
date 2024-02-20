@@ -1,7 +1,7 @@
 ﻿// Licensed to the .NET Foundation under one or more agreements.
 // The .NET Foundation licenses this file to you under the MIT license.
 
-namespace KlassenEigenschaftsMethode
+namespace DialogStandard
 {
     partial class Form1
     {
@@ -31,46 +31,45 @@ namespace KlassenEigenschaftsMethode
         /// </summary>
         private void InitializeComponent()
         {
-            CmdAnzeigen = new Button();
-            LblAnzeigen = new Label();
+            CmdOeffnen = new Button();
+            CmdSpeichern = new Button();
             SuspendLayout();
             // 
-            // CmdAnzeigen
+            // CmdOeffnen
             // 
-            CmdAnzeigen.Location = new Point(572, 110);
-            CmdAnzeigen.Name = "CmdAnzeigen";
-            CmdAnzeigen.Size = new Size(75, 23);
-            CmdAnzeigen.TabIndex = 0;
-            CmdAnzeigen.Text = "button1";
-            CmdAnzeigen.UseVisualStyleBackColor = true;
-            CmdAnzeigen.Click += CmdAnzeigen_Click;
+            CmdOeffnen.Location = new Point(501, 74);
+            CmdOeffnen.Name = "CmdOeffnen";
+            CmdOeffnen.Size = new Size(75, 23);
+            CmdOeffnen.TabIndex = 0;
+            CmdOeffnen.Text = "Öffnen";
+            CmdOeffnen.UseVisualStyleBackColor = true;
+            CmdOeffnen.Click += CmdOeffnen_Click;
             // 
-            // LblAnzeigen
+            // CmdSpeichern
             // 
-            LblAnzeigen.AutoSize = true;
-            LblAnzeigen.Location = new Point(102, 110);
-            LblAnzeigen.Name = "LblAnzeigen";
-            LblAnzeigen.Size = new Size(38, 15);
-            LblAnzeigen.TabIndex = 1;
-            LblAnzeigen.Text = "label1";
+            CmdSpeichern.Location = new Point(501, 118);
+            CmdSpeichern.Name = "CmdSpeichern";
+            CmdSpeichern.Size = new Size(75, 23);
+            CmdSpeichern.TabIndex = 1;
+            CmdSpeichern.Text = "Speichern";
+            CmdSpeichern.UseVisualStyleBackColor = true;
+            CmdSpeichern.Click += CmdSpeichern_Click;
             // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
-            Controls.Add(LblAnzeigen);
-            Controls.Add(CmdAnzeigen);
+            Controls.Add(CmdSpeichern);
+            Controls.Add(CmdOeffnen);
             Name = "Form1";
             Text = "Form1";
-            Load += Form1_Load;
             ResumeLayout(false);
-            PerformLayout();
         }
 
         #endregion
 
-        private Button CmdAnzeigen;
-        private Label LblAnzeigen;
+        private Button CmdOeffnen;
+        private Button CmdSpeichern;
     }
 }

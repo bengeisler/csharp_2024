@@ -1,7 +1,7 @@
 ﻿// Licensed to the .NET Foundation under one or more agreements.
 // The .NET Foundation licenses this file to you under the MIT license.
 
-namespace KlassenEigenschaftsMethode
+namespace DatumUhrzeit
 {
     partial class Form1
     {
@@ -31,36 +31,34 @@ namespace KlassenEigenschaftsMethode
         /// </summary>
         private void InitializeComponent()
         {
-            CmdAnzeigen = new Button();
-            LblAnzeigen = new Label();
+            DatPicker = new DateTimePicker();
+            LblAusgabe = new Label();
             SuspendLayout();
             // 
-            // CmdAnzeigen
+            // DatPicker
             // 
-            CmdAnzeigen.Location = new Point(572, 110);
-            CmdAnzeigen.Name = "CmdAnzeigen";
-            CmdAnzeigen.Size = new Size(75, 23);
-            CmdAnzeigen.TabIndex = 0;
-            CmdAnzeigen.Text = "button1";
-            CmdAnzeigen.UseVisualStyleBackColor = true;
-            CmdAnzeigen.Click += CmdAnzeigen_Click;
+            DatPicker.Location = new Point(46, 45);
+            DatPicker.Name = "DatPicker";
+            DatPicker.Size = new Size(228, 23);
+            DatPicker.TabIndex = 0;
+            DatPicker.ValueChanged += DatPicker_ValueChanged;
             // 
-            // LblAnzeigen
+            // LblAusgabe
             // 
-            LblAnzeigen.AutoSize = true;
-            LblAnzeigen.Location = new Point(102, 110);
-            LblAnzeigen.Name = "LblAnzeigen";
-            LblAnzeigen.Size = new Size(38, 15);
-            LblAnzeigen.TabIndex = 1;
-            LblAnzeigen.Text = "label1";
+            LblAusgabe.AutoSize = true;
+            LblAusgabe.Location = new Point(350, 53);
+            LblAusgabe.Name = "LblAusgabe";
+            LblAusgabe.Size = new Size(38, 15);
+            LblAusgabe.TabIndex = 1;
+            LblAusgabe.Text = "label1";
             // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
-            Controls.Add(LblAnzeigen);
-            Controls.Add(CmdAnzeigen);
+            Controls.Add(LblAusgabe);
+            Controls.Add(DatPicker);
             Name = "Form1";
             Text = "Form1";
             Load += Form1_Load;
@@ -70,7 +68,7 @@ namespace KlassenEigenschaftsMethode
 
         #endregion
 
-        private Button CmdAnzeigen;
-        private Label LblAnzeigen;
+        private DateTimePicker DatPicker;
+        private Label LblAusgabe;
     }
 }

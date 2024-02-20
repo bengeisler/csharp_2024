@@ -1,9 +1,9 @@
 ﻿// Licensed to the .NET Foundation under one or more agreements.
 // The .NET Foundation licenses this file to you under the MIT license.
 
-namespace KlassenEigenschaftsMethode
+namespace KlassenFormulareNeu
 {
-    partial class Form1
+    partial class Hauptformular
     {
         /// <summary>
         ///  Required designer variable.
@@ -31,46 +31,56 @@ namespace KlassenEigenschaftsMethode
         /// </summary>
         private void InitializeComponent()
         {
-            CmdAnzeigen = new Button();
-            LblAnzeigen = new Label();
+            Cmd = new Button();
+            TxtEingabe = new TextBox();
+            chkOK = new CheckBox();
             SuspendLayout();
             // 
-            // CmdAnzeigen
+            // Cmd
             // 
-            CmdAnzeigen.Location = new Point(572, 110);
-            CmdAnzeigen.Name = "CmdAnzeigen";
-            CmdAnzeigen.Size = new Size(75, 23);
-            CmdAnzeigen.TabIndex = 0;
-            CmdAnzeigen.Text = "button1";
-            CmdAnzeigen.UseVisualStyleBackColor = true;
-            CmdAnzeigen.Click += CmdAnzeigen_Click;
+            Cmd.Location = new Point(23, 82);
+            Cmd.Name = "Cmd";
+            Cmd.Size = new Size(120, 64);
+            Cmd.TabIndex = 0;
+            Cmd.Text = "Unterformular aufrufen";
+            Cmd.UseVisualStyleBackColor = true;
+            Cmd.Click += Cmd_Click;
             // 
-            // LblAnzeigen
+            // TxtEingabe
             // 
-            LblAnzeigen.AutoSize = true;
-            LblAnzeigen.Location = new Point(102, 110);
-            LblAnzeigen.Name = "LblAnzeigen";
-            LblAnzeigen.Size = new Size(38, 15);
-            LblAnzeigen.TabIndex = 1;
-            LblAnzeigen.Text = "label1";
+            TxtEingabe.Location = new Point(23, 29);
+            TxtEingabe.Name = "TxtEingabe";
+            TxtEingabe.Size = new Size(100, 23);
+            TxtEingabe.TabIndex = 1;
             // 
-            // Form1
+            // chkOK
+            // 
+            chkOK.AutoSize = true;
+            chkOK.Location = new Point(186, 33);
+            chkOK.Name = "chkOK";
+            chkOK.Size = new Size(41, 19);
+            chkOK.TabIndex = 2;
+            chkOK.Text = "Ok";
+            chkOK.UseVisualStyleBackColor = true;
+            // 
+            // Hauptformular
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
-            Controls.Add(LblAnzeigen);
-            Controls.Add(CmdAnzeigen);
-            Name = "Form1";
-            Text = "Form1";
-            Load += Form1_Load;
+            Controls.Add(chkOK);
+            Controls.Add(TxtEingabe);
+            Controls.Add(Cmd);
+            Name = "Hauptformular";
+            Text = "Hauptformular";
             ResumeLayout(false);
             PerformLayout();
         }
 
         #endregion
 
-        private Button CmdAnzeigen;
-        private Label LblAnzeigen;
+        private Button Cmd;
+        private TextBox TxtEingabe;
+        private CheckBox chkOK;
     }
 }
