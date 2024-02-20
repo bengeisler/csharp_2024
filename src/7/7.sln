@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DialogEingabeAusgabe", "Dia
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DialogStandard", "DialogStandard\DialogStandard.csproj", "{716D674D-BBA1-423F-9F4E-131A0DF06874}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UKonverter", "UKonverter\UKonverter.csproj", "{22C4A04D-7E12-476D-BF7A-92024EDC1F49}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{716D674D-BBA1-423F-9F4E-131A0DF06874}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{716D674D-BBA1-423F-9F4E-131A0DF06874}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{716D674D-BBA1-423F-9F4E-131A0DF06874}.Release|Any CPU.Build.0 = Release|Any CPU
+		{22C4A04D-7E12-476D-BF7A-92024EDC1F49}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{22C4A04D-7E12-476D-BF7A-92024EDC1F49}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{22C4A04D-7E12-476D-BF7A-92024EDC1F49}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{22C4A04D-7E12-476D-BF7A-92024EDC1F49}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
