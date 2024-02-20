@@ -37,6 +37,7 @@ namespace FehlerLaufzeit
             BtnMitException = new Button();
             BtnMitErweitertem = new Button();
             LblAusgabe = new Label();
+            BtnAusnahme = new Button();
             SuspendLayout();
             // 
             // TxtEingabe1
@@ -91,11 +92,22 @@ namespace FehlerLaufzeit
             LblAusgabe.TabIndex = 5;
             LblAusgabe.Text = "label1";
             // 
+            // BtnAusnahme
+            // 
+            BtnAusnahme.Location = new Point(165, 99);
+            BtnAusnahme.Name = "BtnAusnahme";
+            BtnAusnahme.Size = new Size(206, 23);
+            BtnAusnahme.TabIndex = 6;
+            BtnAusnahme.Text = "Ausnahme auslösen";
+            BtnAusnahme.UseVisualStyleBackColor = true;
+            BtnAusnahme.Click += BtnAusnahme_Click;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(423, 153);
+            Controls.Add(BtnAusnahme);
             Controls.Add(LblAusgabe);
             Controls.Add(BtnMitErweitertem);
             Controls.Add(BtnMitException);
@@ -116,5 +128,6 @@ namespace FehlerLaufzeit
         private Button BtnMitException;
         private Button BtnMitErweitertem;
         private Label LblAusgabe;
+        private Button BtnAusnahme;
     }
 }

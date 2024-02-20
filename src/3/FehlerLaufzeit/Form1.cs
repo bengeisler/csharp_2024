@@ -40,5 +40,27 @@ namespace FehlerLaufzeit
                 MessageBox.Show("Bitte nur gültige Zahlen eingeben!");
             }
         }
+
+        private void BtnAusnahme_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                //TryParse:
+                //Rückgabewerte: true|false => Umwandeln erfolgreich ja/nein
+                //Argument 1: string, der in double umgewandelt werden soll
+                //Argument 2: Ausgabeparameter, in dem das Ergebnis der Umwandlung steht
+                bool erfolgreich = double.TryParse(TxtEingabe1.Text, out double ergebnis);
+
+                //Ausname auslösen, falls Umwandlung nicht funktioniert hat
+                if (!erfolgreich)
+                {
+                    throw new FormatException("Es wurde keine gültige Zahl eingegeben.");
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
     }
 }
