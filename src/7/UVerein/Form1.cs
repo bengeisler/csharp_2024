@@ -10,6 +10,7 @@ namespace UVerein
         public Form1()
         {
             InitializeComponent();
+            LblAusgabe.Text = "";
         }
 
 
