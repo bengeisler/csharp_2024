@@ -341,12 +341,15 @@ namespace Bestellungen
             // 
             // dataGridView2
             // 
+            dataGridView2.AllowUserToAddRows = false;
+            dataGridView2.AllowUserToDeleteRows = false;
             dataGridView2.AutoGenerateColumns = false;
             dataGridView2.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dataGridView2.Columns.AddRange(new DataGridViewColumn[] { kundenNrDataGridViewTextBoxColumn1, nameDataGridViewTextBoxColumn, adresseDataGridViewTextBoxColumn, plzDataGridViewTextBoxColumn, ortDataGridViewTextBoxColumn, telefonDataGridViewTextBoxColumn });
             dataGridView2.DataSource = kundeBindingSource;
             dataGridView2.Location = new Point(6, 30);
             dataGridView2.Name = "dataGridView2";
+            dataGridView2.ReadOnly = true;
             dataGridView2.RowHeadersWidth = 62;
             dataGridView2.Size = new Size(1008, 225);
             dataGridView2.TabIndex = 0;
@@ -357,6 +360,7 @@ namespace Bestellungen
             kundenNrDataGridViewTextBoxColumn1.HeaderText = "KundenNr";
             kundenNrDataGridViewTextBoxColumn1.MinimumWidth = 8;
             kundenNrDataGridViewTextBoxColumn1.Name = "kundenNrDataGridViewTextBoxColumn1";
+            kundenNrDataGridViewTextBoxColumn1.ReadOnly = true;
             kundenNrDataGridViewTextBoxColumn1.Width = 150;
             // 
             // nameDataGridViewTextBoxColumn
@@ -365,6 +369,7 @@ namespace Bestellungen
             nameDataGridViewTextBoxColumn.HeaderText = "Name";
             nameDataGridViewTextBoxColumn.MinimumWidth = 8;
             nameDataGridViewTextBoxColumn.Name = "nameDataGridViewTextBoxColumn";
+            nameDataGridViewTextBoxColumn.ReadOnly = true;
             nameDataGridViewTextBoxColumn.Width = 150;
             // 
             // adresseDataGridViewTextBoxColumn
@@ -373,6 +378,7 @@ namespace Bestellungen
             adresseDataGridViewTextBoxColumn.HeaderText = "Adresse";
             adresseDataGridViewTextBoxColumn.MinimumWidth = 8;
             adresseDataGridViewTextBoxColumn.Name = "adresseDataGridViewTextBoxColumn";
+            adresseDataGridViewTextBoxColumn.ReadOnly = true;
             adresseDataGridViewTextBoxColumn.Width = 150;
             // 
             // plzDataGridViewTextBoxColumn
@@ -381,6 +387,7 @@ namespace Bestellungen
             plzDataGridViewTextBoxColumn.HeaderText = "Plz";
             plzDataGridViewTextBoxColumn.MinimumWidth = 8;
             plzDataGridViewTextBoxColumn.Name = "plzDataGridViewTextBoxColumn";
+            plzDataGridViewTextBoxColumn.ReadOnly = true;
             plzDataGridViewTextBoxColumn.Width = 150;
             // 
             // ortDataGridViewTextBoxColumn
@@ -389,6 +396,7 @@ namespace Bestellungen
             ortDataGridViewTextBoxColumn.HeaderText = "Ort";
             ortDataGridViewTextBoxColumn.MinimumWidth = 8;
             ortDataGridViewTextBoxColumn.Name = "ortDataGridViewTextBoxColumn";
+            ortDataGridViewTextBoxColumn.ReadOnly = true;
             ortDataGridViewTextBoxColumn.Width = 150;
             // 
             // telefonDataGridViewTextBoxColumn
@@ -397,6 +405,7 @@ namespace Bestellungen
             telefonDataGridViewTextBoxColumn.HeaderText = "Telefon";
             telefonDataGridViewTextBoxColumn.MinimumWidth = 8;
             telefonDataGridViewTextBoxColumn.Name = "telefonDataGridViewTextBoxColumn";
+            telefonDataGridViewTextBoxColumn.ReadOnly = true;
             telefonDataGridViewTextBoxColumn.Width = 150;
             // 
             // CmdSpeichern

@@ -93,8 +93,7 @@ namespace Bestellungen
             bestellung.KundenNr = kunde.KundenNr;
 
             // Anzeige aktualisieren
-            TxtKundenNr.Text = bestellung.KundenNr.ToString();
-            dataGridView1.Focus();
+            bestellungBindingSource.ResetBindings(false);
         }
 
         private void CmdLöschen_Click(object sender, EventArgs e)
