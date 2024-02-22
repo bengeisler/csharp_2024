@@ -15,6 +15,7 @@ namespace Autowerkstatt
 {
     public partial class FrmAutowerkstatt : Form
     {
+        private AutowerkstattDbContext _ctx = new();
         public FrmAutowerkstatt()
         {
             InitializeComponent();
@@ -22,6 +23,22 @@ namespace Autowerkstatt
 
         private void CmdHinzufügen_Click(object sender, EventArgs e)
         {
+            // Neues Fahrzeug hinzufügen
+
+            // Objekt für das Formular "Fahrzeug" instanziieren
+            FrmFahrzeuge frmFahrzeuge = new();
+
+            // Daten übergeben: aktuell in Tabelle ausgewähltes Fahrzeug 
+            frmFahrzeuge.FahrzeugInBearbeitung = new Fahrzeug();
+
+            // Formular aufrufen
+            frmFahrzeuge.Show();
+        }
+
+        private void dataGridView1_CellContentDoubleClick(object sender, DataGridViewCellEventArgs e)
+        {
+            // Bestehendes Fahrzeug ändern
+
             // Objekt für das Formular "Fahrzeug" instanziieren
             FrmFahrzeuge frmFahrzeuge = new();
 
@@ -30,14 +47,6 @@ namespace Autowerkstatt
 
             // Formular aufrufen
             frmFahrzeuge.Show();
-        }
-
-        private AutowerkstattDbContext _ctx = new();
-
-        private void dataGridView1_CellContentDoubleClick(object sender, DataGridViewCellEventArgs e)
-        {
-            // Ereignismethode CmdHinzufügen aufrufen
-            CmdHinzufügen_Click(null, null);
         }
 
         private void CmdFahrzeugÜbernehmen_Click(object sender, EventArgs e)

@@ -20,10 +20,14 @@ namespace Autowerkstatt
         {
             InitializeComponent();
         }
+
+        // Kontext-Objekt für den Datenbankzugriff erstellen
         private AutowerkstattDbContext _ctx = new();
 
         private void CboxFilter_SelectedIndexChanged(object sender, EventArgs e)
         {
+            // => Skript S. 32
+            // Aktuell in der ComboBox ausgewähltes Fahrzeug auslesen und in Variable speichern
             var fahrzeug = (Fahrzeug)CboxFilter.SelectedItem;
 
 
