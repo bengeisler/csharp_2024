@@ -36,15 +36,17 @@ namespace Autowerkstatt
             label1 = new Label();
             LblFilter = new Label();
             dataGridView1 = new DataGridView();
-            CboxFilter = new ComboBox();
-            reparaturBindingSource = new BindingSource(components);
             nrDataGridViewTextBoxColumn = new DataGridViewTextBoxColumn();
             datumDataGridViewTextBoxColumn = new DataGridViewTextBoxColumn();
             beschreibungDataGridViewTextBoxColumn = new DataGridViewTextBoxColumn();
             kostenDataGridViewTextBoxColumn = new DataGridViewTextBoxColumn();
             fahrzeugNrDataGridViewTextBoxColumn = new DataGridViewTextBoxColumn();
+            reparaturBindingSource = new BindingSource(components);
+            CboxFilter = new ComboBox();
+            fahrzeugBindingSource = new BindingSource(components);
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)reparaturBindingSource).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)fahrzeugBindingSource).BeginInit();
             SuspendLayout();
             // 
             // CmdAlleAnzeigen
@@ -89,18 +91,6 @@ namespace Autowerkstatt
             dataGridView1.RowHeadersWidth = 62;
             dataGridView1.Size = new Size(883, 319);
             dataGridView1.TabIndex = 3;
-            // 
-            // CboxFilter
-            // 
-            CboxFilter.FormattingEnabled = true;
-            CboxFilter.Location = new Point(392, 14);
-            CboxFilter.Name = "CboxFilter";
-            CboxFilter.Size = new Size(252, 33);
-            CboxFilter.TabIndex = 4;
-            // 
-            // reparaturBindingSource
-            // 
-            reparaturBindingSource.DataSource = typeof(Models.Reparatur);
             // 
             // nrDataGridViewTextBoxColumn
             // 
@@ -147,6 +137,26 @@ namespace Autowerkstatt
             fahrzeugNrDataGridViewTextBoxColumn.ReadOnly = true;
             fahrzeugNrDataGridViewTextBoxColumn.Width = 150;
             // 
+            // reparaturBindingSource
+            // 
+            reparaturBindingSource.DataSource = typeof(Models.Reparatur);
+            // 
+            // CboxFilter
+            // 
+            CboxFilter.DataSource = fahrzeugBindingSource;
+            CboxFilter.DisplayMember = "Kennzeichen";
+            CboxFilter.FormattingEnabled = true;
+            CboxFilter.Location = new Point(392, 14);
+            CboxFilter.Name = "CboxFilter";
+            CboxFilter.Size = new Size(252, 33);
+            CboxFilter.TabIndex = 4;
+            CboxFilter.ValueMember = "Nr";
+            CboxFilter.SelectedIndexChanged += CboxFilter_SelectedIndexChanged;
+            // 
+            // fahrzeugBindingSource
+            // 
+            fahrzeugBindingSource.DataSource = typeof(Models.Fahrzeug);
+            // 
             // FrmReparaturen
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
@@ -159,8 +169,10 @@ namespace Autowerkstatt
             Controls.Add(CmdAlleAnzeigen);
             Name = "FrmReparaturen";
             Text = "Reparaturen";
+            Load += FrmReparaturen_Load;
             ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
             ((System.ComponentModel.ISupportInitialize)reparaturBindingSource).EndInit();
+            ((System.ComponentModel.ISupportInitialize)fahrzeugBindingSource).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -178,5 +190,6 @@ namespace Autowerkstatt
         private DataGridViewTextBoxColumn kostenDataGridViewTextBoxColumn;
         private DataGridViewTextBoxColumn fahrzeugNrDataGridViewTextBoxColumn;
         private BindingSource reparaturBindingSource;
+        private BindingSource fahrzeugBindingSource;
     }
 }

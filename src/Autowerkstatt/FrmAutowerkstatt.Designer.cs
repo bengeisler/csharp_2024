@@ -67,6 +67,7 @@ namespace Autowerkstatt
             CmdHinzufügen = new Button();
             CmdSpeichern = new Button();
             CmdLöschen = new Button();
+            CmdReparaturenAnzeigen = new Button();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)fahrzeugBindingSource).BeginInit();
             SuspendLayout();
@@ -389,11 +390,22 @@ namespace Autowerkstatt
             CmdLöschen.Text = "Löschen";
             CmdLöschen.UseVisualStyleBackColor = true;
             // 
+            // CmdReparaturenAnzeigen
+            // 
+            CmdReparaturenAnzeigen.Location = new Point(332, 10);
+            CmdReparaturenAnzeigen.Name = "CmdReparaturenAnzeigen";
+            CmdReparaturenAnzeigen.Size = new Size(214, 34);
+            CmdReparaturenAnzeigen.TabIndex = 28;
+            CmdReparaturenAnzeigen.Text = "Reparaturen anzeigen";
+            CmdReparaturenAnzeigen.UseVisualStyleBackColor = true;
+            CmdReparaturenAnzeigen.Click += CmdReparaturenAnzeigen_Click;
+            // 
             // FrmAutowerkstatt
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1448, 578);
+            Controls.Add(CmdReparaturenAnzeigen);
             Controls.Add(CmdLöschen);
             Controls.Add(CmdSpeichern);
             Controls.Add(CmdHinzufügen);
@@ -468,5 +480,6 @@ namespace Autowerkstatt
         private DataGridViewTextBoxColumn halterDataGridViewTextBoxColumn;
         private DataGridViewTextBoxColumn ortDataGridViewTextBoxColumn;
         private BindingSource fahrzeugBindingSource;
+        private Button CmdReparaturenAnzeigen;
     }
 }

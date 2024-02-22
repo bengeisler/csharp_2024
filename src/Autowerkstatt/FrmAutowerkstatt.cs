@@ -90,5 +90,12 @@ namespace Autowerkstatt
                 MessageBox.Show(ex.Message);
             }
         }
+
+        private void CmdReparaturenAnzeigen_Click(object sender, EventArgs e)
+        {
+            FrmReparaturen frmReparaturen = new();
+
+            frmReparaturen.Show();
+        }
     }
 }
