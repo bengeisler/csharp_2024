@@ -153,6 +153,7 @@ namespace Autowerkstatt
             CmdSpeichern.TabIndex = 12;
             CmdSpeichern.Text = "Speichern";
             CmdSpeichern.UseVisualStyleBackColor = true;
+            CmdSpeichern.Click += CmdSpeichern_Click;
             // 
             // CmdAbbrechen
             // 
@@ -162,6 +163,7 @@ namespace Autowerkstatt
             CmdAbbrechen.TabIndex = 13;
             CmdAbbrechen.Text = "Abbrechen";
             CmdAbbrechen.UseVisualStyleBackColor = true;
+            CmdAbbrechen.Click += CmdAbbrechen_Click;
             // 
             // FrmFahrzeuge
             // 

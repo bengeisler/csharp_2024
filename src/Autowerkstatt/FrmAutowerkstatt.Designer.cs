@@ -55,12 +55,6 @@ namespace Autowerkstatt
             TxtKosten = new TextBox();
             label19 = new Label();
             dataGridView1 = new DataGridView();
-            nrDataGridViewTextBoxColumn = new DataGridViewTextBoxColumn();
-            kennzeichenDataGridViewTextBoxColumn = new DataGridViewTextBoxColumn();
-            markeDataGridViewTextBoxColumn = new DataGridViewTextBoxColumn();
-            modellDataGridViewTextBoxColumn = new DataGridViewTextBoxColumn();
-            halterDataGridViewTextBoxColumn = new DataGridViewTextBoxColumn();
-            ortDataGridViewTextBoxColumn = new DataGridViewTextBoxColumn();
             fahrzeugBindingSource = new BindingSource(components);
             CmdReparaturSpeichern = new Button();
             CmdFahrzeugÜbernehmen = new Button();
@@ -68,6 +62,12 @@ namespace Autowerkstatt
             CmdSpeichern = new Button();
             CmdLöschen = new Button();
             CmdReparaturenAnzeigen = new Button();
+            nrDataGridViewTextBoxColumn = new DataGridViewTextBoxColumn();
+            kennzeichenDataGridViewTextBoxColumn = new DataGridViewTextBoxColumn();
+            markeDataGridViewTextBoxColumn = new DataGridViewTextBoxColumn();
+            modellDataGridViewTextBoxColumn = new DataGridViewTextBoxColumn();
+            halterDataGridViewTextBoxColumn = new DataGridViewTextBoxColumn();
+            ortDataGridViewTextBoxColumn = new DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)fahrzeugBindingSource).BeginInit();
             SuspendLayout();
@@ -282,61 +282,7 @@ namespace Autowerkstatt
             dataGridView1.RowHeadersWidth = 62;
             dataGridView1.Size = new Size(870, 462);
             dataGridView1.TabIndex = 22;
-            dataGridView1.CellContentDoubleClick += dataGridView1_CellContentDoubleClick;
-            // 
-            // nrDataGridViewTextBoxColumn
-            // 
-            nrDataGridViewTextBoxColumn.DataPropertyName = "Nr";
-            nrDataGridViewTextBoxColumn.HeaderText = "Nr";
-            nrDataGridViewTextBoxColumn.MinimumWidth = 8;
-            nrDataGridViewTextBoxColumn.Name = "nrDataGridViewTextBoxColumn";
-            nrDataGridViewTextBoxColumn.ReadOnly = true;
-            nrDataGridViewTextBoxColumn.Width = 50;
-            // 
-            // kennzeichenDataGridViewTextBoxColumn
-            // 
-            kennzeichenDataGridViewTextBoxColumn.DataPropertyName = "Kennzeichen";
-            kennzeichenDataGridViewTextBoxColumn.HeaderText = "Kennzeichen";
-            kennzeichenDataGridViewTextBoxColumn.MinimumWidth = 8;
-            kennzeichenDataGridViewTextBoxColumn.Name = "kennzeichenDataGridViewTextBoxColumn";
-            kennzeichenDataGridViewTextBoxColumn.ReadOnly = true;
-            kennzeichenDataGridViewTextBoxColumn.Width = 150;
-            // 
-            // markeDataGridViewTextBoxColumn
-            // 
-            markeDataGridViewTextBoxColumn.DataPropertyName = "Marke";
-            markeDataGridViewTextBoxColumn.HeaderText = "Marke";
-            markeDataGridViewTextBoxColumn.MinimumWidth = 8;
-            markeDataGridViewTextBoxColumn.Name = "markeDataGridViewTextBoxColumn";
-            markeDataGridViewTextBoxColumn.ReadOnly = true;
-            markeDataGridViewTextBoxColumn.Width = 150;
-            // 
-            // modellDataGridViewTextBoxColumn
-            // 
-            modellDataGridViewTextBoxColumn.DataPropertyName = "Modell";
-            modellDataGridViewTextBoxColumn.HeaderText = "Modell";
-            modellDataGridViewTextBoxColumn.MinimumWidth = 8;
-            modellDataGridViewTextBoxColumn.Name = "modellDataGridViewTextBoxColumn";
-            modellDataGridViewTextBoxColumn.ReadOnly = true;
-            modellDataGridViewTextBoxColumn.Width = 150;
-            // 
-            // halterDataGridViewTextBoxColumn
-            // 
-            halterDataGridViewTextBoxColumn.DataPropertyName = "Halter";
-            halterDataGridViewTextBoxColumn.HeaderText = "Halter";
-            halterDataGridViewTextBoxColumn.MinimumWidth = 8;
-            halterDataGridViewTextBoxColumn.Name = "halterDataGridViewTextBoxColumn";
-            halterDataGridViewTextBoxColumn.ReadOnly = true;
-            halterDataGridViewTextBoxColumn.Width = 150;
-            // 
-            // ortDataGridViewTextBoxColumn
-            // 
-            ortDataGridViewTextBoxColumn.DataPropertyName = "Ort";
-            ortDataGridViewTextBoxColumn.HeaderText = "Ort";
-            ortDataGridViewTextBoxColumn.MinimumWidth = 8;
-            ortDataGridViewTextBoxColumn.Name = "ortDataGridViewTextBoxColumn";
-            ortDataGridViewTextBoxColumn.ReadOnly = true;
-            ortDataGridViewTextBoxColumn.Width = 150;
+            dataGridView1.CellDoubleClick += dataGridView1_CellDoubleClick;
             // 
             // fahrzeugBindingSource
             // 
@@ -399,6 +345,60 @@ namespace Autowerkstatt
             CmdReparaturenAnzeigen.Text = "Reparaturen anzeigen";
             CmdReparaturenAnzeigen.UseVisualStyleBackColor = true;
             CmdReparaturenAnzeigen.Click += CmdReparaturenAnzeigen_Click;
+            // 
+            // nrDataGridViewTextBoxColumn
+            // 
+            nrDataGridViewTextBoxColumn.DataPropertyName = "Nr";
+            nrDataGridViewTextBoxColumn.HeaderText = "Nr";
+            nrDataGridViewTextBoxColumn.MinimumWidth = 8;
+            nrDataGridViewTextBoxColumn.Name = "nrDataGridViewTextBoxColumn";
+            nrDataGridViewTextBoxColumn.ReadOnly = true;
+            nrDataGridViewTextBoxColumn.Width = 80;
+            // 
+            // kennzeichenDataGridViewTextBoxColumn
+            // 
+            kennzeichenDataGridViewTextBoxColumn.DataPropertyName = "Kennzeichen";
+            kennzeichenDataGridViewTextBoxColumn.HeaderText = "Kennzeichen";
+            kennzeichenDataGridViewTextBoxColumn.MinimumWidth = 8;
+            kennzeichenDataGridViewTextBoxColumn.Name = "kennzeichenDataGridViewTextBoxColumn";
+            kennzeichenDataGridViewTextBoxColumn.ReadOnly = true;
+            kennzeichenDataGridViewTextBoxColumn.Width = 150;
+            // 
+            // markeDataGridViewTextBoxColumn
+            // 
+            markeDataGridViewTextBoxColumn.DataPropertyName = "Marke";
+            markeDataGridViewTextBoxColumn.HeaderText = "Marke";
+            markeDataGridViewTextBoxColumn.MinimumWidth = 8;
+            markeDataGridViewTextBoxColumn.Name = "markeDataGridViewTextBoxColumn";
+            markeDataGridViewTextBoxColumn.ReadOnly = true;
+            markeDataGridViewTextBoxColumn.Width = 150;
+            // 
+            // modellDataGridViewTextBoxColumn
+            // 
+            modellDataGridViewTextBoxColumn.DataPropertyName = "Modell";
+            modellDataGridViewTextBoxColumn.HeaderText = "Modell";
+            modellDataGridViewTextBoxColumn.MinimumWidth = 8;
+            modellDataGridViewTextBoxColumn.Name = "modellDataGridViewTextBoxColumn";
+            modellDataGridViewTextBoxColumn.ReadOnly = true;
+            modellDataGridViewTextBoxColumn.Width = 150;
+            // 
+            // halterDataGridViewTextBoxColumn
+            // 
+            halterDataGridViewTextBoxColumn.DataPropertyName = "Halter";
+            halterDataGridViewTextBoxColumn.HeaderText = "Halter";
+            halterDataGridViewTextBoxColumn.MinimumWidth = 8;
+            halterDataGridViewTextBoxColumn.Name = "halterDataGridViewTextBoxColumn";
+            halterDataGridViewTextBoxColumn.ReadOnly = true;
+            halterDataGridViewTextBoxColumn.Width = 150;
+            // 
+            // ortDataGridViewTextBoxColumn
+            // 
+            ortDataGridViewTextBoxColumn.DataPropertyName = "Ort";
+            ortDataGridViewTextBoxColumn.HeaderText = "Ort";
+            ortDataGridViewTextBoxColumn.MinimumWidth = 8;
+            ortDataGridViewTextBoxColumn.Name = "ortDataGridViewTextBoxColumn";
+            ortDataGridViewTextBoxColumn.ReadOnly = true;
+            ortDataGridViewTextBoxColumn.Width = 150;
             // 
             // FrmAutowerkstatt
             // 
@@ -473,13 +473,13 @@ namespace Autowerkstatt
         private Button CmdHinzufügen;
         private Button CmdSpeichern;
         private Button CmdLöschen;
+        private BindingSource fahrzeugBindingSource;
+        private Button CmdReparaturenAnzeigen;
         private DataGridViewTextBoxColumn nrDataGridViewTextBoxColumn;
         private DataGridViewTextBoxColumn kennzeichenDataGridViewTextBoxColumn;
         private DataGridViewTextBoxColumn markeDataGridViewTextBoxColumn;
         private DataGridViewTextBoxColumn modellDataGridViewTextBoxColumn;
         private DataGridViewTextBoxColumn halterDataGridViewTextBoxColumn;
         private DataGridViewTextBoxColumn ortDataGridViewTextBoxColumn;
-        private BindingSource fahrzeugBindingSource;
-        private Button CmdReparaturenAnzeigen;
     }
 }

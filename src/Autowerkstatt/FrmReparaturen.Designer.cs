@@ -57,6 +57,7 @@ namespace Autowerkstatt
             CmdAlleAnzeigen.TabIndex = 0;
             CmdAlleAnzeigen.Text = "Alle anzeigen";
             CmdAlleAnzeigen.UseVisualStyleBackColor = true;
+            CmdAlleAnzeigen.Click += CmdAlleAnzeigen_Click;
             // 
             // label1
             // 
