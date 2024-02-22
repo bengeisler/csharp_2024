@@ -1,0 +1,40 @@
+﻿// Licensed to the .NET Foundation under one or more agreements.
+// The .NET Foundation licenses this file to you under the MIT license.
+
+using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows.Forms;
+using Autowerkstatt.Models;
+
+namespace Autowerkstatt
+{
+    public partial class FrmReparaturen : Form
+    {
+        public FrmReparaturen()
+        {
+            InitializeComponent();
+        }
+        private AutowerkstattDbContext _ctx = new();
+
+        public Fahrzeug FahrzeugInReparatur = new();
+
+
+        private void ComFilter_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            var fahrzeug = (Fahrzeug)ComFilter.SelectedItem;
+        }
+        private void FrmReparaturen_Load(object sender, EventArgs e)
+        {
+            fahrzeugBindingSource.DataSource = _ctx.Fahrzeugs.ToList();
+            reparaturBindingSource.DataSource = _ctx.Reparaturs.ToList();
+
+        }
+
+    }
+}
