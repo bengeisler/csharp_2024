@@ -1,0 +1,53 @@
+THEORIEPRÜFUNG
+
+20 Fragen
+20 Minuten
+Keine Hilfsmittel
+
+1. Welchen Wert hat die Variable x nach nach dieser Anweisung: string x = "Ergebnis "; x += "1 + 2";
+
+a) "Ergebnis 3"
+b) "Ergebnis 1 + 2"
+c) "3"
+d) "1 + 2"
+
+2. Wie oft wird diese Schleife durchlaufen? while (1 == 2) {...}
+
+a) 1 mal
+b) 2 mal
+c) nie
+d) unendlich oft
+
+2.1. Wie oft wird diese Schleife durchlaufen? do {...} while (1 == 2)
+
+a) 1 mal
+b) 2 mal
+c) nie
+d) unendlich oft
+
+3. Wie kann ich Elemente einer Datenbanktabelle (Tabelle Artikel) 
+    nach der Artikelbezeichnung aufsteigend sortieren?
+
+a) ctx.Artikels.OrderBy(a => a.Artikelbezeichnung).ToList();
+b) ctx.Artikels.Where(a => a.Artikelbezeichnung).ToList();
+c) ctx.Artikel.IndexOf(a => a.Artikelbzeichnung).ToList();
+d) ctx.Artikel.Sort(a => a.Artikelbezeichnung).ToList();
+
+4. Ein Objekt welcher Klasse benötigen Sie, um einen Dateinamen zum Schreiben
+    einer Datei auszuwählen?
+
+a) FileNameDialog
+b) FolderBrowserDialog
+c) SaveFileDialog
+d) DirectorySearchDialog
+
+5. Wozu dient eine BindingSource in einer Windows-Forms Anwendung?
+
+a) Damit kann man Daten aus der Datenbank an Objekte binden. Änderungen an Objekten werden 
+    automatisch in die Datenbank übernommen, ohne SQL Befehle eingeben zu müssen.
+b) Um Steuerelemente an Datenobjekte und Aufzählungen, wie z.B. Listen zu binden. 
+    So können deren Eigenschaften bzw. Elemente automatisch angezeigt werden.
+c) Herstellung einer Verbindung zur Datenbank im Quellcode.
+d) Mit einer BindingSource ist es möglich, Änderungen in Steuerelementen (z.B. Textbox) 
+    automatisch an eine Datenquelle (DataSource) zu übernehmen.
+e) Eine BindingSource dient der Bindung von Quellcode zu einem Programm.
