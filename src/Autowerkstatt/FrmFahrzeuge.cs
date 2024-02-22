@@ -10,6 +10,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Autowerkstatt.Models;
 
 namespace Autowerkstatt
 {
@@ -18,6 +19,15 @@ namespace Autowerkstatt
         public FrmFahrzeuge()
         {
             InitializeComponent();
+        }
+
+        // Eigenschaft zum Datenaustausch
+        public Fahrzeug FahrzeugInBearbeitung = new();
+
+        private void FrmFahrzeuge_Load(object sender, EventArgs e)
+        {
+            LblNummer.Text = FahrzeugInBearbeitung.Nr.ToString();
+            TxtKennzeichen.Text = FahrzeugInBearbeitung.Kennzeichen;
         }
     }
 }

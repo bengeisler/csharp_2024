@@ -349,6 +349,7 @@ namespace Autowerkstatt
             CmdReparaturSpeichern.TabIndex = 23;
             CmdReparaturSpeichern.Text = "Speichern";
             CmdReparaturSpeichern.UseVisualStyleBackColor = true;
+            CmdReparaturSpeichern.Click += CmdReparaturSpeichern_Click;
             // 
             // CmdFahrzeugÜbernehmen
             // 

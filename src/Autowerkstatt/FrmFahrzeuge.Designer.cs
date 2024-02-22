@@ -184,6 +184,7 @@ namespace Autowerkstatt
             Controls.Add(label1);
             Name = "FrmFahrzeuge";
             Text = "Fahrzeuge";
+            Load += FrmFahrzeuge_Load;
             ResumeLayout(false);
             PerformLayout();
         }
