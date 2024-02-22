@@ -25,12 +25,14 @@ namespace Übung
                     throw new FormatException("Fehler Kein Name gefunden !");
                 if (textBox2.Text == "")
                     throw new FormatException("Es wird kein Alter eingegeben");
-                // if (textBox2 = int.TryParse( out int ergebnis));
-                //    throw new FormatException("Das alter ist keine gültige Zahl");
-                // if (textBox2.Text <= 18)
-                //    throw new FormatException("Das alter liegt unter 18 Jahren");
-                // if (textBox2.Text >= 68)
-                //     throw new FormatException("Das alter liegt über 68");
+                 if (!int.TryParse(textBox2.Text, out int alter))
+                {
+                    throw new FormatException("Das alter ist keine gültige Zahl");
+                }
+                 if (alter <= 18)
+                    throw new FormatException("Das alter liegt unter 18 Jahren");
+                 if (alter >= 68)
+                     throw new FormatException("Das alter liegt über 68");
                 if (radioButton1.Checked == true)
                 {
                     LblError.ForeColor = Color.Red;
