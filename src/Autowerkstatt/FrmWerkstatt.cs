@@ -24,6 +24,20 @@ namespace Autowerkstatt
 
         private void CmdSpeichern2_Click(object sender, EventArgs e)
         {
+            Fahrzeug fahrzeug = new Fahrzeug();
+            fahrzeug.Kennzeichen = LblKennzeichen.Text;
+            fahrzeug.Halter = LblHalter.Text;
+            fahrzeug.Ort = LblOrt.Text;
+            fahrzeug.Modell = LblModell.Text;
+            fahrzeug.Marke = LblMarke.Text;
+
+
+
+            _ctx.Fahrzeugs.Add(fahrzeug);
+            _ctx.SaveChanges();
+
+
+
 
         }
 
@@ -64,29 +78,49 @@ namespace Autowerkstatt
         {
             try
             {
-                // Benutzereingaben validieren
-                // if (...) throw ...
+                // Validierung der Eingabe
+                if (TxtBeschreibung.Text == "")
+                    throw new ArgumentException("Bitte Beschreibung eingeben!");
+                if (DatDatum.Value > DateTime.Now)
+                    throw new ArgumentException("Gültiges Datum auswählen!");
+                if (!decimal.TryParse(TxtKosten.Text, out decimal kosten))
+                    throw new ArgumentException("Bitte gültige Kosten eingeben!");
+                if (kosten <= 0)
+                    throw new ArgumentException("Reparaturen müssen etwas kosten!");
+                if (!int.TryParse(LblFahrzeug.Text, out int fahrzeugnummer))
+                    throw new ArgumentException("Bitte Fahrzeug auswählen!");
 
-                // - Kennzeichen nicht leer
-                // - Beschreibung nicht leer
-                // - Kosten >= 0
-                // ...
+                // Reparatur anlegen & Eigenschaften zuweisen
+                Reparatur reparatur = new()
+                {
+                    FahrzeugNr = fahrzeugnummer,
+                    Beschreibung = TxtBeschreibung.Text,
+                    Kosten = kosten,
+                    Datum = DatDatum.Value
+                };
 
-                // Neue Reparatur anlegen
-                Reparatur neueReparatur = new();
-
-                // Eigenschaften befüllen
-                // neueReparatur.FahrzeugNr = LblNummer.Text; // hier fehlt noch string -> int Umwandlung
-                neueReparatur.Beschreibung = TxtBeschreibung.Text;
-                // ...
-
-                // Reparatur zur Datenbank hinzufügen
-                _ctx.Reparaturs.Add(neueReparatur);
+                // Reparatur zur DB hinzufügen
+                _ctx.Reparaturs.Add(reparatur);
 
                 // Speichern
                 _ctx.SaveChanges();
 
-                dotnet ef dbcontext scaffold "Server=(localdb)\mssqllocaldb; Database=BestellungDb; Trusted_Connection=True;" Microsoft.EntityFrameworkCore.SqlServer - o Models
+                // Meldung anzeigen
+                MessageBox.Show($"Ein neuer Reparaturdatensatz {reparatur.Nr} wurde für Fahrzeug {LblKennzeichen.Text} angelegt");
+
+                // Felder leeren
+                TxtBeschreibung.Text = "";
+                TxtKosten.Text = "";
+                DatDatum.Value = DateTime.Now;
+
+                LblHalter.Text = "";
+                LblKennzeichen.Text = "";
+                LblMarke.Text = "";
+                LblModell.Text = "";
+                LblFahrzeug.Text = "";
+                LblOrt.Text = "";
+
+
 
             }
             catch (Exception ex)
@@ -101,6 +135,31 @@ namespace Autowerkstatt
             FrmReparaturen frmReparaturen = new();
             frmReparaturen.FahrzeugInReparatur = (Fahrzeug)fahrzeugBindingSource.Current;
             frmReparaturen.Show();
+        }
+
+        private void CmdLöschen_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                // Aktuell ausgewähltes Fahrzeuge auslesen
+                Fahrzeug fahrzeug = (Fahrzeug)fahrzeugBindingSource.Current;
+
+                // Abbruch, falls nichts ausgewählt ist
+                if (fahrzeug == null) return;
+
+                // Alle Reparaturen dieses Fahrzeugs löschen
+                foreach (var reparatur in fahrzeug.Reparaturs)
+                    _ctx.Reparaturs.Remove(reparatur);
+
+                // Fahrzeug löschen
+
+
+            }
+            catch (Exception ex)
+            {
+
+                MessageBox.Show(ex.Message);
+            }
         }
     }
 }

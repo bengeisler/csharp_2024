@@ -33,6 +33,7 @@ namespace Autowerkstatt
         {
             components = new System.ComponentModel.Container();
             GrpErfassung = new GroupBox();
+            CmdReparaturenAnzeigen = new Button();
             label5 = new Label();
             CmdSpeichern = new Button();
             TxtBeschreibung = new TextBox();
@@ -68,7 +69,6 @@ namespace Autowerkstatt
             halterDataGridViewTextBoxColumn = new DataGridViewTextBoxColumn();
             ortDataGridViewTextBoxColumn = new DataGridViewTextBoxColumn();
             CmdFahrzeugÜbernehmen = new Button();
-            CmdReparaturenAnzeigen = new Button();
             GrpErfassung.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)fahrzeugBindingSource).BeginInit();
             ((System.ComponentModel.ISupportInitialize)reparaturBindingSource).BeginInit();
@@ -106,6 +106,16 @@ namespace Autowerkstatt
             GrpErfassung.TabIndex = 0;
             GrpErfassung.TabStop = false;
             GrpErfassung.Text = "Erfassung Reparatur:";
+            // 
+            // CmdReparaturenAnzeigen
+            // 
+            CmdReparaturenAnzeigen.Location = new Point(363, 22);
+            CmdReparaturenAnzeigen.Name = "CmdReparaturenAnzeigen";
+            CmdReparaturenAnzeigen.Size = new Size(141, 23);
+            CmdReparaturenAnzeigen.TabIndex = 22;
+            CmdReparaturenAnzeigen.Text = "Reparaturen Anzeigen";
+            CmdReparaturenAnzeigen.UseVisualStyleBackColor = true;
+            CmdReparaturenAnzeigen.Click += CmdReparaturenAnzeigen_Click;
             // 
             // label5
             // 
@@ -148,9 +158,8 @@ namespace Autowerkstatt
             LblModell.AutoSize = true;
             LblModell.Location = new Point(115, 354);
             LblModell.Name = "LblModell";
-            LblModell.Size = new Size(44, 15);
+            LblModell.Size = new Size(0, 15);
             LblModell.TabIndex = 17;
-            LblModell.Text = "label15";
             // 
             // label14
             // 
@@ -166,9 +175,8 @@ namespace Autowerkstatt
             LblOrt.AutoSize = true;
             LblOrt.Location = new Point(114, 450);
             LblOrt.Name = "LblOrt";
-            LblOrt.Size = new Size(44, 15);
+            LblOrt.Size = new Size(0, 15);
             LblOrt.TabIndex = 15;
-            LblOrt.Text = "label13";
             // 
             // label12
             // 
@@ -184,9 +192,8 @@ namespace Autowerkstatt
             LblHalter.AutoSize = true;
             LblHalter.Location = new Point(114, 409);
             LblHalter.Name = "LblHalter";
-            LblHalter.Size = new Size(44, 15);
+            LblHalter.Size = new Size(0, 15);
             LblHalter.TabIndex = 13;
-            LblHalter.Text = "label11";
             // 
             // label10
             // 
@@ -202,9 +209,8 @@ namespace Autowerkstatt
             LblMarke.AutoSize = true;
             LblMarke.Location = new Point(115, 323);
             LblMarke.Name = "LblMarke";
-            LblMarke.Size = new Size(38, 15);
+            LblMarke.Size = new Size(0, 15);
             LblMarke.TabIndex = 11;
-            LblMarke.Text = "label9";
             // 
             // label8
             // 
@@ -220,9 +226,8 @@ namespace Autowerkstatt
             LblKennzeichen.AutoSize = true;
             LblKennzeichen.Location = new Point(115, 286);
             LblKennzeichen.Name = "LblKennzeichen";
-            LblKennzeichen.Size = new Size(38, 15);
+            LblKennzeichen.Size = new Size(0, 15);
             LblKennzeichen.TabIndex = 9;
-            LblKennzeichen.Text = "label7";
             // 
             // label6
             // 
@@ -323,6 +328,7 @@ namespace Autowerkstatt
             CmdLöschen.TabIndex = 4;
             CmdLöschen.Text = "Löschen";
             CmdLöschen.UseVisualStyleBackColor = true;
+            CmdLöschen.Click += CmdLöschen_Click;
             // 
             // CmdSpeichern2
             // 
@@ -410,16 +416,6 @@ namespace Autowerkstatt
             CmdFahrzeugÜbernehmen.Text = "<<< Fahrzeug übernehmen";
             CmdFahrzeugÜbernehmen.UseVisualStyleBackColor = true;
             CmdFahrzeugÜbernehmen.Click += CmdFahrzeugÜbernehmen_Click;
-            // 
-            // CmdReparaturenAnzeigen
-            // 
-            CmdReparaturenAnzeigen.Location = new Point(363, 22);
-            CmdReparaturenAnzeigen.Name = "CmdReparaturenAnzeigen";
-            CmdReparaturenAnzeigen.Size = new Size(141, 23);
-            CmdReparaturenAnzeigen.TabIndex = 22;
-            CmdReparaturenAnzeigen.Text = "Reparaturen Anzeigen";
-            CmdReparaturenAnzeigen.UseVisualStyleBackColor = true;
-            CmdReparaturenAnzeigen.Click += CmdReparaturenAnzeigen_Click;
             // 
             // FrmWerkstatt
             // 
