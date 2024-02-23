@@ -17,7 +17,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UBankkonto", "UBankkonto\UB
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "KlassenGenerisch", "KlassenGenerisch\KlassenGenerisch.csproj", "{A20F80CA-3B0B-416F-A2D7-445E7544B1AD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KlassenFormulare", "KlassenFormulare\KlassenFormulare.csproj", "{42D551ED-BD06-460F-952B-6698460C4E32}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "KlassenFormulare", "KlassenFormulare\KlassenFormulare.csproj", "{42D551ED-BD06-460F-952B-6698460C4E32}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AnwendungBeenden", "AnwendungBeenden\AnwendungBeenden.csproj", "{99C7F3FA-BCF0-424D-85DC-041CF725FC0E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -57,6 +59,10 @@ Global
 		{42D551ED-BD06-460F-952B-6698460C4E32}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{42D551ED-BD06-460F-952B-6698460C4E32}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{42D551ED-BD06-460F-952B-6698460C4E32}.Release|Any CPU.Build.0 = Release|Any CPU
+		{99C7F3FA-BCF0-424D-85DC-041CF725FC0E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{99C7F3FA-BCF0-424D-85DC-041CF725FC0E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{99C7F3FA-BCF0-424D-85DC-041CF725FC0E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{99C7F3FA-BCF0-424D-85DC-041CF725FC0E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
