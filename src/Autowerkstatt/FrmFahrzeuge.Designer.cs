@@ -106,9 +106,9 @@ namespace Autowerkstatt
             LblNummer.AutoSize = true;
             LblNummer.Location = new Point(150, 9);
             LblNummer.Name = "LblNummer";
-            LblNummer.Size = new Size(105, 25);
+            LblNummer.Size = new Size(22, 25);
             LblNummer.TabIndex = 6;
-            LblNummer.Text = "LblNummer";
+            LblNummer.Text = "0";
             // 
             // TxtKennzeichen
             // 

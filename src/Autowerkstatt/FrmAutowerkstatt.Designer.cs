@@ -55,19 +55,18 @@ namespace Autowerkstatt
             TxtKosten = new TextBox();
             label19 = new Label();
             dataGridView1 = new DataGridView();
-            fahrzeugBindingSource = new BindingSource(components);
-            CmdReparaturSpeichern = new Button();
-            CmdFahrzeugÜbernehmen = new Button();
-            CmdHinzufügen = new Button();
-            CmdSpeichern = new Button();
-            CmdLöschen = new Button();
-            CmdReparaturenAnzeigen = new Button();
             nrDataGridViewTextBoxColumn = new DataGridViewTextBoxColumn();
             kennzeichenDataGridViewTextBoxColumn = new DataGridViewTextBoxColumn();
             markeDataGridViewTextBoxColumn = new DataGridViewTextBoxColumn();
             modellDataGridViewTextBoxColumn = new DataGridViewTextBoxColumn();
             halterDataGridViewTextBoxColumn = new DataGridViewTextBoxColumn();
             ortDataGridViewTextBoxColumn = new DataGridViewTextBoxColumn();
+            fahrzeugBindingSource = new BindingSource(components);
+            CmdReparaturSpeichern = new Button();
+            CmdFahrzeugÜbernehmen = new Button();
+            CmdHinzufügen = new Button();
+            CmdLöschen = new Button();
+            CmdReparaturenAnzeigen = new Button();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)fahrzeugBindingSource).BeginInit();
             SuspendLayout();
@@ -284,68 +283,6 @@ namespace Autowerkstatt
             dataGridView1.TabIndex = 22;
             dataGridView1.CellDoubleClick += dataGridView1_CellDoubleClick;
             // 
-            // fahrzeugBindingSource
-            // 
-            fahrzeugBindingSource.DataSource = typeof(Models.Fahrzeug);
-            // 
-            // CmdReparaturSpeichern
-            // 
-            CmdReparaturSpeichern.Location = new Point(176, 528);
-            CmdReparaturSpeichern.Name = "CmdReparaturSpeichern";
-            CmdReparaturSpeichern.Size = new Size(112, 34);
-            CmdReparaturSpeichern.TabIndex = 23;
-            CmdReparaturSpeichern.Text = "Speichern";
-            CmdReparaturSpeichern.UseVisualStyleBackColor = true;
-            CmdReparaturSpeichern.Click += CmdReparaturSpeichern_Click;
-            // 
-            // CmdFahrzeugÜbernehmen
-            // 
-            CmdFahrzeugÜbernehmen.Location = new Point(573, 528);
-            CmdFahrzeugÜbernehmen.Name = "CmdFahrzeugÜbernehmen";
-            CmdFahrzeugÜbernehmen.Size = new Size(281, 34);
-            CmdFahrzeugÜbernehmen.TabIndex = 24;
-            CmdFahrzeugÜbernehmen.Text = "<<< Fahrzeug übernehmen";
-            CmdFahrzeugÜbernehmen.UseVisualStyleBackColor = true;
-            CmdFahrzeugÜbernehmen.Click += CmdFahrzeugÜbernehmen_Click;
-            // 
-            // CmdHinzufügen
-            // 
-            CmdHinzufügen.Location = new Point(799, 10);
-            CmdHinzufügen.Name = "CmdHinzufügen";
-            CmdHinzufügen.Size = new Size(112, 34);
-            CmdHinzufügen.TabIndex = 25;
-            CmdHinzufügen.Text = "Hinzufügen";
-            CmdHinzufügen.UseVisualStyleBackColor = true;
-            CmdHinzufügen.Click += CmdHinzufügen_Click;
-            // 
-            // CmdSpeichern
-            // 
-            CmdSpeichern.Location = new Point(917, 10);
-            CmdSpeichern.Name = "CmdSpeichern";
-            CmdSpeichern.Size = new Size(112, 34);
-            CmdSpeichern.TabIndex = 26;
-            CmdSpeichern.Text = "Speichern";
-            CmdSpeichern.UseVisualStyleBackColor = true;
-            // 
-            // CmdLöschen
-            // 
-            CmdLöschen.Location = new Point(1035, 10);
-            CmdLöschen.Name = "CmdLöschen";
-            CmdLöschen.Size = new Size(112, 34);
-            CmdLöschen.TabIndex = 27;
-            CmdLöschen.Text = "Löschen";
-            CmdLöschen.UseVisualStyleBackColor = true;
-            // 
-            // CmdReparaturenAnzeigen
-            // 
-            CmdReparaturenAnzeigen.Location = new Point(332, 10);
-            CmdReparaturenAnzeigen.Name = "CmdReparaturenAnzeigen";
-            CmdReparaturenAnzeigen.Size = new Size(214, 34);
-            CmdReparaturenAnzeigen.TabIndex = 28;
-            CmdReparaturenAnzeigen.Text = "Reparaturen anzeigen";
-            CmdReparaturenAnzeigen.UseVisualStyleBackColor = true;
-            CmdReparaturenAnzeigen.Click += CmdReparaturenAnzeigen_Click;
-            // 
             // nrDataGridViewTextBoxColumn
             // 
             nrDataGridViewTextBoxColumn.DataPropertyName = "Nr";
@@ -400,6 +337,60 @@ namespace Autowerkstatt
             ortDataGridViewTextBoxColumn.ReadOnly = true;
             ortDataGridViewTextBoxColumn.Width = 150;
             // 
+            // fahrzeugBindingSource
+            // 
+            fahrzeugBindingSource.DataSource = typeof(Models.Fahrzeug);
+            // 
+            // CmdReparaturSpeichern
+            // 
+            CmdReparaturSpeichern.Location = new Point(176, 528);
+            CmdReparaturSpeichern.Name = "CmdReparaturSpeichern";
+            CmdReparaturSpeichern.Size = new Size(112, 34);
+            CmdReparaturSpeichern.TabIndex = 23;
+            CmdReparaturSpeichern.Text = "Speichern";
+            CmdReparaturSpeichern.UseVisualStyleBackColor = true;
+            CmdReparaturSpeichern.Click += CmdReparaturSpeichern_Click;
+            // 
+            // CmdFahrzeugÜbernehmen
+            // 
+            CmdFahrzeugÜbernehmen.Location = new Point(573, 528);
+            CmdFahrzeugÜbernehmen.Name = "CmdFahrzeugÜbernehmen";
+            CmdFahrzeugÜbernehmen.Size = new Size(281, 34);
+            CmdFahrzeugÜbernehmen.TabIndex = 24;
+            CmdFahrzeugÜbernehmen.Text = "<<< Fahrzeug übernehmen";
+            CmdFahrzeugÜbernehmen.UseVisualStyleBackColor = true;
+            CmdFahrzeugÜbernehmen.Click += CmdFahrzeugÜbernehmen_Click;
+            // 
+            // CmdHinzufügen
+            // 
+            CmdHinzufügen.Location = new Point(799, 10);
+            CmdHinzufügen.Name = "CmdHinzufügen";
+            CmdHinzufügen.Size = new Size(112, 34);
+            CmdHinzufügen.TabIndex = 25;
+            CmdHinzufügen.Text = "Hinzufügen";
+            CmdHinzufügen.UseVisualStyleBackColor = true;
+            CmdHinzufügen.Click += CmdHinzufügen_Click;
+            // 
+            // CmdLöschen
+            // 
+            CmdLöschen.Location = new Point(917, 9);
+            CmdLöschen.Name = "CmdLöschen";
+            CmdLöschen.Size = new Size(112, 34);
+            CmdLöschen.TabIndex = 27;
+            CmdLöschen.Text = "Löschen";
+            CmdLöschen.UseVisualStyleBackColor = true;
+            CmdLöschen.Click += CmdLöschen_Click;
+            // 
+            // CmdReparaturenAnzeigen
+            // 
+            CmdReparaturenAnzeigen.Location = new Point(332, 10);
+            CmdReparaturenAnzeigen.Name = "CmdReparaturenAnzeigen";
+            CmdReparaturenAnzeigen.Size = new Size(214, 34);
+            CmdReparaturenAnzeigen.TabIndex = 28;
+            CmdReparaturenAnzeigen.Text = "Reparaturen anzeigen";
+            CmdReparaturenAnzeigen.UseVisualStyleBackColor = true;
+            CmdReparaturenAnzeigen.Click += CmdReparaturenAnzeigen_Click;
+            // 
             // FrmAutowerkstatt
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
@@ -407,7 +398,6 @@ namespace Autowerkstatt
             ClientSize = new Size(1448, 578);
             Controls.Add(CmdReparaturenAnzeigen);
             Controls.Add(CmdLöschen);
-            Controls.Add(CmdSpeichern);
             Controls.Add(CmdHinzufügen);
             Controls.Add(CmdFahrzeugÜbernehmen);
             Controls.Add(CmdReparaturSpeichern);
@@ -471,7 +461,6 @@ namespace Autowerkstatt
         private Button CmdReparaturSpeichern;
         private Button CmdFahrzeugÜbernehmen;
         private Button CmdHinzufügen;
-        private Button CmdSpeichern;
         private Button CmdLöschen;
         private BindingSource fahrzeugBindingSource;
         private Button CmdReparaturenAnzeigen;

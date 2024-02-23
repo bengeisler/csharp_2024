@@ -17,25 +17,37 @@ namespace Autowerkstatt
 
         private void CmdHinzufügen_Click(object sender, EventArgs e)
         {
-            // Objekt für Formular Fahrzeug erstellen
-            FrmFahrzeuge frmFahrzeuge = new()
+            try
             {
-                FahrzeugInBearbeitung = new Fahrzeug()
-            };
+                // Neues Fahrzeug-Objekt erstellen
+                var fahrzeugInBearbeitung = new Fahrzeug();
 
-            // Formular anzeigen
-            frmFahrzeuge.ShowDialog();
+                // Objekt für Formular Fahrzeug erstellen
+                FrmFahrzeuge frmFahrzeuge = new()
+                {
+                    FahrzeugInBearbeitung = fahrzeugInBearbeitung
+                };
 
-            // Nach Speichern Tabelle aktualisieren
-            if (frmFahrzeuge.DialogResult == DialogResult.OK)
-            {
-                _ctx.SaveChanges();
-                fahrzeugBindingSource.DataSource = _ctx.Fahrzeugs.ToList();
-                fahrzeugBindingSource.ResetBindings(false);
+                // Formular anzeigen
+                frmFahrzeuge.ShowDialog();
+
+                if (frmFahrzeuge.DialogResult == DialogResult.OK)
+                {
+                    // Fahrzeug hinzufügen
+                    _ctx.Fahrzeugs.Add(fahrzeugInBearbeitung);
+
+                    // Speichern
+                    _ctx.SaveChanges();
+
+                    // Update der Anzeige
+                    fahrzeugBindingSource.DataSource = _ctx.Fahrzeugs.ToList();
+                    fahrzeugBindingSource.ResetBindings(false);
+                }
             }
-                
-            
-
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
         }
 
         private void CmdFahrzeugÜbernehmen_Click(object sender, EventArgs e)
@@ -85,7 +97,7 @@ namespace Autowerkstatt
                     Beschreibung = TxtBeschreibung.Text,
                     Kosten = kosten,
                     Datum = DatDatum.Value
-                };             
+                };
 
                 // Reparatur zur DB hinzufügen
                 _ctx.Reparaturs.Add(reparatur);
@@ -139,10 +151,6 @@ namespace Autowerkstatt
 
             if (frmFahrzeuge.DialogResult == DialogResult.OK)
             {
-                // Prüfen ob hinzufügen oder ändern
-                if (fahrzeugInBearbeitung.Nr == 0)
-                    _ctx.Fahrzeugs.Add(fahrzeugInBearbeitung);
-
                 // Speichern
                 _ctx.SaveChanges();
 
@@ -150,7 +158,36 @@ namespace Autowerkstatt
                 fahrzeugBindingSource.DataSource = _ctx.Fahrzeugs.ToList();
                 fahrzeugBindingSource.ResetBindings(false);
             }
+        }
 
+        private void CmdLöschen_Click(object sender, EventArgs e)
+        {
+            // Datenbankzugriff immer in try/catch!
+            try
+            {
+                // Aktuell ausgewähltes Fahrzeug auslesen
+                Fahrzeug fahrzeug = (Fahrzeug)fahrzeugBindingSource.Current;
+
+                // Abbruch, falls nichts ausgewählt ist
+                if (fahrzeug == null) return;
+
+                // Alle Reparaturen dieses Fahrzeugs löschen
+                foreach (var reparatur in fahrzeug.Reparaturs)
+                    _ctx.Reparaturs.Remove(reparatur);
+
+                // Fahrzeug löschen
+                _ctx.Fahrzeugs.Remove(fahrzeug);
+
+                // Speichern
+                _ctx.SaveChanges();
+
+                // Anzeige aktualisieren
+                fahrzeugBindingSource.DataSource = _ctx.Fahrzeugs.ToList();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            } 
         }
     }
 }

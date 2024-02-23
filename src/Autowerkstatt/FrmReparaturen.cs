@@ -25,6 +25,9 @@ namespace Autowerkstatt
 
         private void CboxFilter_SelectedIndexChanged(object sender, EventArgs e)
         {
+            // Abbruch, falls nichts ausgewählt ist
+            if (CboxFilter.SelectedValue == null) return;
+
             // Aktuell ausgewählte Fahrzeugnummer aus ComboBox auslesen
             int fahrzeugnummer = (int)CboxFilter.SelectedValue;
 
