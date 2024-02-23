@@ -3,21 +3,23 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.0.31903.59
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Klassen", "Klassen\Klassen.csproj", "{632FCC4A-826D-4EAF-92DE-A313D64D1077}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Klassen", "Klassen\Klassen.csproj", "{632FCC4A-826D-4EAF-92DE-A313D64D1077}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KlassenEigenschaftsmethoden", "KlassenEigenschaftsmethoden\KlassenEigenschaftsmethoden.csproj", "{ADDA10C2-8671-4010-8B7B-39DE9CD4216B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "KlassenEigenschaftsmethoden", "KlassenEigenschaftsmethoden\KlassenEigenschaftsmethoden.csproj", "{ADDA10C2-8671-4010-8B7B-39DE9CD4216B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KlassenKonsturktoren", "KlassenKonsturktoren\KlassenKonsturktoren.csproj", "{FFAD2741-2AE5-4B8A-B39E-764AAD251232}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "KlassenKonsturktoren", "KlassenKonsturktoren\KlassenKonsturktoren.csproj", "{FFAD2741-2AE5-4B8A-B39E-764AAD251232}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Klassenpruefung", "Klassenpruefung\Klassenpruefung.csproj", "{424AD561-5FD2-47B2-B908-5174F921B88C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Klassenpruefung", "Klassenpruefung\Klassenpruefung.csproj", "{424AD561-5FD2-47B2-B908-5174F921B88C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Klassenschnittstellen", "Klassenschnittstellen\Klassenschnittstellen.csproj", "{80E9D54B-F1B9-4EC3-850D-6559FB3901F3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Klassenschnittstellen", "Klassenschnittstellen\Klassenschnittstellen.csproj", "{80E9D54B-F1B9-4EC3-850D-6559FB3901F3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AufgabeBankkonto", "AufgabeBankkonto\AufgabeBankkonto.csproj", "{CBFA16C3-7F13-4EA7-8C79-2971F3991E5D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AufgabeBankkonto", "AufgabeBankkonto\AufgabeBankkonto.csproj", "{CBFA16C3-7F13-4EA7-8C79-2971F3991E5D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KlassenGenerisch", "KlassenGenerisch\KlassenGenerisch.csproj", "{DEB25418-E26E-422B-BA8B-0ADB5F0DFF0F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "KlassenGenerisch", "KlassenGenerisch\KlassenGenerisch.csproj", "{DEB25418-E26E-422B-BA8B-0ADB5F0DFF0F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KlassenFormulare", "KlassenFormulare\KlassenFormulare.csproj", "{40FBAED4-8EDF-4B47-96AA-D131EB1BC2D7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "KlassenFormulare", "KlassenFormulare\KlassenFormulare.csproj", "{40FBAED4-8EDF-4B47-96AA-D131EB1BC2D7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Anwendung beenden", "Anwendung beenden\Anwendung beenden.csproj", "{AF4B96A2-8DB7-433D-A6C9-102C9C571CCA}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -57,6 +59,10 @@ Global
 		{40FBAED4-8EDF-4B47-96AA-D131EB1BC2D7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{40FBAED4-8EDF-4B47-96AA-D131EB1BC2D7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{40FBAED4-8EDF-4B47-96AA-D131EB1BC2D7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AF4B96A2-8DB7-433D-A6C9-102C9C571CCA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AF4B96A2-8DB7-433D-A6C9-102C9C571CCA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AF4B96A2-8DB7-433D-A6C9-102C9C571CCA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AF4B96A2-8DB7-433D-A6C9-102C9C571CCA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

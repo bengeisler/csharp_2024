@@ -13,7 +13,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SUMMIERENARRAY", "SUMMIEREN
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LottozahlenÜBUNG", "LottozahlenÜBUNG\LottozahlenÜBUNG.csproj", "{6BCADD02-4525-471B-8855-510476E9AF3F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EinExclusiverVerein", "EinExclusiverVerein\EinExclusiverVerein.csproj", "{8679E633-C2A4-4A5E-B77A-27542A5AAB07}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EinExclusiverVerein", "EinExclusiverVerein\EinExclusiverVerein.csproj", "{8679E633-C2A4-4A5E-B77A-27542A5AAB07}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
