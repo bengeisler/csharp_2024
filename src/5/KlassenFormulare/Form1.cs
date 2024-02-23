@@ -24,8 +24,12 @@ namespace KlassenFormulare
             //-Unterformular anzeigen
             unterformular.ShowDialog();
 
-           
+
         }
-        
+
+        private void TxtBox_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

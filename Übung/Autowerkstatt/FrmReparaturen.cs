@@ -10,6 +10,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Autowerkstatt.Models;
 
 namespace Autowerkstatt
 {
@@ -18,6 +19,38 @@ namespace Autowerkstatt
         public FrmReparaturen()
         {
             InitializeComponent();
+        }
+
+        private AutowerkstattDbContext _ctx = new();
+
+        private void CboxFilter_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            // Aktuell ausgewählte Fahrzeugnummer aus ComboBox auslesen
+            int fahrzeugnummer = (int)CboxFilter.SelectedValue;
+
+            // Aktuell ausgewähltes Kennzeichen aus ComboBox auslesen
+            string kennzeichen = CboxFilter.Text;
+
+            // Tabelle filtern
+            reparaturBindingSource.DataSource = _ctx.Reparaturs
+                .Where(r => r.FahrzeugNr == fahrzeugnummer)
+                .ToList();
+
+            // Anzeige aktualisieren
+            LblFilter.Text = $"Reparaturen von Fahrzeug - {kennzeichen} -";
+        }
+
+        private void FrmReparaturen_Load(object sender, EventArgs e)
+        {
+            // Datenquellen binden
+            reparaturBindingSource.DataSource = _ctx.Reparaturs.ToList();
+            fahrzeugBindingSource.DataSource = _ctx.Fahrzeugs.ToList();
+        }
+
+        private void CmdAlleAnzeigen_Click(object sender, EventArgs e)
+        {
+            reparaturBindingSource.DataSource = _ctx.Reparaturs.ToList();
+            LblFilter.Text = "Alle Fahrzeuge";
         }
     }
 }

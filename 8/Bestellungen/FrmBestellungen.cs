@@ -121,7 +121,7 @@ namespace Bestellungen
 
         private void CmdButtonHinzufügen2_Click(object sender, EventArgs e)
         {
-            bestellungBindingSource.Addnew();
+           // bestellungBindingSource.Addnew();
         }
     }
 }

@@ -50,124 +50,139 @@ namespace Autowerkstatt
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(12, 9);
+            label1.Location = new Point(8, 5);
+            label1.Margin = new Padding(2, 0, 2, 0);
             label1.Name = "label1";
-            label1.Size = new Size(35, 25);
+            label1.Size = new Size(23, 15);
             label1.TabIndex = 0;
             label1.Text = "Nr:";
             // 
             // label2
             // 
             label2.AutoSize = true;
-            label2.Location = new Point(12, 40);
+            label2.Location = new Point(8, 24);
+            label2.Margin = new Padding(2, 0, 2, 0);
             label2.Name = "label2";
-            label2.Size = new Size(113, 25);
+            label2.Size = new Size(77, 15);
             label2.TabIndex = 1;
             label2.Text = "Kennzeichen:";
             // 
             // label3
             // 
             label3.AutoSize = true;
-            label3.Location = new Point(12, 77);
+            label3.Location = new Point(8, 46);
+            label3.Margin = new Padding(2, 0, 2, 0);
             label3.Name = "label3";
-            label3.Size = new Size(65, 25);
+            label3.Size = new Size(43, 15);
             label3.TabIndex = 2;
             label3.Text = "Marke:";
             // 
             // label4
             // 
             label4.AutoSize = true;
-            label4.Location = new Point(12, 114);
+            label4.Location = new Point(8, 68);
+            label4.Margin = new Padding(2, 0, 2, 0);
             label4.Name = "label4";
-            label4.Size = new Size(71, 25);
+            label4.Size = new Size(47, 15);
             label4.TabIndex = 3;
             label4.Text = "Modell:";
             // 
             // label5
             // 
             label5.AutoSize = true;
-            label5.Location = new Point(12, 151);
+            label5.Location = new Point(8, 91);
+            label5.Margin = new Padding(2, 0, 2, 0);
             label5.Name = "label5";
-            label5.Size = new Size(63, 25);
+            label5.Size = new Size(42, 15);
             label5.TabIndex = 4;
             label5.Text = "Halter:";
             // 
             // label6
             // 
             label6.AutoSize = true;
-            label6.Location = new Point(12, 188);
+            label6.Location = new Point(8, 113);
+            label6.Margin = new Padding(2, 0, 2, 0);
             label6.Name = "label6";
-            label6.Size = new Size(42, 25);
+            label6.Size = new Size(27, 15);
             label6.TabIndex = 5;
             label6.Text = "Ort:";
             // 
             // LblNummer
             // 
             LblNummer.AutoSize = true;
-            LblNummer.Location = new Point(150, 9);
+            LblNummer.Location = new Point(105, 5);
+            LblNummer.Margin = new Padding(2, 0, 2, 0);
             LblNummer.Name = "LblNummer";
-            LblNummer.Size = new Size(105, 25);
+            LblNummer.Size = new Size(71, 15);
             LblNummer.TabIndex = 6;
             LblNummer.Text = "LblNummer";
             // 
             // TxtKennzeichen
             // 
-            TxtKennzeichen.Location = new Point(150, 37);
+            TxtKennzeichen.Location = new Point(105, 22);
+            TxtKennzeichen.Margin = new Padding(2, 2, 2, 2);
             TxtKennzeichen.Name = "TxtKennzeichen";
-            TxtKennzeichen.Size = new Size(150, 31);
+            TxtKennzeichen.Size = new Size(106, 23);
             TxtKennzeichen.TabIndex = 7;
+
             // 
             // TxtMarke
             // 
-            TxtMarke.Location = new Point(150, 74);
+            TxtMarke.Location = new Point(105, 44);
+            TxtMarke.Margin = new Padding(2, 2, 2, 2);
             TxtMarke.Name = "TxtMarke";
-            TxtMarke.Size = new Size(150, 31);
+            TxtMarke.Size = new Size(106, 23);
             TxtMarke.TabIndex = 8;
             // 
             // TxtModell
             // 
-            TxtModell.Location = new Point(150, 111);
+            TxtModell.Location = new Point(105, 67);
+            TxtModell.Margin = new Padding(2, 2, 2, 2);
             TxtModell.Name = "TxtModell";
-            TxtModell.Size = new Size(150, 31);
+            TxtModell.Size = new Size(106, 23);
             TxtModell.TabIndex = 9;
             // 
             // TxtHalter
             // 
-            TxtHalter.Location = new Point(150, 148);
+            TxtHalter.Location = new Point(105, 89);
+            TxtHalter.Margin = new Padding(2, 2, 2, 2);
             TxtHalter.Name = "TxtHalter";
-            TxtHalter.Size = new Size(150, 31);
+            TxtHalter.Size = new Size(106, 23);
             TxtHalter.TabIndex = 10;
             // 
             // TxtOrt
             // 
-            TxtOrt.Location = new Point(150, 185);
+            TxtOrt.Location = new Point(105, 111);
+            TxtOrt.Margin = new Padding(2, 2, 2, 2);
             TxtOrt.Name = "TxtOrt";
-            TxtOrt.Size = new Size(150, 31);
+            TxtOrt.Size = new Size(106, 23);
             TxtOrt.TabIndex = 11;
             // 
             // CmdSpeichern
             // 
-            CmdSpeichern.Location = new Point(12, 254);
+            CmdSpeichern.Location = new Point(8, 152);
+            CmdSpeichern.Margin = new Padding(2, 2, 2, 2);
             CmdSpeichern.Name = "CmdSpeichern";
-            CmdSpeichern.Size = new Size(112, 34);
+            CmdSpeichern.Size = new Size(78, 20);
             CmdSpeichern.TabIndex = 12;
             CmdSpeichern.Text = "Speichern";
             CmdSpeichern.UseVisualStyleBackColor = true;
             // 
             // CmdAbbrechen
             // 
-            CmdAbbrechen.Location = new Point(188, 254);
+            CmdAbbrechen.Location = new Point(132, 152);
+            CmdAbbrechen.Margin = new Padding(2, 2, 2, 2);
             CmdAbbrechen.Name = "CmdAbbrechen";
-            CmdAbbrechen.Size = new Size(112, 34);
+            CmdAbbrechen.Size = new Size(78, 20);
             CmdAbbrechen.TabIndex = 13;
             CmdAbbrechen.Text = "Abbrechen";
             CmdAbbrechen.UseVisualStyleBackColor = true;
             // 
             // FrmFahrzeuge
             // 
-            AutoScaleDimensions = new SizeF(10F, 25F);
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(324, 312);
+            ClientSize = new Size(227, 187);
             Controls.Add(CmdAbbrechen);
             Controls.Add(CmdSpeichern);
             Controls.Add(TxtOrt);
@@ -182,6 +197,7 @@ namespace Autowerkstatt
             Controls.Add(label3);
             Controls.Add(label2);
             Controls.Add(label1);
+            Margin = new Padding(2, 2, 2, 2);
             Name = "FrmFahrzeuge";
             Text = "Fahrzeuge";
             ResumeLayout(false);

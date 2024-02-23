@@ -51,8 +51,11 @@ namespace Autowerkstatt
             LblOrt = new Label();
             label18 = new Label();
             DatDatum = new DateTimePicker();
+            reparaturBindingSource2 = new BindingSource(components);
             TxtBeschreibung = new TextBox();
+            reparaturBindingSource = new BindingSource(components);
             TxtKosten = new TextBox();
+            reparaturBindingSource1 = new BindingSource(components);
             label19 = new Label();
             dataGridView1 = new DataGridView();
             nrDataGridViewTextBoxColumn = new DataGridViewTextBoxColumn();
@@ -67,6 +70,9 @@ namespace Autowerkstatt
             CmdHinzufügen = new Button();
             CmdSpeichern = new Button();
             CmdLöschen = new Button();
+            ((System.ComponentModel.ISupportInitialize)reparaturBindingSource2).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)reparaturBindingSource).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)reparaturBindingSource1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)fahrzeugBindingSource).BeginInit();
             SuspendLayout();
@@ -75,45 +81,50 @@ namespace Autowerkstatt
             // 
             label1.AutoSize = true;
             label1.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label1.Location = new Point(12, 9);
+            label1.Location = new Point(8, 5);
+            label1.Margin = new Padding(2, 0, 2, 0);
             label1.Name = "label1";
-            label1.Size = new Size(255, 32);
+            label1.Size = new Size(168, 21);
             label1.TabIndex = 0;
             label1.Text = "Erfassung Reparatur:";
             // 
             // label2
             // 
             label2.AutoSize = true;
-            label2.Location = new Point(38, 66);
+            label2.Location = new Point(27, 40);
+            label2.Margin = new Padding(2, 0, 2, 0);
             label2.Name = "label2";
-            label2.Size = new Size(70, 25);
+            label2.Size = new Size(46, 15);
             label2.TabIndex = 1;
             label2.Text = "Datum:";
             // 
             // label3
             // 
             label3.AutoSize = true;
-            label3.Location = new Point(38, 100);
+            label3.Location = new Point(27, 60);
+            label3.Margin = new Padding(2, 0, 2, 0);
             label3.Name = "label3";
-            label3.Size = new Size(122, 25);
+            label3.Size = new Size(82, 15);
             label3.TabIndex = 2;
             label3.Text = "Beschreibung:";
             // 
             // label4
             // 
             label4.AutoSize = true;
-            label4.Location = new Point(39, 248);
+            label4.Location = new Point(27, 149);
+            label4.Margin = new Padding(2, 0, 2, 0);
             label4.Name = "label4";
-            label4.Size = new Size(70, 25);
+            label4.Size = new Size(46, 15);
             label4.TabIndex = 3;
             label4.Text = "Kosten:";
             // 
             // label5
             // 
             label5.AutoSize = true;
-            label5.Location = new Point(285, 317);
+            label5.Location = new Point(200, 190);
+            label5.Margin = new Padding(2, 0, 2, 0);
             label5.Name = "label5";
-            label5.Size = new Size(35, 25);
+            label5.Size = new Size(23, 15);
             label5.TabIndex = 4;
             label5.Text = "Nr:";
             // 
@@ -121,108 +132,120 @@ namespace Autowerkstatt
             // 
             label6.AutoSize = true;
             label6.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label6.Location = new Point(12, 311);
+            label6.Location = new Point(8, 187);
+            label6.Margin = new Padding(2, 0, 2, 0);
             label6.Name = "label6";
-            label6.Size = new Size(124, 32);
+            label6.Size = new Size(84, 21);
             label6.TabIndex = 5;
             label6.Text = "Fahrzeug:";
             // 
             // LblNummer
             // 
             LblNummer.AutoSize = true;
-            LblNummer.Location = new Point(350, 318);
+            LblNummer.Location = new Point(245, 191);
+            LblNummer.Margin = new Padding(2, 0, 2, 0);
             LblNummer.Name = "LblNummer";
-            LblNummer.Size = new Size(59, 25);
+            LblNummer.Size = new Size(38, 15);
             LblNummer.TabIndex = 6;
             LblNummer.Text = "label7";
             // 
             // label8
             // 
             label8.AutoSize = true;
-            label8.Location = new Point(38, 362);
+            label8.Location = new Point(27, 217);
+            label8.Margin = new Padding(2, 0, 2, 0);
             label8.Name = "label8";
-            label8.Size = new Size(113, 25);
+            label8.Size = new Size(77, 15);
             label8.TabIndex = 7;
             label8.Text = "Kennzeichen:";
             // 
             // label9
             // 
             label9.AutoSize = true;
-            label9.Location = new Point(38, 387);
+            label9.Location = new Point(27, 232);
+            label9.Margin = new Padding(2, 0, 2, 0);
             label9.Name = "label9";
-            label9.Size = new Size(65, 25);
+            label9.Size = new Size(43, 15);
             label9.TabIndex = 8;
             label9.Text = "Marke:";
             // 
             // label10
             // 
             label10.AutoSize = true;
-            label10.Location = new Point(38, 412);
+            label10.Location = new Point(27, 247);
+            label10.Margin = new Padding(2, 0, 2, 0);
             label10.Name = "label10";
-            label10.Size = new Size(71, 25);
+            label10.Size = new Size(47, 15);
             label10.TabIndex = 9;
             label10.Text = "Modell:";
             // 
             // label11
             // 
             label11.AutoSize = true;
-            label11.Location = new Point(38, 472);
+            label11.Location = new Point(27, 283);
+            label11.Margin = new Padding(2, 0, 2, 0);
             label11.Name = "label11";
-            label11.Size = new Size(63, 25);
+            label11.Size = new Size(42, 15);
             label11.TabIndex = 10;
             label11.Text = "Halter:";
             // 
             // label12
             // 
             label12.AutoSize = true;
-            label12.Location = new Point(38, 497);
+            label12.Location = new Point(27, 298);
+            label12.Margin = new Padding(2, 0, 2, 0);
             label12.Name = "label12";
-            label12.Size = new Size(42, 25);
+            label12.Size = new Size(27, 15);
             label12.TabIndex = 11;
             label12.Text = "Ort:";
             // 
             // LblKennzeichen
             // 
             LblKennzeichen.AutoSize = true;
-            LblKennzeichen.Location = new Point(167, 362);
+            LblKennzeichen.Location = new Point(117, 217);
+            LblKennzeichen.Margin = new Padding(2, 0, 2, 0);
             LblKennzeichen.Name = "LblKennzeichen";
-            LblKennzeichen.Size = new Size(69, 25);
+            LblKennzeichen.Size = new Size(44, 15);
             LblKennzeichen.TabIndex = 12;
             LblKennzeichen.Text = "label13";
             // 
             // LblMarke
             // 
             LblMarke.AutoSize = true;
-            LblMarke.Location = new Point(167, 387);
+            LblMarke.Location = new Point(117, 232);
+            LblMarke.Margin = new Padding(2, 0, 2, 0);
             LblMarke.Name = "LblMarke";
-            LblMarke.Size = new Size(69, 25);
+            LblMarke.Size = new Size(44, 15);
             LblMarke.TabIndex = 13;
             LblMarke.Text = "label14";
             // 
             // LblModell
             // 
             LblModell.AutoSize = true;
-            LblModell.Location = new Point(167, 412);
+            LblModell.Location = new Point(117, 247);
+            LblModell.Margin = new Padding(2, 0, 2, 0);
             LblModell.Name = "LblModell";
-            LblModell.Size = new Size(69, 25);
+            LblModell.Size = new Size(44, 15);
             LblModell.TabIndex = 14;
             LblModell.Text = "label15";
             // 
             // LblHalter
             // 
             LblHalter.AutoSize = true;
-            LblHalter.Location = new Point(167, 472);
+            LblHalter.Location = new Point(117, 283);
+            LblHalter.Margin = new Padding(2, 0, 2, 0);
             LblHalter.Name = "LblHalter";
-            LblHalter.Size = new Size(69, 25);
+            LblHalter.Size = new Size(44, 15);
             LblHalter.TabIndex = 15;
             LblHalter.Text = "label16";
             // 
             // LblOrt
             // 
             LblOrt.AutoSize = true;
-            LblOrt.Location = new Point(167, 497);
+            LblOrt.Location = new Point(117, 298);
+            LblOrt.Margin = new Padding(2, 0, 2, 0);
             LblOrt.Name = "LblOrt";
-            LblOrt.Size = new Size(69, 25);
+            LblOrt.Size = new Size(44, 15);
             LblOrt.TabIndex = 16;
             LblOrt.Text = "label17";
             // 
@@ -230,40 +253,60 @@ namespace Autowerkstatt
             // 
             label18.AutoSize = true;
             label18.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label18.Location = new Point(573, 9);
+            label18.Location = new Point(401, 5);
+            label18.Margin = new Padding(2, 0, 2, 0);
             label18.Name = "label18";
-            label18.Size = new Size(130, 32);
+            label18.Size = new Size(89, 21);
             label18.TabIndex = 17;
             label18.Text = "Fahrzeuge";
             // 
             // DatDatum
             // 
-            DatDatum.Location = new Point(176, 60);
+            DatDatum.DataBindings.Add(new Binding("Value", reparaturBindingSource2, "Datum", true));
+            DatDatum.Location = new Point(123, 36);
+            DatDatum.Margin = new Padding(2);
             DatDatum.Name = "DatDatum";
-            DatDatum.Size = new Size(300, 31);
+            DatDatum.Size = new Size(211, 23);
             DatDatum.TabIndex = 18;
+            // 
+            // reparaturBindingSource2
+            // 
+            reparaturBindingSource2.DataSource = typeof(Models.Reparatur);
             // 
             // TxtBeschreibung
             // 
-            TxtBeschreibung.Location = new Point(176, 97);
+            TxtBeschreibung.DataBindings.Add(new Binding("Text", reparaturBindingSource, "Beschreibung", true));
+            TxtBeschreibung.Location = new Point(123, 58);
+            TxtBeschreibung.Margin = new Padding(2);
             TxtBeschreibung.Multiline = true;
             TxtBeschreibung.Name = "TxtBeschreibung";
-            TxtBeschreibung.Size = new Size(300, 139);
+            TxtBeschreibung.Size = new Size(211, 85);
             TxtBeschreibung.TabIndex = 19;
+            // 
+            // reparaturBindingSource
+            // 
+            reparaturBindingSource.DataSource = typeof(Models.Reparatur);
             // 
             // TxtKosten
             // 
-            TxtKosten.Location = new Point(176, 242);
+            TxtKosten.DataBindings.Add(new Binding("Text", reparaturBindingSource1, "Kosten", true));
+            TxtKosten.Location = new Point(123, 145);
+            TxtKosten.Margin = new Padding(2);
             TxtKosten.Name = "TxtKosten";
-            TxtKosten.Size = new Size(233, 31);
+            TxtKosten.Size = new Size(164, 23);
             TxtKosten.TabIndex = 20;
+            // 
+            // reparaturBindingSource1
+            // 
+            reparaturBindingSource1.DataSource = typeof(Models.Reparatur);
             // 
             // label19
             // 
             label19.AutoSize = true;
-            label19.Location = new Point(415, 248);
+            label19.Location = new Point(290, 149);
+            label19.Margin = new Padding(2, 0, 2, 0);
             label19.Name = "label19";
-            label19.Size = new Size(48, 25);
+            label19.Size = new Size(31, 15);
             label19.TabIndex = 21;
             label19.Text = "Euro";
             // 
@@ -275,13 +318,13 @@ namespace Autowerkstatt
             dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dataGridView1.Columns.AddRange(new DataGridViewColumn[] { nrDataGridViewTextBoxColumn, kennzeichenDataGridViewTextBoxColumn, markeDataGridViewTextBoxColumn, modellDataGridViewTextBoxColumn, halterDataGridViewTextBoxColumn, ortDataGridViewTextBoxColumn });
             dataGridView1.DataSource = fahrzeugBindingSource;
-            dataGridView1.Location = new Point(573, 60);
+            dataGridView1.Location = new Point(401, 36);
+            dataGridView1.Margin = new Padding(2);
             dataGridView1.Name = "dataGridView1";
             dataGridView1.ReadOnly = true;
             dataGridView1.RowHeadersWidth = 62;
-            dataGridView1.Size = new Size(870, 462);
+            dataGridView1.Size = new Size(609, 277);
             dataGridView1.TabIndex = 22;
-            dataGridView1.CellContentDoubleClick += dataGridView1_CellContentDoubleClick;
             // 
             // nrDataGridViewTextBoxColumn
             // 
@@ -343,18 +386,21 @@ namespace Autowerkstatt
             // 
             // CmdReparaturSpeichern
             // 
-            CmdReparaturSpeichern.Location = new Point(176, 528);
+            CmdReparaturSpeichern.Location = new Point(123, 317);
+            CmdReparaturSpeichern.Margin = new Padding(2);
             CmdReparaturSpeichern.Name = "CmdReparaturSpeichern";
-            CmdReparaturSpeichern.Size = new Size(112, 34);
+            CmdReparaturSpeichern.Size = new Size(78, 20);
             CmdReparaturSpeichern.TabIndex = 23;
             CmdReparaturSpeichern.Text = "Speichern";
             CmdReparaturSpeichern.UseVisualStyleBackColor = true;
+            CmdReparaturSpeichern.Click += CmdReparaturSpeichern_Click;
             // 
             // CmdFahrzeugÜbernehmen
             // 
-            CmdFahrzeugÜbernehmen.Location = new Point(573, 528);
+            CmdFahrzeugÜbernehmen.Location = new Point(401, 317);
+            CmdFahrzeugÜbernehmen.Margin = new Padding(2);
             CmdFahrzeugÜbernehmen.Name = "CmdFahrzeugÜbernehmen";
-            CmdFahrzeugÜbernehmen.Size = new Size(281, 34);
+            CmdFahrzeugÜbernehmen.Size = new Size(197, 20);
             CmdFahrzeugÜbernehmen.TabIndex = 24;
             CmdFahrzeugÜbernehmen.Text = "<<< Fahrzeug übernehmen";
             CmdFahrzeugÜbernehmen.UseVisualStyleBackColor = true;
@@ -362,9 +408,10 @@ namespace Autowerkstatt
             // 
             // CmdHinzufügen
             // 
-            CmdHinzufügen.Location = new Point(799, 10);
+            CmdHinzufügen.Location = new Point(559, 6);
+            CmdHinzufügen.Margin = new Padding(2);
             CmdHinzufügen.Name = "CmdHinzufügen";
-            CmdHinzufügen.Size = new Size(112, 34);
+            CmdHinzufügen.Size = new Size(78, 20);
             CmdHinzufügen.TabIndex = 25;
             CmdHinzufügen.Text = "Hinzufügen";
             CmdHinzufügen.UseVisualStyleBackColor = true;
@@ -372,27 +419,30 @@ namespace Autowerkstatt
             // 
             // CmdSpeichern
             // 
-            CmdSpeichern.Location = new Point(917, 10);
+            CmdSpeichern.Location = new Point(642, 6);
+            CmdSpeichern.Margin = new Padding(2);
             CmdSpeichern.Name = "CmdSpeichern";
-            CmdSpeichern.Size = new Size(112, 34);
+            CmdSpeichern.Size = new Size(78, 20);
             CmdSpeichern.TabIndex = 26;
             CmdSpeichern.Text = "Speichern";
             CmdSpeichern.UseVisualStyleBackColor = true;
             // 
             // CmdLöschen
             // 
-            CmdLöschen.Location = new Point(1035, 10);
+            CmdLöschen.Location = new Point(724, 6);
+            CmdLöschen.Margin = new Padding(2);
             CmdLöschen.Name = "CmdLöschen";
-            CmdLöschen.Size = new Size(112, 34);
+            CmdLöschen.Size = new Size(78, 20);
             CmdLöschen.TabIndex = 27;
             CmdLöschen.Text = "Löschen";
             CmdLöschen.UseVisualStyleBackColor = true;
+            CmdLöschen.Click += CmdLöschen_Click;
             // 
             // FrmAutowerkstatt
             // 
-            AutoScaleDimensions = new SizeF(10F, 25F);
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1448, 578);
+            ClientSize = new Size(1014, 347);
             Controls.Add(CmdLöschen);
             Controls.Add(CmdSpeichern);
             Controls.Add(CmdHinzufügen);
@@ -421,9 +471,13 @@ namespace Autowerkstatt
             Controls.Add(label3);
             Controls.Add(label2);
             Controls.Add(label1);
+            Margin = new Padding(2);
             Name = "FrmAutowerkstatt";
             Text = "Autowerkstatt Helferlein";
             Load += FrmAutowerkstatt_Load;
+            ((System.ComponentModel.ISupportInitialize)reparaturBindingSource2).EndInit();
+            ((System.ComponentModel.ISupportInitialize)reparaturBindingSource).EndInit();
+            ((System.ComponentModel.ISupportInitialize)reparaturBindingSource1).EndInit();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
             ((System.ComponentModel.ISupportInitialize)fahrzeugBindingSource).EndInit();
             ResumeLayout(false);
@@ -467,5 +521,8 @@ namespace Autowerkstatt
         private DataGridViewTextBoxColumn halterDataGridViewTextBoxColumn;
         private DataGridViewTextBoxColumn ortDataGridViewTextBoxColumn;
         private BindingSource fahrzeugBindingSource;
+        private BindingSource reparaturBindingSource;
+        private BindingSource reparaturBindingSource1;
+        private BindingSource reparaturBindingSource2;
     }
 }

@@ -1,7 +1,7 @@
 ﻿// Licensed to the .NET Foundation under one or more agreements.
 // The .NET Foundation licenses this file to you under the MIT license.
 
-namespace KlassenFormulare
+namespace AnwendungBeenden
 {
     partial class Form1
     {
@@ -31,44 +31,33 @@ namespace KlassenFormulare
         /// </summary>
         private void InitializeComponent()
         {
-            CmdButton = new Button();
-            TxtBox = new TextBox();
+            CmdButton1 = new Button();
             SuspendLayout();
             // 
-            // CmdButton
+            // CmdButton1
             // 
-            CmdButton.Location = new Point(120, 98);
-            CmdButton.Name = "CmdButton";
-            CmdButton.Size = new Size(100, 48);
-            CmdButton.TabIndex = 0;
-            CmdButton.Text = "Formular 2 Aufrufen";
-            CmdButton.UseVisualStyleBackColor = true;
-            CmdButton.Click += CmdButton_Click;
-            // 
-            // TxtBox
-            // 
-            TxtBox.Location = new Point(120, 69);
-            TxtBox.Name = "TxtBox";
-            TxtBox.Size = new Size(100, 23);
-            TxtBox.TabIndex = 1;
-            TxtBox.TextChanged += TxtBox_TextChanged;
+            CmdButton1.Location = new Point(165, 113);
+            CmdButton1.Name = "CmdButton1";
+            CmdButton1.Size = new Size(501, 251);
+            CmdButton1.TabIndex = 0;
+            CmdButton1.Text = "Its a Button";
+            CmdButton1.UseVisualStyleBackColor = true;
+            CmdButton1.Click += CmdButton1_Click;
             // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
-            Controls.Add(TxtBox);
-            Controls.Add(CmdButton);
+            Controls.Add(CmdButton1);
             Name = "Form1";
             Text = "Form1";
+            FormClosing += Form1_FormClosing;
             ResumeLayout(false);
-            PerformLayout();
         }
 
         #endregion
 
-        private Button CmdButton;
-        private TextBox TxtBox;
+        private Button CmdButton1;
     }
 }
