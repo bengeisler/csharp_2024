@@ -1,7 +1,7 @@
 ﻿// Licensed to the .NET Foundation under one or more agreements.
 // The .NET Foundation licenses this file to you under the MIT license.
 
-namespace Mitarbeiter
+namespace Mitarbeiterverwaltung
 {
     partial class FrmMitarbeiterverwaltung
     {
@@ -35,16 +35,16 @@ namespace Mitarbeiter
             CmdMitarbeiterHinzufügen = new Button();
             CmdMitarbeiterLöschen = new Button();
             dataGridView1 = new DataGridView();
+            dataGridViewTextBoxColumn1 = new DataGridViewTextBoxColumn();
+            dataGridViewTextBoxColumn2 = new DataGridViewTextBoxColumn();
+            dataGridViewTextBoxColumn3 = new DataGridViewTextBoxColumn();
+            dataGridViewTextBoxColumn4 = new DataGridViewTextBoxColumn();
+            dataGridViewTextBoxColumn5 = new DataGridViewTextBoxColumn();
+            dataGridViewTextBoxColumn6 = new DataGridViewTextBoxColumn();
+            dataGridViewTextBoxColumn7 = new DataGridViewTextBoxColumn();
+            dataGridViewTextBoxColumn8 = new DataGridViewTextBoxColumn();
+            dataGridViewTextBoxColumn9 = new DataGridViewTextBoxColumn();
             mitarbeiterBindingSource = new BindingSource(components);
-            personalNrDataGridViewTextBoxColumn = new DataGridViewTextBoxColumn();
-            abteilungsNrDataGridViewTextBoxColumn = new DataGridViewTextBoxColumn();
-            nameDataGridViewTextBoxColumn = new DataGridViewTextBoxColumn();
-            vornameDataGridViewTextBoxColumn = new DataGridViewTextBoxColumn();
-            stellenbezeichnungDataGridViewTextBoxColumn = new DataGridViewTextBoxColumn();
-            adresseDataGridViewTextBoxColumn = new DataGridViewTextBoxColumn();
-            plzDataGridViewTextBoxColumn = new DataGridViewTextBoxColumn();
-            ortDataGridViewTextBoxColumn = new DataGridViewTextBoxColumn();
-            telefonDataGridViewTextBoxColumn = new DataGridViewTextBoxColumn();
             label1 = new Label();
             label2 = new Label();
             label3 = new Label();
@@ -57,9 +57,9 @@ namespace Mitarbeiter
             CmdMitarbeiterInAbteilungÜbernehmen = new Button();
             label4 = new Label();
             dataGridView2 = new DataGridView();
+            dataGridViewTextBoxColumn10 = new DataGridViewTextBoxColumn();
+            dataGridViewTextBoxColumn11 = new DataGridViewTextBoxColumn();
             abteilungBindingSource = new BindingSource(components);
-            abteilungsNrDataGridViewTextBoxColumn1 = new DataGridViewTextBoxColumn();
-            bezeichnungDataGridViewTextBoxColumn = new DataGridViewTextBoxColumn();
             label5 = new Label();
             TxtAbteilungsnummer = new TextBox();
             TxtAbteilungsbezeichnung = new TextBox();
@@ -80,6 +80,7 @@ namespace Mitarbeiter
             CmdMitarbeiterHinzufügen.TabIndex = 0;
             CmdMitarbeiterHinzufügen.Text = "Mitarbeiter hinzufügen";
             CmdMitarbeiterHinzufügen.UseVisualStyleBackColor = true;
+            CmdMitarbeiterHinzufügen.Click += CmdMitarbeiterHinzufügen_Click;
             // 
             // CmdMitarbeiterLöschen
             // 
@@ -89,6 +90,7 @@ namespace Mitarbeiter
             CmdMitarbeiterLöschen.TabIndex = 1;
             CmdMitarbeiterLöschen.Text = "Mitarbeiter löschen";
             CmdMitarbeiterLöschen.UseVisualStyleBackColor = true;
+            CmdMitarbeiterLöschen.Click += CmdMitarbeiterLöschen_Click;
             // 
             // dataGridView1
             // 
@@ -96,7 +98,7 @@ namespace Mitarbeiter
             dataGridView1.AllowUserToDeleteRows = false;
             dataGridView1.AutoGenerateColumns = false;
             dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView1.Columns.AddRange(new DataGridViewColumn[] { personalNrDataGridViewTextBoxColumn, abteilungsNrDataGridViewTextBoxColumn, nameDataGridViewTextBoxColumn, vornameDataGridViewTextBoxColumn, stellenbezeichnungDataGridViewTextBoxColumn, adresseDataGridViewTextBoxColumn, plzDataGridViewTextBoxColumn, ortDataGridViewTextBoxColumn, telefonDataGridViewTextBoxColumn });
+            dataGridView1.Columns.AddRange(new DataGridViewColumn[] { dataGridViewTextBoxColumn1, dataGridViewTextBoxColumn2, dataGridViewTextBoxColumn3, dataGridViewTextBoxColumn4, dataGridViewTextBoxColumn5, dataGridViewTextBoxColumn6, dataGridViewTextBoxColumn7, dataGridViewTextBoxColumn8, dataGridViewTextBoxColumn9 });
             dataGridView1.DataSource = mitarbeiterBindingSource;
             dataGridView1.Location = new Point(12, 82);
             dataGridView1.Name = "dataGridView1";
@@ -104,91 +106,92 @@ namespace Mitarbeiter
             dataGridView1.RowHeadersWidth = 62;
             dataGridView1.Size = new Size(1422, 225);
             dataGridView1.TabIndex = 2;
+            dataGridView1.CellDoubleClick += dataGridView1_CellDoubleClick;
+            // 
+            // dataGridViewTextBoxColumn1
+            // 
+            dataGridViewTextBoxColumn1.DataPropertyName = "PersonalNr";
+            dataGridViewTextBoxColumn1.HeaderText = "PersonalNr";
+            dataGridViewTextBoxColumn1.MinimumWidth = 8;
+            dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
+            dataGridViewTextBoxColumn1.ReadOnly = true;
+            dataGridViewTextBoxColumn1.Width = 150;
+            // 
+            // dataGridViewTextBoxColumn2
+            // 
+            dataGridViewTextBoxColumn2.DataPropertyName = "AbteilungsNr";
+            dataGridViewTextBoxColumn2.HeaderText = "AbteilungsNr";
+            dataGridViewTextBoxColumn2.MinimumWidth = 8;
+            dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
+            dataGridViewTextBoxColumn2.ReadOnly = true;
+            dataGridViewTextBoxColumn2.Width = 150;
+            // 
+            // dataGridViewTextBoxColumn3
+            // 
+            dataGridViewTextBoxColumn3.DataPropertyName = "Name";
+            dataGridViewTextBoxColumn3.HeaderText = "Name";
+            dataGridViewTextBoxColumn3.MinimumWidth = 8;
+            dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
+            dataGridViewTextBoxColumn3.ReadOnly = true;
+            dataGridViewTextBoxColumn3.Width = 150;
+            // 
+            // dataGridViewTextBoxColumn4
+            // 
+            dataGridViewTextBoxColumn4.DataPropertyName = "Vorname";
+            dataGridViewTextBoxColumn4.HeaderText = "Vorname";
+            dataGridViewTextBoxColumn4.MinimumWidth = 8;
+            dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
+            dataGridViewTextBoxColumn4.ReadOnly = true;
+            dataGridViewTextBoxColumn4.Width = 150;
+            // 
+            // dataGridViewTextBoxColumn5
+            // 
+            dataGridViewTextBoxColumn5.DataPropertyName = "Stellenbezeichnung";
+            dataGridViewTextBoxColumn5.HeaderText = "Stellenbezeichnung";
+            dataGridViewTextBoxColumn5.MinimumWidth = 8;
+            dataGridViewTextBoxColumn5.Name = "dataGridViewTextBoxColumn5";
+            dataGridViewTextBoxColumn5.ReadOnly = true;
+            dataGridViewTextBoxColumn5.Width = 200;
+            // 
+            // dataGridViewTextBoxColumn6
+            // 
+            dataGridViewTextBoxColumn6.DataPropertyName = "Adresse";
+            dataGridViewTextBoxColumn6.HeaderText = "Adresse";
+            dataGridViewTextBoxColumn6.MinimumWidth = 8;
+            dataGridViewTextBoxColumn6.Name = "dataGridViewTextBoxColumn6";
+            dataGridViewTextBoxColumn6.ReadOnly = true;
+            dataGridViewTextBoxColumn6.Width = 150;
+            // 
+            // dataGridViewTextBoxColumn7
+            // 
+            dataGridViewTextBoxColumn7.DataPropertyName = "Plz";
+            dataGridViewTextBoxColumn7.HeaderText = "Plz";
+            dataGridViewTextBoxColumn7.MinimumWidth = 8;
+            dataGridViewTextBoxColumn7.Name = "dataGridViewTextBoxColumn7";
+            dataGridViewTextBoxColumn7.ReadOnly = true;
+            dataGridViewTextBoxColumn7.Width = 150;
+            // 
+            // dataGridViewTextBoxColumn8
+            // 
+            dataGridViewTextBoxColumn8.DataPropertyName = "Ort";
+            dataGridViewTextBoxColumn8.HeaderText = "Ort";
+            dataGridViewTextBoxColumn8.MinimumWidth = 8;
+            dataGridViewTextBoxColumn8.Name = "dataGridViewTextBoxColumn8";
+            dataGridViewTextBoxColumn8.ReadOnly = true;
+            dataGridViewTextBoxColumn8.Width = 150;
+            // 
+            // dataGridViewTextBoxColumn9
+            // 
+            dataGridViewTextBoxColumn9.DataPropertyName = "Telefon";
+            dataGridViewTextBoxColumn9.HeaderText = "Telefon";
+            dataGridViewTextBoxColumn9.MinimumWidth = 8;
+            dataGridViewTextBoxColumn9.Name = "dataGridViewTextBoxColumn9";
+            dataGridViewTextBoxColumn9.ReadOnly = true;
+            dataGridViewTextBoxColumn9.Width = 150;
             // 
             // mitarbeiterBindingSource
             // 
             mitarbeiterBindingSource.DataSource = typeof(Models.Mitarbeiter);
-            // 
-            // personalNrDataGridViewTextBoxColumn
-            // 
-            personalNrDataGridViewTextBoxColumn.DataPropertyName = "PersonalNr";
-            personalNrDataGridViewTextBoxColumn.HeaderText = "PersonalNr";
-            personalNrDataGridViewTextBoxColumn.MinimumWidth = 8;
-            personalNrDataGridViewTextBoxColumn.Name = "personalNrDataGridViewTextBoxColumn";
-            personalNrDataGridViewTextBoxColumn.ReadOnly = true;
-            personalNrDataGridViewTextBoxColumn.Width = 150;
-            // 
-            // abteilungsNrDataGridViewTextBoxColumn
-            // 
-            abteilungsNrDataGridViewTextBoxColumn.DataPropertyName = "AbteilungsNr";
-            abteilungsNrDataGridViewTextBoxColumn.HeaderText = "AbteilungsNr";
-            abteilungsNrDataGridViewTextBoxColumn.MinimumWidth = 8;
-            abteilungsNrDataGridViewTextBoxColumn.Name = "abteilungsNrDataGridViewTextBoxColumn";
-            abteilungsNrDataGridViewTextBoxColumn.ReadOnly = true;
-            abteilungsNrDataGridViewTextBoxColumn.Width = 150;
-            // 
-            // nameDataGridViewTextBoxColumn
-            // 
-            nameDataGridViewTextBoxColumn.DataPropertyName = "Name";
-            nameDataGridViewTextBoxColumn.HeaderText = "Name";
-            nameDataGridViewTextBoxColumn.MinimumWidth = 8;
-            nameDataGridViewTextBoxColumn.Name = "nameDataGridViewTextBoxColumn";
-            nameDataGridViewTextBoxColumn.ReadOnly = true;
-            nameDataGridViewTextBoxColumn.Width = 150;
-            // 
-            // vornameDataGridViewTextBoxColumn
-            // 
-            vornameDataGridViewTextBoxColumn.DataPropertyName = "Vorname";
-            vornameDataGridViewTextBoxColumn.HeaderText = "Vorname";
-            vornameDataGridViewTextBoxColumn.MinimumWidth = 8;
-            vornameDataGridViewTextBoxColumn.Name = "vornameDataGridViewTextBoxColumn";
-            vornameDataGridViewTextBoxColumn.ReadOnly = true;
-            vornameDataGridViewTextBoxColumn.Width = 150;
-            // 
-            // stellenbezeichnungDataGridViewTextBoxColumn
-            // 
-            stellenbezeichnungDataGridViewTextBoxColumn.DataPropertyName = "Stellenbezeichnung";
-            stellenbezeichnungDataGridViewTextBoxColumn.HeaderText = "Stellenbezeichnung";
-            stellenbezeichnungDataGridViewTextBoxColumn.MinimumWidth = 8;
-            stellenbezeichnungDataGridViewTextBoxColumn.Name = "stellenbezeichnungDataGridViewTextBoxColumn";
-            stellenbezeichnungDataGridViewTextBoxColumn.ReadOnly = true;
-            stellenbezeichnungDataGridViewTextBoxColumn.Width = 150;
-            // 
-            // adresseDataGridViewTextBoxColumn
-            // 
-            adresseDataGridViewTextBoxColumn.DataPropertyName = "Adresse";
-            adresseDataGridViewTextBoxColumn.HeaderText = "Adresse";
-            adresseDataGridViewTextBoxColumn.MinimumWidth = 8;
-            adresseDataGridViewTextBoxColumn.Name = "adresseDataGridViewTextBoxColumn";
-            adresseDataGridViewTextBoxColumn.ReadOnly = true;
-            adresseDataGridViewTextBoxColumn.Width = 150;
-            // 
-            // plzDataGridViewTextBoxColumn
-            // 
-            plzDataGridViewTextBoxColumn.DataPropertyName = "Plz";
-            plzDataGridViewTextBoxColumn.HeaderText = "Plz";
-            plzDataGridViewTextBoxColumn.MinimumWidth = 8;
-            plzDataGridViewTextBoxColumn.Name = "plzDataGridViewTextBoxColumn";
-            plzDataGridViewTextBoxColumn.ReadOnly = true;
-            plzDataGridViewTextBoxColumn.Width = 150;
-            // 
-            // ortDataGridViewTextBoxColumn
-            // 
-            ortDataGridViewTextBoxColumn.DataPropertyName = "Ort";
-            ortDataGridViewTextBoxColumn.HeaderText = "Ort";
-            ortDataGridViewTextBoxColumn.MinimumWidth = 8;
-            ortDataGridViewTextBoxColumn.Name = "ortDataGridViewTextBoxColumn";
-            ortDataGridViewTextBoxColumn.ReadOnly = true;
-            ortDataGridViewTextBoxColumn.Width = 150;
-            // 
-            // telefonDataGridViewTextBoxColumn
-            // 
-            telefonDataGridViewTextBoxColumn.DataPropertyName = "Telefon";
-            telefonDataGridViewTextBoxColumn.HeaderText = "Telefon";
-            telefonDataGridViewTextBoxColumn.MinimumWidth = 8;
-            telefonDataGridViewTextBoxColumn.Name = "telefonDataGridViewTextBoxColumn";
-            telefonDataGridViewTextBoxColumn.ReadOnly = true;
-            telefonDataGridViewTextBoxColumn.Width = 150;
             // 
             // label1
             // 
@@ -240,6 +243,7 @@ namespace Mitarbeiter
             CmdFiltern.TabIndex = 8;
             CmdFiltern.Text = "Filtern";
             CmdFiltern.UseVisualStyleBackColor = true;
+            CmdFiltern.Click += CmdFiltern_Click;
             // 
             // CmdAlleAnzeigen
             // 
@@ -249,6 +253,7 @@ namespace Mitarbeiter
             CmdAlleAnzeigen.TabIndex = 9;
             CmdAlleAnzeigen.Text = "Alle anzeigen";
             CmdAlleAnzeigen.UseVisualStyleBackColor = true;
+            CmdAlleAnzeigen.Click += CmdAlleAnzeigen_Click;
             // 
             // CmdNachNachnameSortieren
             // 
@@ -258,6 +263,7 @@ namespace Mitarbeiter
             CmdNachNachnameSortieren.TabIndex = 10;
             CmdNachNachnameSortieren.Text = "Nach Nachname sortieren";
             CmdNachNachnameSortieren.UseVisualStyleBackColor = true;
+            CmdNachNachnameSortieren.Click += CmdNachNachnameSortieren_Click;
             // 
             // CmdNachVornameSortieren
             // 
@@ -267,6 +273,7 @@ namespace Mitarbeiter
             CmdNachVornameSortieren.TabIndex = 11;
             CmdNachVornameSortieren.Text = "Nach Vorname sortieren";
             CmdNachVornameSortieren.UseVisualStyleBackColor = true;
+            CmdNachVornameSortieren.Click += CmdNachVornameSortieren_Click;
             // 
             // CmdMitarbeiterInAbteilungÜbernehmen
             // 
@@ -276,6 +283,7 @@ namespace Mitarbeiter
             CmdMitarbeiterInAbteilungÜbernehmen.TabIndex = 12;
             CmdMitarbeiterInAbteilungÜbernehmen.Text = "Mitarbeiter in ausgewählte Abteilung übernehmen";
             CmdMitarbeiterInAbteilungÜbernehmen.UseVisualStyleBackColor = true;
+            CmdMitarbeiterInAbteilungÜbernehmen.Click += CmdMitarbeiterInAbteilungÜbernehmen_Click;
             // 
             // label4
             // 
@@ -293,7 +301,7 @@ namespace Mitarbeiter
             dataGridView2.AllowUserToDeleteRows = false;
             dataGridView2.AutoGenerateColumns = false;
             dataGridView2.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView2.Columns.AddRange(new DataGridViewColumn[] { abteilungsNrDataGridViewTextBoxColumn1, bezeichnungDataGridViewTextBoxColumn });
+            dataGridView2.Columns.AddRange(new DataGridViewColumn[] { dataGridViewTextBoxColumn10, dataGridViewTextBoxColumn11 });
             dataGridView2.DataSource = abteilungBindingSource;
             dataGridView2.Location = new Point(12, 484);
             dataGridView2.Name = "dataGridView2";
@@ -302,27 +310,27 @@ namespace Mitarbeiter
             dataGridView2.Size = new Size(1422, 225);
             dataGridView2.TabIndex = 14;
             // 
+            // dataGridViewTextBoxColumn10
+            // 
+            dataGridViewTextBoxColumn10.DataPropertyName = "AbteilungsNr";
+            dataGridViewTextBoxColumn10.HeaderText = "AbteilungsNr";
+            dataGridViewTextBoxColumn10.MinimumWidth = 8;
+            dataGridViewTextBoxColumn10.Name = "dataGridViewTextBoxColumn10";
+            dataGridViewTextBoxColumn10.ReadOnly = true;
+            dataGridViewTextBoxColumn10.Width = 150;
+            // 
+            // dataGridViewTextBoxColumn11
+            // 
+            dataGridViewTextBoxColumn11.DataPropertyName = "Bezeichnung";
+            dataGridViewTextBoxColumn11.HeaderText = "Bezeichnung";
+            dataGridViewTextBoxColumn11.MinimumWidth = 8;
+            dataGridViewTextBoxColumn11.Name = "dataGridViewTextBoxColumn11";
+            dataGridViewTextBoxColumn11.ReadOnly = true;
+            dataGridViewTextBoxColumn11.Width = 150;
+            // 
             // abteilungBindingSource
             // 
             abteilungBindingSource.DataSource = typeof(Models.Abteilung);
-            // 
-            // abteilungsNrDataGridViewTextBoxColumn1
-            // 
-            abteilungsNrDataGridViewTextBoxColumn1.DataPropertyName = "AbteilungsNr";
-            abteilungsNrDataGridViewTextBoxColumn1.HeaderText = "AbteilungsNr";
-            abteilungsNrDataGridViewTextBoxColumn1.MinimumWidth = 8;
-            abteilungsNrDataGridViewTextBoxColumn1.Name = "abteilungsNrDataGridViewTextBoxColumn1";
-            abteilungsNrDataGridViewTextBoxColumn1.ReadOnly = true;
-            abteilungsNrDataGridViewTextBoxColumn1.Width = 150;
-            // 
-            // bezeichnungDataGridViewTextBoxColumn
-            // 
-            bezeichnungDataGridViewTextBoxColumn.DataPropertyName = "Bezeichnung";
-            bezeichnungDataGridViewTextBoxColumn.HeaderText = "Bezeichnung";
-            bezeichnungDataGridViewTextBoxColumn.MinimumWidth = 8;
-            bezeichnungDataGridViewTextBoxColumn.Name = "bezeichnungDataGridViewTextBoxColumn";
-            bezeichnungDataGridViewTextBoxColumn.ReadOnly = true;
-            bezeichnungDataGridViewTextBoxColumn.Width = 150;
             // 
             // label5
             // 
@@ -335,6 +343,7 @@ namespace Mitarbeiter
             // 
             // TxtAbteilungsnummer
             // 
+            TxtAbteilungsnummer.DataBindings.Add(new Binding("Text", abteilungBindingSource, "AbteilungsNr", true));
             TxtAbteilungsnummer.Location = new Point(221, 722);
             TxtAbteilungsnummer.Name = "TxtAbteilungsnummer";
             TxtAbteilungsnummer.ReadOnly = true;
@@ -343,6 +352,7 @@ namespace Mitarbeiter
             // 
             // TxtAbteilungsbezeichnung
             // 
+            TxtAbteilungsbezeichnung.DataBindings.Add(new Binding("Text", abteilungBindingSource, "Bezeichnung", true));
             TxtAbteilungsbezeichnung.Location = new Point(268, 722);
             TxtAbteilungsbezeichnung.Name = "TxtAbteilungsbezeichnung";
             TxtAbteilungsbezeichnung.ReadOnly = true;
@@ -357,6 +367,7 @@ namespace Mitarbeiter
             CmdAbteilungHinzufügen.TabIndex = 18;
             CmdAbteilungHinzufügen.Text = "Abteilung hinzufügen";
             CmdAbteilungHinzufügen.UseVisualStyleBackColor = true;
+            CmdAbteilungHinzufügen.Click += CmdAbteilungHinzufügen_Click;
             // 
             // CmdAbteilungBearbeiten
             // 
@@ -366,6 +377,7 @@ namespace Mitarbeiter
             CmdAbteilungBearbeiten.TabIndex = 19;
             CmdAbteilungBearbeiten.Text = "Abteilung bearbeiten";
             CmdAbteilungBearbeiten.UseVisualStyleBackColor = true;
+            CmdAbteilungBearbeiten.Click += CmdAbteilungBearbeiten_Click;
             // 
             // CmdAbteilungLöschen
             // 
@@ -375,6 +387,7 @@ namespace Mitarbeiter
             CmdAbteilungLöschen.TabIndex = 20;
             CmdAbteilungLöschen.Text = "Abteilung löschen";
             CmdAbteilungLöschen.UseVisualStyleBackColor = true;
+            CmdAbteilungLöschen.Click += CmdAbteilungLöschen_Click;
             // 
             // FrmMitarbeiterverwaltung
             // 
@@ -404,6 +417,7 @@ namespace Mitarbeiter
             Controls.Add(CmdMitarbeiterHinzufügen);
             Name = "FrmMitarbeiterverwaltung";
             Text = "Mitarbeiterverwaltung";
+            Load += FrmMitarbeiterverwaltung_Load;
             ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
             ((System.ComponentModel.ISupportInitialize)mitarbeiterBindingSource).EndInit();
             ((System.ComponentModel.ISupportInitialize)dataGridView2).EndInit();
@@ -426,7 +440,6 @@ namespace Mitarbeiter
         private DataGridViewTextBoxColumn plzDataGridViewTextBoxColumn;
         private DataGridViewTextBoxColumn ortDataGridViewTextBoxColumn;
         private DataGridViewTextBoxColumn telefonDataGridViewTextBoxColumn;
-        private BindingSource mitarbeiterBindingSource;
         private Label label1;
         private Label label2;
         private Label label3;
@@ -441,12 +454,24 @@ namespace Mitarbeiter
         private DataGridView dataGridView2;
         private DataGridViewTextBoxColumn abteilungsNrDataGridViewTextBoxColumn1;
         private DataGridViewTextBoxColumn bezeichnungDataGridViewTextBoxColumn;
-        private BindingSource abteilungBindingSource;
         private Label label5;
         private TextBox TxtAbteilungsnummer;
         private TextBox TxtAbteilungsbezeichnung;
         private Button CmdAbteilungHinzufügen;
         private Button CmdAbteilungBearbeiten;
         private Button CmdAbteilungLöschen;
+        private DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
+        private DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
+        private DataGridViewTextBoxColumn dataGridViewTextBoxColumn3;
+        private DataGridViewTextBoxColumn dataGridViewTextBoxColumn4;
+        private DataGridViewTextBoxColumn dataGridViewTextBoxColumn5;
+        private DataGridViewTextBoxColumn dataGridViewTextBoxColumn6;
+        private DataGridViewTextBoxColumn dataGridViewTextBoxColumn7;
+        private DataGridViewTextBoxColumn dataGridViewTextBoxColumn8;
+        private DataGridViewTextBoxColumn dataGridViewTextBoxColumn9;
+        private BindingSource mitarbeiterBindingSource;
+        private DataGridViewTextBoxColumn dataGridViewTextBoxColumn10;
+        private DataGridViewTextBoxColumn dataGridViewTextBoxColumn11;
+        private BindingSource abteilungBindingSource;
     }
 }

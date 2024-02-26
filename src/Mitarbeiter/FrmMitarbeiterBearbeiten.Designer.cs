@@ -1,7 +1,7 @@
 ﻿// Licensed to the .NET Foundation under one or more agreements.
 // The .NET Foundation licenses this file to you under the MIT license.
 
-namespace Mitarbeiter
+namespace Mitarbeiterverwaltung
 {
     partial class FrmMitarbeiterBearbeiten
     {
@@ -207,6 +207,7 @@ namespace Mitarbeiter
             CmdSpeichern.TabIndex = 18;
             CmdSpeichern.Text = "Speichern";
             CmdSpeichern.UseVisualStyleBackColor = true;
+            CmdSpeichern.Click += CmdSpeichern_Click;
             // 
             // CmdAbbrechen
             // 
@@ -216,6 +217,7 @@ namespace Mitarbeiter
             CmdAbbrechen.TabIndex = 19;
             CmdAbbrechen.Text = "Abbrechen";
             CmdAbbrechen.UseVisualStyleBackColor = true;
+            CmdAbbrechen.Click += CmdAbbrechen_Click;
             // 
             // FrmMitarbeiterBearbeiten
             // 
@@ -244,6 +246,8 @@ namespace Mitarbeiter
             Controls.Add(label1);
             Name = "FrmMitarbeiterBearbeiten";
             Text = "Mitarbeiter bearbeiten";
+            FormClosing += FrmMitarbeiterBearbeiten_FormClosing;
+            Load += FrmMitarbeiterBearbeiten_Load;
             ResumeLayout(false);
             PerformLayout();
         }

@@ -10,14 +10,50 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Mitarbeiterverwaltung.Models;
 
-namespace Mitarbeiter
+namespace Mitarbeiterverwaltung
 {
     public partial class FrmAbteilungBearbeiten : Form
     {
         public FrmAbteilungBearbeiten()
         {
             InitializeComponent();
+        }
+
+        // Eigenschaft zum Datenaustausch zwischen den Formularen
+        public Abteilung AbteilungInBearbeitung;
+
+        private void FrmAbteilungBearbeiten_Load(object sender, EventArgs e)
+        {
+            // Falls ein neuer Datensatz angelegt wird, hier Methode verlassen
+            if (AbteilungInBearbeitung.AbteilungsNr == 0) return;
+
+            TxtAbteilungsbezeichnung.Text = AbteilungInBearbeitung.Bezeichnung;
+            TxtAbteilungsnummer.Text = AbteilungInBearbeitung.AbteilungsNr.ToString();
+        }
+
+        private void CmdSpeichern_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                // Validierung der Eingabe
+                if (TxtAbteilungsbezeichnung.Text == "")
+                    throw new ArgumentException("Bitte Abteilungsbezeichnung vergeben");
+
+                // Eigenschaften zuweisen
+                AbteilungInBearbeitung.Bezeichnung = TxtAbteilungsbezeichnung.Text;
+
+                // DialogResult setzen
+                DialogResult = DialogResult.OK;
+
+                // Schließen
+                Close();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message); 
+            }
         }
     }
 }

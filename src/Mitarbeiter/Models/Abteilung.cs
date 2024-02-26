@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace Mitarbeiter.Models;
+namespace Mitarbeiterverwaltung.Models;
 
 public partial class Abteilung
 {

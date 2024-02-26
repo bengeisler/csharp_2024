@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using Microsoft.EntityFrameworkCore;
 
-namespace Mitarbeiter.Models;
+namespace Mitarbeiterverwaltung.Models;
 
 public partial class FirmaDbContext : DbContext
 {
