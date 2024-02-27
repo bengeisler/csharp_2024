@@ -1,6 +1,9 @@
 // Licensed to the .NET Foundation under one or more agreements.
 // The .NET Foundation licenses this file to you under the MIT license.
 
+using System.Data;
+using System.Net.Mail;
+
 namespace UListe
 {
     public partial class Form1 : Form
@@ -18,77 +21,68 @@ namespace UListe
         private void CmdHinzufügen_Click(object sender, EventArgs e)
         {
             LstListe.Items.Add(TxtEingabe.Text);
-            TxtEingabe.Text = "";
         }
 
         private void CmdSpeichern_Click(object sender, EventArgs e)
         {
-            try
+            // SaveFileDialog
+            SaveFileDialog sfd = new()
             {
-                // Ansatz 1: Über Hilfs-Liste zum Zwischenspeichern der Einträge
-                List<string> items = [];
+                InitialDirectory = Environment.SpecialFolder.Desktop.ToString(),
+                Filter = "Textdateien|*.txt;*.docx",
+                Title = "Datei speichern..."
+            };
+
+            if (sfd.ShowDialog() == DialogResult.OK)
+            {
+                List<string> list = new();
                 foreach (var item in LstListe.Items)
+                    list.Add(item.ToString());
+
+                try
                 {
-                    items.Add(item.ToString());
+                    File.WriteAllLines(sfd.FileName, list);
                 }
-                File.WriteAllLines("liste.txt", items);
-
-                // Ansatz 2: StreamWriter
-
-                // Filestream erstellen, der die Datei öffnet
-                var fs = new FileStream("liste.txt", FileMode.Open);
-                // StreamWriter erstellen, um in den Stream zu schreiben
-                var sw = new StreamWriter(fs);
-                // Alle Einträge der Liste in den Stream schreiben
-                foreach (var item in LstListe.Items) sw.WriteLine(item);
-                // StreamWriter schließen
-                sw.Close();
-
-                // Ansatz 3: String erstellen
-                string zeilen = "";
-                foreach (var eintrag in LstListe.Items)
+                catch (Exception ex)
                 {
-                    zeilen += eintrag.ToString() + Environment.NewLine;
+                    MessageBox.Show(ex.Message);
                 }
-                File.WriteAllText("liste.txt", zeilen);
-
-                // Ansatz 4: Umwandlung der Einträge in strings
-                File.WriteAllLines("liste.txt", LstListe.Items.Cast<string>());
             }
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.Message);
-            }
+                
         }
 
         private void CmdLaden_Click(object sender, EventArgs e)
         {
-            try
+            // OpenFileDialog erstellen
+            OpenFileDialog ofd = new()
             {
-                // Ansatz 1: Alle Zeilen der Datei einlesen und dann
-                //           Zeile für Zeile der Liste hinzufügen
-                var items = File.ReadAllLines("liste.txt");
-                LstListe.Items.Clear();
-                foreach (var item in items) LstListe.Items.Add(item);
+                InitialDirectory = Environment.SpecialFolder.Desktop.ToString(),
+                Filter = "Textdateien|*.txt;*.docx",
+                Title = "Datei öffnen..."
+            };
 
-                // Ansatz 2: StreamReader
+            // Anzeigen
+            var result = ofd.ShowDialog();
 
-                // Filestream erstellen, der die Datei öffnet
-                var fs = new FileStream("liste.txt", FileMode.Open);
-                // StreamReader erstellen, um aus dem Stream zu lesen
-                var sr = new StreamReader(fs);
-                // Schleife wird solange durchlaufen, bis das Ende des Streams erreicht ist
-                while (sr.Peek() != -1)
+            // Wenn Benutzer auf öffnen geklickt hat
+            if (result == DialogResult.OK)
+            {
+                try
                 {
-                    LstListe.Items.Add(sr.ReadLine());
+                    // Datei einlesen
+                    // Pfad: ofd.FileName
+                    var items = File.ReadAllLines(ofd.FileName);
+
+                    // Zur Liste hinzufügen
+                    LstListe.Items.Clear();
+                    foreach (var item in items)
+                        LstListe.Items.Add(item);
                 }
-                // StreamReader schließen
-                sr.Close();
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.Message);
-            }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message);
+                }
+            }        
         }
 
         private void CmdLöschen_Click(object sender, EventArgs e)
