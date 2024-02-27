@@ -17,9 +17,7 @@ namespace DialogStandard
             {
                 Multiselect = true, // Erlaubt Mehrfachauswahl
                 InitialDirectory = Environment.SpecialFolder.MyDocuments.ToString(),
-                Filter = "Tabellen (*.xlsx)|*.xlsx|"
-                + "Texte (*.txt; *.docx)|*.txt;*.docx|"
-                + "Alle Dateien (*.*)|*.*",
+                Filter = "Tabellen|*.xlsx|Texte|*.txt;*.docx|Alle Dateien|*.*",
                 Title = "Datei zum Öffnen auswählen"
             };
 
